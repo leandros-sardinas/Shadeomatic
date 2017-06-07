@@ -1,14 +1,12 @@
 $(document).ready(function(){
       $('.bxslider').bxSlider({
+          autoHover: true,
+          pause: 6000,
           mode: 'fade',
           auto: true,
-          pause: 5000,
-          controls: false,
-          onSliderLoad: function() {
-              $('.bxslider li').eq(1).addClass('active');
-          },
+          controls: false,          
           onSlideAfter: function(item, index) {              
-              $(item).addClass('active');
+              $(item).addClass('active');              
           }
       });
 });

@@ -60,21 +60,18 @@ ul.bxslider {
   color: #666;  
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
+  background: #e5e5e5;
   text-indent: -9999px;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 48px;
+  height: 5px;
   margin: 0 5px;
   outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
+  background: #fff;
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
@@ -175,6 +172,10 @@ ul.bxslider {
   padding: 10px;
 }
 
+.bxslider li {
+  min-height: 500px;
+}
+
 .bxslider li h1 {
   color: #fff;
   font-weight: bold;
@@ -185,7 +186,7 @@ ul.bxslider {
 
 .bxslider li.active h1{
   animation-name: title;
-  animation-duration: 4s;      
+  animation-duration: 2s;      
   animation-fill-mode: forwards;
 }
 
@@ -198,18 +199,8 @@ ul.bxslider {
     margin-left:50%;
     opacity: 0;
   }
-  40% {
+  100% {
     margin-left:0;
     opacity: 1;
-  }
-  80% {
-    margin-left:0;    
-  }
-  99% {    
-    opacity: 0;
-  }
-  100% {
-    margin-left:50%;
-    opacity: 0;
-  }
+  }  
 }
