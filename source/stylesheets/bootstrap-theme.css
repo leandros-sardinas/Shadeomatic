@@ -638,7 +638,12 @@ fieldset[disabled] .btn-danger.active {
   display: block;
   line-height: 40px;
   text-transform: uppercase;
-  padding: 20px 14px;
+  padding: 5px 14px;
+}
+@media (min-width: 1200px) {
+  .navbar-nav > li > a {
+    padding: 20px 14px;
+  }
 }
 
 .dropdown-menu {
@@ -652,6 +657,25 @@ fieldset[disabled] .btn-danger.active {
 .dropdown-menu li a {
   display: block;
   padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  #main-menu .dropdown-menu {
+    border: none;
+    position: relative;
+    display: block;
+    box-shadow: none;
+    height: auto;
+    width: 100%;
+  }
+  #main-menu .dropdown-menu li {
+    border-bottom:none;
+  }
+  #main-menu .dropdown-menu li a {
+    border-left: solid 3px #7cb034;
+    margin-bottom: 10px;    
+    padding:0 0 0 28px;    
+  }
 }
 
 .row-default {
@@ -707,6 +731,22 @@ label[data-required='true']:after {
   color: red;
 }
 
+#navigation-menu.closed span:nth-child(2) {
+  animation-name: unLeft;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+#navigation-menu.closed span:nth-child(3) {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+#navigation-menu.closed span:nth-child(4) {
+  animation-name: unRight;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
 #navigation-menu.open span:nth-child(2) {
   animation-name: rotateleft;
   animation-duration: 0.25s;
@@ -723,15 +763,34 @@ label[data-required='true']:after {
   animation-fill-mode: forwards;
 }
 
-@keyframes rotateleft {
-  0% {
-
+/*Animations*/
+@keyframes unLeft {
+  0% {}
+  100% {
+    transform: translateY(0) rotate(0deg); /*-12px*/
   }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes unRight {
+  0% {}
+  100% {
+    transform: translateY(0) rotate(0deg);    
+  }
+}
+
+@keyframes rotateleft {
+  0% {}
   100% {
     transform: translateY(12px) rotate(45deg);    
   }
 }
-
 @keyframes fadeAway {
   0% {
     opacity: 1;
@@ -740,11 +799,8 @@ label[data-required='true']:after {
     opacity: 0;
   }
 }
-
 @keyframes rotateRight {
-  0% {
-
-  }
+  0% {}
   100% {
     transform: translateY(-12px) rotate(-45deg);    
   }
