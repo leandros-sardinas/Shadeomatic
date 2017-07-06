@@ -805,3 +805,20 @@ label[data-required='true']:after {
     transform: translateY(-12px) rotate(-45deg);    
   }
 }
+
+.tab-content {
+  padding: 20px 10px;    
+}
+
+.faq-list {
+  margin:0;
+  padding:0;
+}
+.faq-list li {
+  list-style: none;
+  margin: 0 0 20px 0;
+}
+.faq-list .question {
+  display: block;
+  font-weight: bold;
+}
