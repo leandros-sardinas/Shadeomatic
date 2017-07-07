@@ -31,33 +31,38 @@
         </div>
     </div>
     
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <ul class="nav nav-tabs">
-                    <li role="presentation" <%if current_page.data.title == "FAQ" %> class="active" <% end %> >
-                        <a href="/faq.html">F.A.Q</a>
-                    </li>
-                    <li role="presentation" <%if current_page.data.title == "Installation Instructions" %> class="active" <% end %>>
-                        <a href="#">Installation Instructions</a>
-                    </li>                
-                    <li role="presentation" <%if current_page.data.title == "Warranty" %> class="active" <% end %>>
-                        <a href="#">Warranty</a>
-                    </li>
-                    <li role="presentation" <%if current_page.data.title == "Measurement Guides" %> class="active" <% end %>>
-                        <a href="#">Measurement Guides</a>
-                    </li>
-                    <li role="presentation" <%if current_page.data.title == "Child Safety" %> class="active" <% end %>>
-                        <a href="/child-safety.html">Child Safety</a>
-                    </li>
-                    <li role="presentation" <%if current_page.data.title == "News" %> class="active" <% end %>>
-                        <a href="#">News</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="row-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" <%if current_page.data.title == "FAQ" %> class="active" <% end %> >
+                            <a href="/faq">
+                                F.A.Q                                
+                            </a>
+                        </li>
+                        <li role="presentation" <%if current_page.data.title == "Installation Instructions" %> class="active" <% end %>>
+                            <a href="/installation-instructions">Installation Instructions</a>
+                        </li>                
+                        <li role="presentation" <%if current_page.data.title == "Warranty" %> class="active" <% end %>>
+                            <a href="/warranty">Warranty</a>
+                        </li>
+                        <li role="presentation" <%if current_page.data.title == "Measurement Guides" %> class="active" <% end %>>
+                            <a href="/measurement-guides">Measurement Guides</a>
+                        </li>
+                        <li role="presentation" <%if current_page.data.title == "Child Safety" %> class="active" <% end %>>
+                            <a href="/child-safety">Child Safety</a>
+                        </li>
+                        <li role="presentation" <%if current_page.data.title == "News" %> class="active" <% end %>>
+                            <a href="/news">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>        
         </div>
-        <%= yield%>
     </div>
+    
+    <%= yield%>
 
     
 
