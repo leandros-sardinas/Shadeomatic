@@ -705,7 +705,7 @@ fieldset[disabled] .btn-danger.active {
 
 .section-title {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -825,75 +825,85 @@ label[data-required='true']:after {
   background: #fff;
   padding: 3px;
 }
-.row-tab {
-  border-top: solid 1px #e5e5e5;
-  border-bottom: solid 1px #e5e5e5;
+
+.tab-list {  
+  border:none;
+  margin:0;
+  padding:0;
+  height: 66px;
+  width: 100%;  
+}
+.tab-list li {
+  border: solid 1px #e5e5e5;
+  float:left;
+  list-style: none;
+  margin: 0px; 
+  height: 66px; 
+  width: 50%;
 
   box-shadow: 0 2px 5px 0 rgba(2,2,2,.14);
 }
-.nav-tabs {
-  border-left: solid 1px #f5f5f5;
-  border:none;
-  height: 66px;
-  width: 100%;
+.tab-list li:hover {
+  background: #f5f5f5;
+  border-bottom: solid 1px #7cb034;
+  color: #000;
 }
-.nav-tabs li {
-  width: 16.6%;
+@media (min-width:568px) {
+  .tab-list li {
+      width: 33.3%;
+  }
 }
-.nav-tabs li a{
-  background: #fff;
-  border-right: solid 1px #f5f5f5;  
-  color: #444;
-  font-weight: bold;
-  margin:0;
-  text-align: center;
-  height: 66px;
-}
-.nav-tabs li a:hover {
-  border-bottom:solid 4px #7cb034;
+@media (min-width: 992px) {
+  .tab-list li {
+    width: 16.6%;
+  }
 }
 
-.nav-tabs li.active a{
-  background: #f5f5f5;
-  border-bottom:solid 4px #7cb034;
-  border-top: solid 1px #f5f5f5;
-  border-left: none;
-  border-right: solid 1px #f5f5f5;
-  color: #000;
-  margin:0;
+.tab-list li a{  
+  color: #444;
+  display: block;
+  font-weight: bold;  
+  text-align: center;
+  padding: 10px 5px 0 5px;
+  height: 66px;
 }
-.nav-tabs li.active a:hover {
+.tab-list li a:hover {
+  border-bottom:solid 2px #7cb034;
+  text-decoration: none;
+}
+.tab-list li.active {  
   background: #f5f5f5;
-  border-bottom:solid 4px #7cb034;
-  border-top: solid 1px #f5f5f5;
-  border-left: none;
-  border-right: solid 1px #f5f5f5;
+  z-index: 9999;
+}
+.tab-list li.active a {  
+  border-bottom:solid 2px #7cb034;
   color: #000;
-  margin:0;
 }
 
 .products-circle {
   margin:0;
   padding:0;
 }
-
 .products-circle li {
   float:left;
   margin-bottom: 20px;
   list-style: none;
   padding: 0 10px 0px 10px;
-  width:25%;
+  width:100%;
+}
+@media only screen and (min-width : 768px) {
+  .products-circle li {
+    width:25%;
+  }
 }
 
 .products-circle li a {
   color: #333;
   font-weight: bold;
 }
-
 .products-circle li a:hover {
   text-decoration: none;
 }
-
 .products-circle .product-image {
   background: #fff;
   display: block;  
@@ -902,8 +912,27 @@ label[data-required='true']:after {
   border-radius: 146px;
   padding: 3px;
 }
-
 .products-circle .product-name {
   display: block;
   text-align: center;
+}
+
+.installation-instructions {
+  margin:0;
+  padding:0;
+}
+.installation-instructions li {
+  background: #f5f5f5;
+  border: solid 1px #e5e5e5;
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.installation-instructions li a {
+  display: block;
+  margin-bottom: 10px;
+}
+.installation-instructions li a:after {
+  content: ' (Download .pdf)';
+  display: block;  
 }

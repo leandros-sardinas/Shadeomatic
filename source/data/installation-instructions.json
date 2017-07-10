@@ -1,0 +1,356 @@
+{
+    "installationInstructions": {
+    "instructions": [{
+        "sequence": 1,
+        "files": [{
+                "name": "1 \" Aluminum Horizontal",
+                "fileName": "1-Aluminum-Horizontal.pdf",
+                "language": "EN",
+                "size": "995 kb"
+            },
+            {
+                "name": "1 \" Aluminum Horizontal",
+                "fileName": "1-Aluminum-Horizontal.pdf",
+                "language": "FR",
+                "size": "995 kb"
+            }]
+        }, {
+        "sequence": 2,
+        "files": [{
+                "name": "2 \" Aluminum Horizontal",
+                "fileName": "2-Aluminum-Horizontal.pdf",
+                "language": "EN",
+                "size": "2,266 kb"
+            },
+            {
+                "name": "2 \" Aluminum Horizontal",
+                "fileName": "2-Aluminum-Horizontal.pdf",
+                "language": "FR",
+                "size": "2,266 kb"
+            }]
+        }, {
+        "sequence": 3,
+        "files": [{
+                "name": "Blackout Instructions 4\" R-Series Fascia Installation – Inside Mount",
+                "fileName": "4-R-Series-Fascia-Inside-Mount",
+                "language": "EN",
+                "size": "2,266 kb"
+            },
+            {
+                "name": "Blackout Instructions 4\" R-Series Fascia Installation – Inside Mount",
+                "fileName": "4-R-Series-Fascia-Inside-Mount",
+                "language": "FR",
+                "size": "2,266 kb"
+            }]
+        }, {
+            "sequence": 4,
+            "files": [{
+                    "name": "Blackout Instructions 4\" R-Series Fascia Installation – Outside Mount",
+                    "fileName": "4-R-Series-Fascia-Inside-Mount",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Blackout Instructions 4\" R-Series Fascia Installation – Inside Mount",
+                    "fileName": "4-R-Series-Fascia-Inside-Mount",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 5,
+            "files": [{
+                    "name": "Blackout Instructions 4\" R-Series Fascia Installation – Outside Mount",
+                    "fileName": "4-R-Series-Pocket-Inside-Mount",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Blackout Instructions 4\" R-Series Fascia Installation – Outside Mount",
+                    "fileName": "4-R-Series-Pocket-Inside-Mount",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 6,
+            "files": [{
+                    "name": "Blackout Instructions 4\" R-Series Pocket Installation – Inside Mount",
+                    "fileName": "4-R-Series-Pocket-Inside-Mount",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Blackout Instructions 4\" R-Series Pocket Installation – Inside Mount",
+                    "fileName": "4-R-Series-Pocket-Inside-Mount",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 7,
+            "files": [{
+                    "name": "Cellular Shades: Angle Cuts, Angled Top, Octagon, Hexagon, Trapezoid",
+                    "fileName": "Cellular-Shades-Angle-Cuts",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Cellular Shades: Angle Cuts, Angled Top, Octagon, Hexagon, Trapezoid",
+                    "fileName": "Cellular-Shades-Angle-Cuts",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 8,
+            "files": [{
+                    "name": "Cellular Shades: Arch, Quarter Circle, Circle",
+                    "fileName": "Cellular-Shades-Arch-Quarter-Circle",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Cellular Shades: Arch, Quarter Circle, Circle",
+                    "fileName": "Cellular-Shades-Arch-Quarter-Circle",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 9,
+            "files": [{
+                    "name": "Cellular Shades: Skylight Application",
+                    "fileName": "Cellular-Shades-Skylight",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Cellular Shades: Skylight Application",
+                    "fileName": "Cellular-Shades-Skylight",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 10,
+            "files": [{
+                    "name": "Honeycomb Shades:Cordless Lift System, Continuous Cord Loop System, Remotelift 2.0 System",
+                    "fileName": "Honeycomb-Cordless-Lift-System-Continous-Cord-Loop-Remote-Lift",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Honeycomb Shades:Cordless Lift System, Continuous Cord Loop System, Remotelift 2.0 System",
+                    "fileName": "Honeycomb-Cordless-Lift-System-Continous-Cord-Loop-Remote-Lift",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 11,
+            "files": [{
+                    "name": "Honeycomb Shades: Remotelift 2.0",
+                    "fileName": "Honeycomb-Shades-Remote-Lift",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Honeycomb Shades: Remotelift 2.0",
+                    "fileName": "Honeycomb-Shades-Remote-Lift",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 12,
+            "files": [{
+                    "name": "Honeycomb Shades: Standard Rectangular",
+                    "fileName": "Honeycomb-Standard-Rectangular",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Honeycomb Shades: Standard Rectangular",
+                    "fileName": "Honeycomb-Standard-Rectangular",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 13,
+            "files": [{
+                    "name": "Honeycomb Shades: Top-down, moveable arch",
+                    "fileName": "Honeycomb-Top-Down-Movable-Arch",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Honeycomb Shades: Top-down, moveable arch",
+                    "fileName": "Honeycomb-Top-Down-Movable-Arch",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 14,
+            "files": [{
+                    "name": "Honeycomb Shades: Vertical Applications",
+                    "fileName": "Hoenycomb-shades-vertical-applications",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Honeycomb Shades: Vertical Applications",
+                    "fileName": "Hoenycomb-shades-vertical-applications",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 15,
+            "files": [{
+                    "name": "Honeycomb Shades: Vertical Applications",
+                    "fileName": "Hoenycomb-shades-vertical-applications",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Honeycomb Shades: Vertical Applications",
+                    "fileName": "Hoenycomb-shades-vertical-applications",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 16,
+            "files": [{
+                    "name": "Honeycomb & Pleated: Standard Shades Top Down Bottom Up Day Night",
+                    "fileName": "Honeycomb-Pleated-Standard-Shades-TDBU-DN",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Honeycomb & Pleated: Standard Shades Top Down Bottom Up Day Night",
+                    "fileName": "Honeycomb-Pleated-Standard-Shades-TDBU-DN",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 17,
+            "files": [{
+                    "name": "Pleated & Cellular Shades",
+                    "fileName": "Pleated-Shades-Cellular-Shades",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Pleated & Cellular Shades",
+                    "fileName": "Pleated-Shades-Cellular-Shades",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 18,
+            "files": [{
+                    "name": "Polysatin Shutter",
+                    "fileName": "Polysatin-Shutter",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Polysatin Shutter",
+                    "fileName": "Polysatin-Shutter",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 19,
+            "files": [{
+                    "name": "Roller Shade Panel Track",
+                    "fileName": "Roller-Shade-Panel-Track",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Roller Shade Panel Track",
+                    "fileName": "Roller-Shade-Panel-Track",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 20,
+            "files": [{
+                    "name": "Roller Shades: Spring, Clutch, Touchlift, Remotelift ™",
+                    "fileName": "Roller-Shades-Spring-Clutch-Touchlift-Remotelift",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Roller Shades: Spring, Clutch, Touchlift, Remotelift ™",
+                    "fileName": "Roller-Shades-Spring-Clutch-Touchlift-Remotelift",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 21,
+            "files": [{
+                    "name": "Traditional Roman Shades",
+                    "fileName": "Roman-Shades-Standard-Cord-Lock-Continuous-Cord-Loop",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Traditional Roman Shades",
+                    "fileName": "Roman-Shades-Standard-Cord-Lock-Continuous-Cord-Loop",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 22,
+            "files": [{
+                    "name": "Vertical Blinds",
+                    "fileName": "Vertical-Blinds",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Vertical Blinds",
+                    "fileName": "Vertical-Blinds",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 23,
+            "files": [{
+                    "name": "Wood Blinds & Faux Blinds",
+                    "fileName": "Wood-Blinds-Faux-Wood-Blinds",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Wood Blinds & Faux Blinds",
+                    "fileName": "Wood-Blinds-Faux-Wood-Blinds",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 24,
+            "files": [{
+                    "name": "Screen Shades",
+                    "fileName": "Screen-Shades",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Screen Shades",
+                    "fileName": "Screen-Shades",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }, {
+            "sequence": 24,
+            "files": [{
+                    "name": "Concept Dual Shadings© Fascia Roller Shades",
+                    "fileName": "Cassette-Roller-Shades-Concept-Dual-Shadings-Fascia-Roller-Shades",
+                    "language": "EN",
+                    "size": "2,266 kb"
+                },
+                {
+                    "name": "Concept Dual Shadings© Fascia Roller Shades",
+                    "fileName": "Cassette-Roller-Shades-Concept-Dual-Shadings-Fascia-Roller-Shades",
+                    "language": "FR",
+                    "size": "2,266 kb"
+                }]
+        }
+        ]
+    }
+}
