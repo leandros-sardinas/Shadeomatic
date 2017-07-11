@@ -527,9 +527,7 @@ fieldset[disabled] .btn-danger.active {
   border-top: solid 1px #e5e5e5;
   border-bottom: solid 1px #e5e5e5;
   padding: 10px 0;
-
-  box-shadow: 0 2px 10px 0 rgba(2,2,2,.14);
-              
+  box-shadow: 0 2px 10px 0 rgba(2,2,2,.10);              
 }
 .row-colors {
   width: 100%;
@@ -635,7 +633,6 @@ fieldset[disabled] .btn-danger.active {
   }
 }
 
-
 @media (max-width: 1200px) {
   #main-menu .dropdown-menu {
     border: none;
@@ -654,8 +651,6 @@ fieldset[disabled] .btn-danger.active {
     padding:0 0 0 28px;    
   }
 }
-
-
 
 .row-default {
   padding: 40px 0;
@@ -829,51 +824,44 @@ label[data-required='true']:after {
 .tab-list {  
   border:none;
   margin:0;
-  padding:0;
-  height: 66px;
+  padding:0;  
   width: 100%;  
 }
-.tab-list li {
-  border: solid 1px #e5e5e5;
-  float:left;
+.tab-list li {    
   list-style: none;
   margin: 0px; 
-  height: 66px; 
-  width: 50%;  
+  height: 66px;   
 }
-.tab-list li:hover {  
-  border-bottom: solid 1px #7cb034;
+.tab-list li:hover {
   color: #000;
 }
-@media (min-width:568px) {
-  .tab-list li {
-      width: 33.3%;
-  }
-}
-@media (min-width: 992px) {
-  .tab-list li {
-    width: 16.6%;
-  }
-}
 
-.tab-list li a{  
+.tab-list li a {
+  border-bottom:solid 2px #e5e5e5;
   color: #444;
   display: block;
-  font-weight: bold;  
-  text-align: center;
-  padding: 10px 5px 0 5px;
-  height: 66px;
+  font-weight: bold;    
+  padding: 0 10px;
+  line-height: 66px;
+  height: 66px;  
 }
-.tab-list li a:hover {
-  border-bottom:solid 2px #7cb034;
+.tab-list li a:hover {  
+  color: #000;
   text-decoration: none;
 }
-.tab-list li.active {  
-  background: #f5f5f5;
-  z-index: 9999;
+.tab-list li a:hover span{
+  color: #7cb034;
 }
-.tab-list li.active a {  
-  border-bottom:solid 2px #7cb034;
+.tab-list li a span {
+  margin-right: 5px;
+  font-size: 20px;
+  line-height: 66px;
+}
+
+.tab-list li.active span{      
+    color: #7cb034;    
+}
+.tab-list li.active a {    
   color: #000;
 }
 
@@ -918,9 +906,7 @@ label[data-required='true']:after {
   margin:0;
   padding:0;
 }
-.installation-instructions li {
-  background: #f5f5f5;
-  border: solid 1px #e5e5e5;
+.installation-instructions li {  
   list-style: none;
   margin-bottom: 20px;
   padding: 10px;
@@ -928,8 +914,4 @@ label[data-required='true']:after {
 .installation-instructions li a {
   display: block;
   margin-bottom: 10px;
-}
-.installation-instructions li a:after {
-  content: ' (Download .pdf)';
-  display: block;  
 }

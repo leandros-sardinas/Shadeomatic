@@ -4,23 +4,30 @@ category: resource
 layout: resources-layout
 ---
 
-<div class="row-default">
-    <div class="container">
+<div id="app">
+    <div class="row-default">    
         <div class="row">
             <div class="col-xs-12">
-                <input type="text" class="form-control input-lg" id="installation-search" placeholder="Search Installation Instructions" />
+                <input type="text" class="form-control input-lg" id="installation-search" placeholder="Search Installation Instructions" 
+                v-model:value="query"/>
             </div>
-        </div>
+        </div>    
     </div>
-</div>
-<div class="row-default">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
+    <div class="row-default-sm">    
+        <div class="row">        
+            <div class="col-xs-12">
                 <ul class="installation-instructions">
-                    
+                    <li v-for="manual in installationManuals" v-show="manual.visible">
+                        <a v-for="file in manual.files" v-bind:href="file.fileName" target="_blank" v-show="file.visible">
+                            {{file.name}} {{file.language}} 
+                            <br>
+                            <span class="file-info">
+                                .pdf {{file.size}}
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </div>
+        </div>    
     </div>
 </div>

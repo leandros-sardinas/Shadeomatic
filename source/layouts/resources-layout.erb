@@ -22,48 +22,53 @@
     <div class="row-default">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="text-center section-title">
-                        <%= current_page.data.fullTitle || current_page.data.title%>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="row-tab">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+                <div class="col-md-3 col-xs-12">
                     <ul class="tab-list">
                         <li role="presentation" <%if current_page.data.title == "FAQ" %> class="active" <% end %> >
                             <a href="/faq">
-                                F.A.Q                                
+                                <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> F.A.Q                                
                             </a>
                         </li>
                         <li role="presentation" <%if current_page.data.title == "Installation Instructions" %> class="active" <% end %>>
-                            <a href="/installation-instructions">Installation Instructions</a>
+                            <a href="/installation-instructions">
+                                <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Installation Instructions
+                            </a>
                         </li>                
                         <li role="presentation" <%if current_page.data.title == "Warranty" %> class="active" <% end %>>
-                            <a href="/warranty">Warranty</a>
+                            <a href="/warranty">
+                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>                                
+                                Warranty
+                            </a>
                         </li>
                         <li role="presentation" <%if current_page.data.title == "Measurement Guides" %> class="active" <% end %>>
-                            <a href="/measurement-guides">Measurement Guides</a>
+                            <a href="/measurement-guides">                                
+                                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                                Measurement Guides
+                            </a>
                         </li>
                         <li role="presentation" <%if current_page.data.title == "Child Safety" %> class="active" <% end %>>
-                            <a href="/child-safety">Child Safety</a>
+                            <a href="/child-safety">                                
+                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                                Child Safety
+                            </a>
                         </li>
                         <li role="presentation" <%if current_page.data.title == "News" %> class="active" <% end %>>
-                            <a href="/news">News</a>
+                            <a href="/news">
+                                <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+                                News
+                            </a>
                         </li>
                     </ul>
                 </div>
-            </div>        
+                <div class="col-md-9 col-xs-12">
+                    <h1 class="section-title">
+                        <%= current_page.data.fullTitle || current_page.data.title%>
+                    </h1>
+
+                    <%= yield%>
+                </div>
+            </div>
         </div>
-    </div>
+    </div>        
     
-    <%= yield%>
-
-    
-
 <% end %>
