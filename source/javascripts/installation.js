@@ -1,6 +1,6 @@
 (function(){
     var app = new Vue({
-        el: '#app',
+        el: '#app-installation',
         data: {
             query: '',
             installationManuals: []
@@ -12,18 +12,11 @@
             query: function(newQuery) {                
                 //Reset the query and installation list
                 if(newQuery === '') {
-                    for(var i=0;i < this.installationManuals.length; i++) {
-
-                        this.installationManuals[i].visible = true;
-                        for(var j=0; j<this.installationManuals[i].files.length; j++) { 
-                            this.installationManuals[i].files[j].visible = true;
-                        }
-                    }                    
+                    this.showAll();
                     return;
                 }
 
                 for(var i=0;i < this.installationManuals.length; i++) {
-                    
                     var visibleCategory = false;
                     for(var j=0; j<this.installationManuals[i].files.length; j++) {
                         var name = this.installationManuals[i].files[j].name + " " + this.installationManuals[i].files[j].language;
@@ -34,12 +27,34 @@
                             this.installationManuals[i].files[j].visible = true;
                         }
                     }
-
                     this.installationManuals[i].visible = visibleCategory;
                 }
             }
         },
-        methods: {
+        computed: {
+            noResults: function() {
+                var noResults = true;
+
+                for(var i=0;i < this.installationManuals.length; i++) {
+                    if (this.installationManuals[i].visible) {
+                        noResults = false;
+                        break;
+                    }
+                }
+
+                return noResults;
+            }
+        },
+        methods: {            
+            showAll: function() {
+                for(var i=0;i < this.installationManuals.length; i++) {
+                    this.installationManuals[i].visible = true;
+                    for(var j=0; j<this.installationManuals[i].files.length; j++) { 
+                        this.installationManuals[i].files[j].visible = true;
+                    }
+                }
+                return;
+            },
             fetchInstallationInstructions: function() {                
                 var self = this;
                 $.ajax({
@@ -64,6 +79,6 @@
                     console.log('An error has ocurred, please try again later.');
                 });
             }
-        }        
+        }
     })
 })()

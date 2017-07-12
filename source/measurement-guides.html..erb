@@ -1,0 +1,33 @@
+---
+title: Measurement Guides
+category: resource
+layout: resources-layout
+---
+
+<div id="app-measurement">
+    <div class="row-default">    
+        <div class="row">
+            <div class="col-xs-12">
+                <input type="text" class="form-control input-lg" id="measurement-search" placeholder="Search Measurement Guides" 
+                v-model:value="query"/>
+            </div>
+        </div>    
+    </div>
+    <div class="row-default-sm">    
+        <div class="row">        
+            <div class="col-xs-12">
+                <ul class="installation-instructions">
+                    <li v-for="manual in installationManuals" v-show="manual.visible">
+                        <a v-for="file in manual.files" v-bind:href="file.fileName" target="_blank" v-show="file.visible">
+                            {{file.name}} {{file.language}} 
+                            <br>
+                            <span class="file-info">
+                                .pdf {{file.size}}
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+</div>

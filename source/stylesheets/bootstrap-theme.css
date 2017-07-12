@@ -907,11 +907,26 @@ label[data-required='true']:after {
   padding:0;
 }
 .installation-instructions li {  
+  border-bottom: solid 1px #e5e5e5;
   list-style: none;
   margin-bottom: 20px;
   padding: 10px;
 }
 .installation-instructions li a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.measurement-guides {
+  margin:0;
+  padding:0;
+}
+.measurement-guides li {  
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.measurement-guides li a {
   display: block;
   margin-bottom: 10px;
 }
