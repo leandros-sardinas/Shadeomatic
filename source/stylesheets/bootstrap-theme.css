@@ -691,17 +691,33 @@ fieldset[disabled] .btn-danger.active {
 .row-footer .list{
   margin: 0 0 20px 0;
   padding: 0;
-}
+} 
 .row-footer .list li{
   list-style: none;
   margin: 0 0 5px 0;
   padding: 0;  
 }
+.row-footer .social {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 40px;  
+}
 
 .section-title {
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   text-transform: uppercase;
+}
+.section-title hr {
+  border-top: solid 1px #e5e5e5;
+  margin:10px auto;
+  width: 30%;
+}
+.section-title .description {
+  color: #000;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: none;
 }
 
 /*Contact Page*/
@@ -823,7 +839,7 @@ label[data-required='true']:after {
 
 .tab-list {  
   border:none;
-  margin:0;
+  margin:0 0 20px 0;
   padding:0;  
   width: 100%;  
 }
@@ -902,6 +918,10 @@ label[data-required='true']:after {
   text-align: center;
 }
 
+.main-search {
+  border-radius: 30px;
+}
+
 .installation-instructions {
   margin:0;
   padding:0;
@@ -913,8 +933,17 @@ label[data-required='true']:after {
   padding: 10px;
 }
 .installation-instructions li a {
+  color: #222;
   display: block;
+  font-weight: bold;  
   margin-bottom: 10px;
+}
+.installation-instructions li a:hover {
+  color: #7cb034;
+  text-decoration: none;
+}
+.installation-instructions li a .glyphicon {
+  color: #7cb034;
 }
 
 .measurement-guides {

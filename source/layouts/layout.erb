@@ -43,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="row-nav">
+    <header class="row-nav">
         <nav class="navbar navbar-default"> 
             <div class="container"> 
                 <div class="navbar-header"> 
@@ -88,16 +88,18 @@
                 </div> 
             </div> 
         </nav>                    
-    </div>
+    </header>
 
     <%= yield %>
 
     <footer class="row-footer">
-        <div class="container">
-            <div class="row">
+        <div class="container">            
+            <div class="row">                
                 <div class="col-md-3">
-                    <p class="section-title">
-                        About Us
+                    <p>
+                        <strong>
+                            About Us
+                        </strong>
                     </p>
                     <ul class="list">
                         <li>
@@ -128,8 +130,10 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p class="section-title">
-                        Our Products
+                    <p>
+                        <strong>
+                            Our Products
+                        </strong>                        
                     </p>
 
                     <ul class="list">
@@ -146,8 +150,10 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p class="section-title">
-                        Customer Support
+                    <p>
+                        <strong>
+                            Customer Support
+                        </strong>                        
                     </p>
 
                     <ul class="list">
@@ -174,8 +180,10 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p class="section-title">
-                        Contact Us
+                    <p>
+                        <strong>
+                            Contact Us
+                        </strong>                        
                     </p>
 
                     <ul class="list">
@@ -191,9 +199,29 @@
                                 Dealer Locator
                             </a>
                         </li>
-                    </ul>
+                    </ul>                    
+                </div>
 
-                    
+                <div class="col-xs-12">
+                    <p>
+                        <strong>
+                            Connect with us
+                        </strong>                        
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/shadeomaticLP/" target="_blank">
+                            <img src="/images/facebook-50.png" alt="Facebook" class="social"/>
+                        </a>
+                        <a href="https://www.instagram.com/shadeomatic.canada/" target="_blank">
+                            <img src="/images/instagram-50.png" alt="Instagram" class="social"/>    
+                        </a>                        
+                        <a href="http://www.pinterest.com/shadeomaticLP/" target="_blank">
+                            <img src="/images/pinterest-50.png" alt="Pinterest" class="social"/>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCnygd20Tz8v4h2_m3n34smQ" target="_blank">
+                            <img src="/images/youtube-50.png" alt="Youtube" class="social"/>
+                        </a>                        
+                    </p>                    
                 </div>
 
                 <div class="col-xs-12">
@@ -211,7 +239,14 @@
     <%= javascript_include_tag "bootstrap.min.js" %>
     <%= javascript_include_tag "jquery.bxslider.min.js" %>
     <%= javascript_include_tag "main.js" %>
+
+    <%if current_page.data.title == "Installation Instructions" %> 
     <%= javascript_include_tag "installation.js" %>
+    <% end %>
+    
+    <%if current_page.data.title == "Measurement Guides" %> 
+    <%= javascript_include_tag "measurement.js" %>
+    <% end %>
 
   </body>
 </html>

@@ -24,9 +24,15 @@
             <div class="row">
                 <div class="col-md-3 col-xs-12">
                     <ul class="tab-list">
-                        <li role="presentation" <%if current_page.data.title == "FAQ" %> class="active" <% end %> >
+                        <li role="presentation" <%if current_page.data.title == "F.A.Q" %> class="active" <% end %> >
                             <a href="/faq">
                                 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> F.A.Q                                
+                            </a>
+                        </li>
+                        <li role="presentation" <%if current_page.data.title == "Measurement Guides" %> class="active" <% end %>>
+                            <a href="/measurement-guides">                                
+                                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                                Measurement Guides
                             </a>
                         </li>
                         <li role="presentation" <%if current_page.data.title == "Installation Instructions" %> class="active" <% end %>>
@@ -39,13 +45,7 @@
                                 <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>                                
                                 Warranty
                             </a>
-                        </li>
-                        <li role="presentation" <%if current_page.data.title == "Measurement Guides" %> class="active" <% end %>>
-                            <a href="/measurement-guides">                                
-                                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
-                                Measurement Guides
-                            </a>
-                        </li>
+                        </li>                        
                         <li role="presentation" <%if current_page.data.title == "Child Safety" %> class="active" <% end %>>
                             <a href="/child-safety">                                
                                 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
@@ -61,10 +61,13 @@
                     </ul>
                 </div>
                 <div class="col-md-9 col-xs-12">
-                    <h1 class="section-title">
+                    <h1 class="section-title text-center">
                         <%= current_page.data.fullTitle || current_page.data.title%>
+                        <hr>
+                        <small class="description">
+                        <%= current_page.data.smallDesc %>                        
+                        </small>
                     </h1>
-
                     <%= yield%>
                 </div>
             </div>

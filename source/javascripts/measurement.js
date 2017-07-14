@@ -1,8 +1,8 @@
 (function(){
     var app = new Vue({
-        el: '#app-installation',
+        el: '#app-measurement',
         data: {
-            contentUrl: '/data/installation-instructions.json',
+            contentUrl: '/data/measuring-guides.json',
             query: '',
             manuals: []
         },
