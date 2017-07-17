@@ -667,7 +667,7 @@ fieldset[disabled] .btn-danger.active {
 }
 
 .row-contrast {
-  background-color: #222;
+  background: url('../images/footer.png');  
   color: #fff;
 }
 
@@ -715,9 +715,9 @@ fieldset[disabled] .btn-danger.active {
   margin:10px auto;
   width: 30%;
 }
-.section-title .description {
+.section-title .description {  
   color: #000;
-  font-style: italic;
+  font-family: 'Lora', serif;  
   font-weight: normal;
   text-transform: none;
 }
