@@ -959,3 +959,62 @@ label[data-required='true']:after {
   display: block;
   margin-bottom: 10px;
 }
+
+.affix {
+  top:0;
+}
+.affix-bottom {
+  position: absolute;
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+  .stay {    
+    width: 100%;
+  }
+  .affix {
+    position:relative;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  .stay {    
+    width: 100%;
+  }
+  .affix {
+    position:relative;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .stay {    
+    width: 100%;
+  }
+  .affix {
+    position:relative;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .stay {
+    width: 212.5px;
+  }
+  .affix {
+    top:0;
+    position: fixed;    
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .stay {
+    width: 272.5px;
+  }
+  .affix {
+    top:0;
+    position: fixed;
+  }
+}
+

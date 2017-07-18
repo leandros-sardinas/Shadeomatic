@@ -29,6 +29,14 @@ $(document).ready(function(){
             $('.dropdown-menu', this).stop( true, true ).fadeOut('fast');
             $(this).toggleClass('open');            
         });
+
+        //Affix sidebar
+        $(".stay").affix({
+            offset: {
+                top: 154,
+                bottom: 495
+            }
+        })
 });
 
     
