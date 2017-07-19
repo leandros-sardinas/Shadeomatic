@@ -19,16 +19,17 @@ $(document).ready(function(){
         //$('.navbar-collapse').toggleClass('collapse');
       });
 
-      //Hover drop down menu
-      $('.dropToggle').hover(
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).fadeIn('fast');
-            $(this).toggleClass('open');            
-        },
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).fadeOut('fast');
-            $(this).toggleClass('open');            
+        /*
+        $('.dropToggle').on("click",function(){
+
+        if ($(this).hasClass('open')) {
+            $(this).children('ul').fadeOut('fast');
+            return;
+        }
+
+        $(this).children('ul').fadeIn('fast');
         });
+        */
 
         //Affix sidebar
         $(".stay").affix({

@@ -533,19 +533,6 @@ fieldset[disabled] .btn-danger.active {
   width: 100%;
 }
 
-.bg-1 {
-  background:#8dc63f;
-}
-.bg-2 {
-  background:#7db137;
-}
-.bg-3 {
-  background:#709e32;
-}
-.bg-4 {
-  background:#648e2c;
-}
-
 .color-1, .color-2, .color-3, .color-4 {
   width: 25%;
   border-bottom: solid 10px;
@@ -598,10 +585,16 @@ fieldset[disabled] .btn-danger.active {
   height: 30px;
 }
 .navbar-nav > li > a {
+  color: #444 !important;
   display: block;
+  font-weight: bold;
   line-height: 40px;
   text-transform: uppercase;
   padding: 5px 14px;
+}
+.navbar-nav > li > a:hover {
+  color: #7cb034 !important;
+  transition: all 0.25s;
 }
 @media (min-width: 1200px) {
   .navbar-nav > li > a {
@@ -638,8 +631,7 @@ fieldset[disabled] .btn-danger.active {
 @media (max-width: 1200px) {
   #main-menu .dropdown-menu {
     border: none;
-    position: relative;
-    display: block;
+    position: relative;    
     box-shadow: none;
     height: auto;
     width: 100%;
@@ -706,6 +698,7 @@ fieldset[disabled] .btn-danger.active {
 }
 
 .section-title {
+  color: #000;
   font-weight: bold;
   margin-bottom: 60px;
   text-transform: uppercase;
@@ -729,81 +722,6 @@ label[data-required='true']:after {
 }
 .error {
   color: red;
-}
-
-#navigation-menu.closed span:nth-child(2) {
-  animation-name: unLeft;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
-}
-#navigation-menu.closed span:nth-child(3) {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-#navigation-menu.closed span:nth-child(4) {
-  animation-name: unRight;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
-}
-
-#navigation-menu.open span:nth-child(2) {
-  animation-name: rotateleft;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
-}
-#navigation-menu.open span:nth-child(3) {
-  animation-name: fadeAway;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
-}
-#navigation-menu.open span:nth-child(4) {
-  animation-name: rotateRight;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
-}
-
-/*Animations*/
-@keyframes unLeft {
-  0% {}
-  100% {
-    transform: translateY(0) rotate(0deg); /*-12px*/
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes unRight {
-  0% {}
-  100% {
-    transform: translateY(0) rotate(0deg);    
-  }
-}
-
-@keyframes rotateleft {
-  0% {}
-  100% {
-    transform: translateY(12px) rotate(45deg);    
-  }
-}
-@keyframes fadeAway {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes rotateRight {
-  0% {}
-  100% {
-    transform: translateY(-12px) rotate(-45deg);    
-  }
 }
 
 .section-header {  
@@ -865,9 +783,11 @@ label[data-required='true']:after {
 .tab-list li a:hover {  
   color: #000;
   text-decoration: none;
+  transition: all 0.25s;
 }
 .tab-list li a:hover span{
   color: #7cb034;
+  transition: all 0.25s;
 }
 .tab-list li a span {
   margin-right: 5px;
@@ -919,8 +839,13 @@ label[data-required='true']:after {
 }
 
 .main-search {
+  background: url('../images/search.png');
+  background-repeat: no-repeat;
+  background-position: 5px center;
   border-radius: 30px;
+  padding-left: 58px;
 }
+
 
 .installation-instructions {
   margin:0;
@@ -1018,3 +943,77 @@ label[data-required='true']:after {
   }
 }
 
+#navigation-menu.closed span:nth-child(2) {
+  animation-name: unLeft;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+#navigation-menu.closed span:nth-child(3) {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+#navigation-menu.closed span:nth-child(4) {
+  animation-name: unRight;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+#navigation-menu.open span:nth-child(2) {
+  animation-name: rotateleft;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+#navigation-menu.open span:nth-child(3) {
+  animation-name: fadeAway;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+#navigation-menu.open span:nth-child(4) {
+  animation-name: rotateRight;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+/*Animations*/
+@keyframes unLeft {
+  0% {}
+  100% {
+    transform: translateY(0) rotate(0deg); /*-12px*/
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes unRight {
+  0% {}
+  100% {
+    transform: translateY(0) rotate(0deg);    
+  }
+}
+
+@keyframes rotateleft {
+  0% {}
+  100% {
+    transform: translateY(12px) rotate(45deg);    
+  }
+}
+@keyframes fadeAway {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotateRight {
+  0% {}
+  100% {
+    transform: translateY(-12px) rotate(-45deg);    
+  }
+}
