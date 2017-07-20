@@ -975,7 +975,36 @@ label[data-required='true']:after {
   animation-fill-mode: forwards;
 }
 
+.open .glyphicon-menu-down {
+  animation-name: open;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+.glyphicon-menu-down {
+  animation-name: close;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
 /*Animations*/
+@keyframes open{
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform:rotate(180deg);
+  }
+}
+
+@keyframes close {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes unLeft {
   0% {}
   100% {
