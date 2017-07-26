@@ -1046,3 +1046,17 @@ label[data-required='true']:after {
     transform: translateY(-12px) rotate(-45deg);    
   }
 }
+
+.dealers {
+  margin:0;
+  padding:0;
+}
+
+.dealers li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.dealers li address {
+  margin-bottom: 5px;
+}

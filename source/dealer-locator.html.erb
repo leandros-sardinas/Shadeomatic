@@ -1,0 +1,89 @@
+---
+title: Dealer Locator
+category: general
+---
+
+<div class="row-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li class="active">
+                        Dealer Locator
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="section-title text-center">
+                Dealer Locator
+                <hr>
+                <small class="description">
+                    Find your closest dealer to purchase Shade-O-Matic's Shades & Shutters
+                </small>
+            </h1>            
+        </div>
+    </div>
+</div>
+
+<div class="row-default-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <input id="dealer-search" 
+                    type="text" 
+                    class="form-control input-lg main-search autocomplete" 
+                    placeholder="Enter Address or Postal Code"                    
+                    />
+            </div>
+        </div>        
+    </div>
+</div>
+<div class="row-default-sm">
+    <div class="container">
+        <div id="app-dealer" class="row">
+            <div class="col-xs-12">
+                <ul class="dealers">
+                    <li v-for="dealer in dealers">
+                        <strong>
+                            {{dealer.Name}}
+                        </strong>
+                        <br>
+                        <address>
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            <span>
+                                {{dealer.Address}}, {{dealer.City}} {{dealer.Province}}
+                                <br>
+                                {{dealer.PostalCode}} {{dealer.Country}}                                
+                            </span>                            
+                        </address>
+                        <p>                            
+                            <span class="glyphicon glyphicon-envelope"></span> {{dealer.Email}}
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-earphone"></span> {{dealer.Phone}}
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-print"></span> {{dealer.Fax}}
+                        </p>
+                        
+                        <a v-bind:href="join('http://',dealer.Website)" target="_blank" v-if="dealer.website">
+                            <span class="glyphicon glyphicon-globe"></span> {{dealer.Website}}
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

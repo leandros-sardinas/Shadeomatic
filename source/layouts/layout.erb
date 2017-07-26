@@ -80,7 +80,7 @@
                             <a href="/faq">Resources</a>
                         </li> 
                         <li>
-                            <a href="#">Dealer Locator</a>
+                            <a href="/dealer-locator">Dealer Locator</a>
                         </li> 
                         <li>
                             <a href="/contact">Contact</a>
@@ -271,6 +271,12 @@
     
     <%if current_page.data.title == "Measurement Guides" %> 
     <%= javascript_include_tag "measurement.js" %>
+    <% end %>
+
+    <%if current_page.data.title == "Dealer Locator" %> 
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HUxEbYS_5Y80fNWk4El1IC6AICXARxw&libraries=places">
+        </script>
+    <%= javascript_include_tag "dealer-locator.js" %>
     <% end %>
 
   </body>
