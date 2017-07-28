@@ -846,6 +846,13 @@ label[data-required='true']:after {
   padding-left: 58px;
 }
 
+.dealer-search {
+  background: url('../images/search.png');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  border-radius: 30px;
+  padding-left: 58px;
+}
 
 .installation-instructions {
   margin:0;
@@ -1057,6 +1064,15 @@ label[data-required='true']:after {
   margin-bottom: 20px;
 }
 
-.dealers li address {
+.dealers li .name {
   margin-bottom: 5px;
+}
+
+.dealers li .address {
+  margin-bottom: 10px;
+}
+
+.dealers li .address .content {
+  display: inline-block;
+  margin-left: 5px;
 }

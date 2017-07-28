@@ -36,54 +36,80 @@ category: general
     </div>
 </div>
 
+<div id="app-dealer">
 <div class="row-default-sm">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <input id="dealer-search" 
-                    type="text" 
-                    class="form-control input-lg main-search autocomplete" 
-                    placeholder="Enter Address or Postal Code"                    
-                    />
+                <div class="input-group">
+                    <input id="dealer-search" type="text" 
+                        class="form-control input-lg dealer-search" 
+                        aria-label="..." 
+                        placeholder="Enter Address or Postal Code"
+                        v-model="query"
+                        >
+                    <div class="input-group-btn">
+                        <!-- Button and dropdown menu -->                        
+                        <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                            Distance {{ distance }} km <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> 
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li v-for="dist in distances" v-bind:key="dist">
+                                <a href="#distance" v-on:click="changeDistance(dist)">
+                                    {{ dist }} km
+                                </a>
+                            </li>                            
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-default">Search</button>
+                    </div>
+                </div>                
             </div>
         </div>        
     </div>
 </div>
 <div class="row-default-sm">
     <div class="container">
-        <div id="app-dealer" class="row">
-            <div class="col-xs-12">
-                <ul class="dealers">
-                    <li v-for="dealer in dealers">
-                        <strong>
+        <div class="row">
+            
+            <ul class="dealers">
+                <li v-for="dealer in dealers">
+                    <div class="col-md-8 col-xs-12">
+                        <strong class="name">
                             {{dealer.Name}}
                         </strong>
                         <br>
-                        <address>
+                        <p class="address">
                             <span class="glyphicon glyphicon-map-marker"></span>
-                            <span>
+                            <span class="content">
                                 {{dealer.Address}}, {{dealer.City}} {{dealer.Province}}
                                 <br>
                                 {{dealer.PostalCode}} {{dealer.Country}}                                
                             </span>                            
-                        </address>
-                        <p>                            
+                        </p>
+                        <p v-if="dealer.Email.length !== 0">
                             <span class="glyphicon glyphicon-envelope"></span> {{dealer.Email}}
                         </p>
-                        <p>
+                        <p v-if="dealer.Phone.length !== 0">
                             <span class="glyphicon glyphicon-earphone"></span> {{dealer.Phone}}
                         </p>
-                        <p>
+                        <p v-if="dealer.Fax.length !== 0">
                             <span class="glyphicon glyphicon-print"></span> {{dealer.Fax}}
                         </p>
                         
-                        <a v-bind:href="join('http://',dealer.Website)" target="_blank" v-if="dealer.website">
+                        <a v-bind:href="join('http://',dealer.Website)" target="_blank" v-if="dealer.Website.length !== 0">
                             <span class="glyphicon glyphicon-globe"></span> {{dealer.Website}}
                         </a>
-
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <strong>
+                            {{dealer.Distance}} km
+                        </strong>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+            
         </div>
     </div>
+</div>
 </div>

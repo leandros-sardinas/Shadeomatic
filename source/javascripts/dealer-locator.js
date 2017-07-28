@@ -1,22 +1,26 @@
 (function(){
-
-    var defaultBounds = new google.maps.LatLngBounds(
-        new google.maps.LatLng(-90, -180),
-        new google.maps.LatLng(90, 180));    
-
-    var input = document.getElementById('dealer-search');
-    var options = {
-        //bounds: defaultBounds,
-        //types: ['regions']
-    };
     
-    var autocomplete = new google.maps.places.Autocomplete(input, options);
     var app = new Vue({
         el: '#app-dealer',
         data: {
+            query: '',
+            distance: 5,
+            distances: [5,10,25,50],
             lat: 0,
             long: 0,
             dealers: []
+        },
+        mounted: function() {
+            var defaultBounds = new google.maps.LatLngBounds(
+                new google.maps.LatLng(-90, -180),
+                new google.maps.LatLng(90, 180));    
+
+            var input = document.getElementById('dealer-search');
+            var options = {
+                //bounds: defaultBounds,
+                //types: ['regions']
+            };    
+            var autocomplete = new google.maps.places.Autocomplete(input, options);
         },
         methods: {
             //Utils
@@ -41,6 +45,9 @@
                 }).error(function() {
                     console.log('An error has ocurred, please try again later.');
                 })
+            },
+            changeDistance: function(dist) {
+                this.distance = dist;
             }
         },
         watch: {
@@ -50,11 +57,11 @@
         }
     });
 
-    autocomplete.addListener('place_changed', function() {
+    /*autocomplete.addListener('place_changed', function() {
         var place = autocomplete.getPlace();               
 
         app.long = place.geometry.location.lng();
         app.lat = place.geometry.location.lat();
         
-    });
+    });*/
 })()
