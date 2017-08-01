@@ -846,14 +846,6 @@ label[data-required='true']:after {
   padding-left: 58px;
 }
 
-.dealer-search {
-  background: url('../images/search.png');
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  border-radius: 30px;
-  padding-left: 58px;
-}
-
 .installation-instructions {
   margin:0;
   padding:0;
@@ -1054,25 +1046,151 @@ label[data-required='true']:after {
   }
 }
 
+.dealer-search {
+  background: url('../images/search.png');
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  border-radius: 30px;
+  border-right: none;
+  padding-left: 48px;
+}
+
+.btn-distance {
+  background: #fff;
+  border-radius: 0;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+
+  border-left:none;
+  border-right:none;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+  height: 49px;
+}
+
+.btn-action {
+  height: 49px;
+}
+
+@media only screen and (min-width : 320px) {
+  .btn-distance-label {
+    display: none;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  .btn-distance-label {
+    display: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .btn-distance-label {
+    display: inline;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .btn-distance-label {
+    display: inline;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .btn-distance-label {
+    display: inline;
+  }
+}
+
 .dealers {
   margin:0;
   padding:0;
 }
 
-.dealers li {
+.dealers .dealer {
+  background: #fff;
+  border: solid 1px #ccc;
+  border-radius: 5px;
   list-style: none;
   margin-bottom: 20px;
+  padding:  0;
+
+  -webkit-box-shadow: 0 2px 10px 0 rgba(2,2,2,.10);
+  box-shadow: 0 2px 10px 0 rgba(2,2,2,.10);
 }
 
-.dealers li .name {
-  margin-bottom: 5px;
+.dealer .header {  
+  display: block;
+  padding: 20px 0 0 0;
 }
 
-.dealers li .address {
+.dealer .header .text-logo {
+  color: #fff;
+  font-family: 'Lora', serif;
+  height: 50px;
+  width: 50px;  
+  background: #7cb034;
+  border-radius: 25px;
+  margin-right: 20px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  float:left;
+}
+
+.dealer .header .company-info {
+  float:left;
+}
+
+.dealer .header .company-info .distance {
+  color: #666;
+}
+
+.dealer .content {
+  padding: 20px 0;
+}
+
+.dealer .footer {
+  border-top: solid 1px #eee;
+  padding: 5px;
+}
+
+.dealer .footer ul {
+  margin:0;
+  padding:0;
+}
+
+.dealer .footer ul li {
+  background:transparent;
+  border:none;
+  float:left;
+  list-style: none;
+  margin:0;
+  padding:0;  
+  box-shadow: none;
+}
+
+.dealer .name {    
+  display: inline-block;
+  font-weight: bold;  
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.dealer .address {
   margin-bottom: 10px;
 }
 
-.dealers li .address .content {
-  display: inline-block;
-  margin-left: 5px;
+.dealers-loading {
+  padding: 20px 0;
+}
+.dealers-loading img {
+  display: block;
+  margin: 0 auto;  
 }

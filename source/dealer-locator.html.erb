@@ -46,69 +46,115 @@ category: general
                         class="form-control input-lg dealer-search" 
                         aria-label="..." 
                         placeholder="Enter Address or Postal Code"
-                        v-model="query"
-                        >
+                        v-model="query">
+
                     <div class="input-group-btn">
                         <!-- Button and dropdown menu -->                        
-                        <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                            Distance {{ distance }} km <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> 
+                        <button type="button" class="btn btn-distance btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                            <span class="btn-distance-label">Distance</span> {{ distance }} km <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> 
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right">
                             <li v-for="dist in distances" v-bind:key="dist">
-                                <a href="#distance" v-on:click="changeDistance(dist)">
+                                <a href="#distance" v-on:click="changeDistance(dist, $event)">
                                     {{ dist }} km
                                 </a>
                             </li>                            
                         </ul>
-                        <button type="button" class="btn btn-lg btn-default">Search</button>
+                        <button type="button" class="btn btn-lg btn-primary btn-action" v-on:click="search">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
                     </div>
                 </div>                
             </div>
+            <div class="col-xs-12" v-if="error.inError">
+                <p class="error">
+                    {{ error.message }}
+                </p>
+            </div>
+            <div class="col-xs-12">                
+                <p class="dealers-loading" v-if="statuses.inSearch">
+                    <img src="images/dealer_loader.gif" alt="Loading ..." />
+                </p>
+            </div>            
         </div>        
     </div>
 </div>
 <div class="row-default-sm">
     <div class="container">
         <div class="row">
+            <div class="col-xs-12 dealers">
             
-            <ul class="dealers">
-                <li v-for="dealer in dealers">
-                    <div class="col-md-8 col-xs-12">
-                        <strong class="name">
-                            {{dealer.Name}}
-                        </strong>
-                        <br>
-                        <p class="address">
-                            <span class="glyphicon glyphicon-map-marker"></span>
-                            <span class="content">
-                                {{dealer.Address}}, {{dealer.City}} {{dealer.Province}}
+                <div v-for="dealer in dealers" class="col-md-6 col-xs-12">
+                    <div class="dealer">
+                    <div class="header">                            
+                        <div class="name col-xs-12">                                
+                            <img v-bind:src="dealer.logo" alt="dealer logo" v-if="dealer.logo !== undefined" />
+
+                            <div class="text-logo" v-if="dealer.logo === undefined">
+                                {{ firstLetter(dealer.Name) }}
+                            </div>
+
+                            <div class="company-info">                                    
+                                {{dealer.Name}}
                                 <br>
-                                {{dealer.PostalCode}} {{dealer.Country}}                                
-                            </span>                            
-                        </p>
-                        <p v-if="dealer.Email.length !== 0">
-                            <span class="glyphicon glyphicon-envelope"></span> {{dealer.Email}}
-                        </p>
-                        <p v-if="dealer.Phone.length !== 0">
-                            <span class="glyphicon glyphicon-earphone"></span> {{dealer.Phone}}
-                        </p>
-                        <p v-if="dealer.Fax.length !== 0">
-                            <span class="glyphicon glyphicon-print"></span> {{dealer.Fax}}
-                        </p>
-                        
-                        <a v-bind:href="join('http://',dealer.Website)" target="_blank" v-if="dealer.Website.length !== 0">
-                            <span class="glyphicon glyphicon-globe"></span> {{dealer.Website}}
-                        </a>
+                                <span class="distance">
+                                    Distance {{ dealer.Distance.toFixed(2) }} km
+                                </span>                                    
+                            </div>                                
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="col-md-4 col-xs-12">
-                        <strong>
-                            {{dealer.Distance}} km
-                        </strong>
+                    <div class="content">
+                        <div class="col-md-6 col-xs-12">
+                            <p class="address">                                                                
+                                {{dealer.Address}}, {{dealer.City}}
+                                <br>
+                                {{dealer.Province}} {{dealer.PostalCode}} {{dealer.Country}}                                    
+                            </p>                                                        
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>
+                                <a v-bind:href="join('http://',dealer.Website)" target="_blank" v-if="dealer.Website.length !== 0">
+                                    {{dealer.Website}}
+                                </a>
+                            </p>
+                            <p v-if="dealer.Email.length !== 0">
+                                <a v-bind:href="linkEmail(dealer.Email)">
+                                    {{dealer.Email}}
+                                </a>
+                            </p>
+                            <p v-if="dealer.Phone.length !== 0">
+                                <abbr title="Phone Number" class="initialism">P:</abbr>
+                                <a v-bind:href="linkNumber(dealer.Phone)"> {{ formatNumber(dealer.Phone) }} </a>                            
+                            </p>
+                            <p v-if="dealer.Fax.length !== 0">
+                                <abbr title="Fax Number" class="initialism">F:</abbr>
+                                <a v-bind:href="linkNumber(dealer.Fax)"> {{ formatNumber(dealer.Fax) }} </a>                            
+                            </p>
+                        </div>                            
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="clearfix"></div>
-                </li>
-            </ul>
+                    <div class="footer">
+                        <div class="col-md-6 col-xs-12">
+                            <ul>
+                                <li>
+                                    <a v-bind:href="linkMap(dealer.Address)" target="_blank">
+                                        Directions
+                                    </a>
+                                </li>
+                                <li class="separator"></li>
+                                <!-- Check with services -->
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    </div>
+                </div>
             
+            </div>
         </div>
     </div>
 </div>
