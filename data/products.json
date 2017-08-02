@@ -1,0 +1,87 @@
+{
+    "products": [{
+        "name": "Honeycomb Shades",
+        "image": "/images/products/main-honeycomb.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+        }, {
+        "name": "Shadow Magic Horizontal Shadings",
+        "image": "/images/products/main-shadowmagic.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Collection of Colour Vertical Blinds",
+        "image": "/images/products/main-visionellesheer.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Romanelle Panel Track Systems",
+        "image": "/images/products/main-romanellepaneltrack.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Lasting Impressions Pleated Shades",
+        "image": "/images/products/main-pleatedshades.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Regency Roller Shades",
+        "image": "/images/products/main-rollershade.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Faux Wood Horizontal Blinds",
+        "image": "/images/products/main-fauxwood.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Concept Dual Shadings",
+        "image": "/images/products/main-conceptdualshadings.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Wood Horizontal Blinds",
+        "image": "/images/products/main-woodblind.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Aluminum Horizontal Blinds",
+        "image": "/images/products/",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Romanelle Roman Shades",
+        "image": "/images/products/main-romanelleromanshade.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Sheerluxe Window Shadings",
+        "image": "/images/products/main-sheerluxe.jpg",
+        "description": "",
+        "url": "",
+        "category": "blinds"
+    }, {
+        "name": "Grandeur Woodalloy Shutters",
+        "image": "/images/products/",
+        "description": "",
+        "url": "",
+        "category": "shutters"
+    }, {
+        "name": "Polysating Shutters - Tropics and Seaview",
+        "image": "/images/products/",
+        "description": "",
+        "url": "",
+        "category": "shutters"
+    }]
+}

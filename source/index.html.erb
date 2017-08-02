@@ -82,3 +82,46 @@ category: general
         </div>
     </div>
 </div>
+
+<section class="row-default row-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>
+                    Blinds and Shades
+                </h1>
+
+                <ul class="product-slider">
+                    <% data.products.products.each do |p| %>
+                        <% if p.category == "blinds" %>
+                        <li style="background-image: url('<%= p.image %>');">                            
+                        </li>
+                        <% end %>          
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="row-default">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>
+                    Shutters
+                </h1>
+
+                <ul class="product-slider">
+                    <% data.products.products.each do |p| %>
+                        <% if p.category == "shutters" %>
+                        <li>
+                            
+                        </li>  
+                        <% end %>          
+                    <% end %>
+                </ul>                
+            </div>
+        </div>
+    </div>
+</section>

@@ -61,8 +61,8 @@
             linkNumber: function(number) {
                 return "tel:" + number;
             },
-            linkMap: function(address){
-                return "https://maps.google.com?q=" + address;
+            linkMap: function(lat,long){
+                return "https://maps.google.com?q=" + lat + "," + long;
             },
             formatNumber: function(number) {
                 var length = number.length;

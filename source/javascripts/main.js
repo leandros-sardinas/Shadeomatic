@@ -11,6 +11,17 @@ $(document).ready(function() {
         }
     });
 
+    $('.product-slider').bxSlider({
+        autoHover: false,
+        pause: 6000,
+        mode: 'fade',
+        auto: true,
+        controls: false,          
+        onSlideAfter: function(item, index) {              
+            $(item).addClass('active');              
+        }
+    });
+
     //Main repsonsive menu
     $('#navigation-menu').on('click', function() {
     $('.navbar-collapse').slideToggle();
@@ -25,6 +36,3 @@ $(document).ready(function() {
         }
     })
 });
-
-    
-    

@@ -113,8 +113,8 @@ category: general
                             </p>                                                        
                         </div>
                         <div class="col-md-6 col-xs-12">
-                            <p>
-                                <a v-bind:href="join('http://',dealer.Website)" target="_blank" v-if="dealer.Website.length !== 0">
+                            <p v-if="dealer.Website.length !== 0">
+                                <a v-bind:href="join('http://',dealer.Website)" target="_blank">
                                     {{dealer.Website}}
                                 </a>
                             </p>
@@ -123,13 +123,13 @@ category: general
                                     {{dealer.Email}}
                                 </a>
                             </p>
-                            <p v-if="dealer.Phone.length !== 0">
+                            <p v-if="dealer.Phone.length !== 0">                                
                                 <abbr title="Phone Number" class="initialism">P:</abbr>
-                                <a v-bind:href="linkNumber(dealer.Phone)"> {{ formatNumber(dealer.Phone) }} </a>                            
+                                <a v-bind:href="linkNumber(dealer.Phone)"> {{ formatNumber(dealer.Phone) }} </a>                                
                             </p>
-                            <p v-if="dealer.Fax.length !== 0">
+                            <p v-if="dealer.Fax.length !== 0">                                
                                 <abbr title="Fax Number" class="initialism">F:</abbr>
-                                <a v-bind:href="linkNumber(dealer.Fax)"> {{ formatNumber(dealer.Fax) }} </a>                            
+                                <a v-bind:href="linkNumber(dealer.Fax)"> {{ formatNumber(dealer.Fax) }} </a>                                
                             </p>
                         </div>                            
                         <div class="clearfix"></div>
@@ -138,7 +138,7 @@ category: general
                         <div class="col-md-6 col-xs-12">
                             <ul>
                                 <li>
-                                    <a v-bind:href="linkMap(dealer.Address)" target="_blank">
+                                    <a v-bind:href="linkMap(dealer.Lat, dealer.Lng)" target="_blank">
                                         Directions
                                     </a>
                                 </li>
