@@ -99,7 +99,15 @@ category: general
                 <ul class="product-slider">
                     <% data.products.products.each do |p| %>
                         <% if p.category == "blinds" %>
-                        <li style="background-image: url('<%= p.image %>');">                            
+                        <li style="background-image: url('<%= p.image %>');">
+                            <div class="caption">
+                                <h2>
+                                    <%= p.name%>
+                                </h2>
+                                <a href="#" class="btn btn-lg btn-primary">
+                                    View Product                                    
+                                </a>
+                            </div>                            
                         </li>
                         <% end %>          
                     <% end %>
@@ -124,7 +132,15 @@ category: general
                 <ul class="product-slider">
                     <% data.products.products.each do |p| %>
                         <% if p.category == "shutters" %>
-                        <li style="background-image: url('<%= p.image %>');">                            
+                        <li style="background-image: url('<%= p.image %>');">
+                            <div class="caption">
+                                <h2>
+                                    <%= p.name%>
+                                </h2>
+                                <a href="#" class="btn btn-lg btn-primary">
+                                    View Product                                    
+                                </a>
+                            </div>                            
                         </li>  
                         <% end %>          
                     <% end %>

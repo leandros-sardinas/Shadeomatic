@@ -74,6 +74,30 @@ ul.bxslider {
   background: #999;
   box-shadow: 0 2px 10px 0 rgba(2,2,2,.10);
 }
+
+.row-default .bx-controls {
+  margin-top: 30px;
+}
+
+.row-default .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #e5e5e5;
+  box-shadow: 0 2px 10px 0 rgba(2,2,2,.10);
+  border-radius: 20px;
+  text-indent: -9999px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  outline: 0;
+}
+
+.row-default .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.row-default .bx-wrapper .bx-pager.bx-default-pager a.active,
+.row-default .bx-wrapper .bx-pager.bx-default-pager a:focus {  
+  background: #444;
+  box-shadow: 0 2px 10px 0 rgba(2,2,2,.10);
+}
+
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
@@ -247,4 +271,37 @@ ul.bxslider {
   background-image: url('../images/slideshow/4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.caption {
+  color: #fff;
+  display: block;
+  margin-top: 60px;
+}
+.caption h2 { 
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;    
+  text-shadow: 1px 1px 5px #444;
+}
+.caption a {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+}
+
+@media only screen and (min-width : 992px) { 
+  .caption {    
+    bottom: 40px;
+    right: 40px;
+    position: absolute;
+  }
+  .caption h2 {
+    line-height: 48px;    
+    padding: 0;    
+  }
+  .caption a {
+    margin:0;
+    float: right;
+  }
 }
