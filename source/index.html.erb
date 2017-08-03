@@ -2,7 +2,7 @@
 title: Welcome to Shadeomatic
 category: general
 ---
-
+<div id="home-slider">
 <ul class="bxslider">
     <li class="active">
         <span class="bg bg-1"></span>
@@ -61,6 +61,7 @@ category: general
         </div>                
     </li>
 </ul>
+</div>
 
 <div class="row-colors">
     <div class="color-1"></div>
@@ -87,8 +88,12 @@ category: general
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1>
+                <h1 class="section-title text-center">
                     Blinds and Shades
+                    <hr>
+                    <small class="description">
+                        Get the optimal amount of light and privacy you need with our large selection of blinds and shades
+                    </small>
                 </h1>
 
                 <ul class="product-slider">
@@ -108,15 +113,18 @@ category: general
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1>
+                <h1 class="section-title text-center">
                     Shutters
+                    <hr>
+                    <small class="description">
+                        Shutters are the perfect solution for those who want their window coverings to be both functional and aesthetically pleasing
+                    </small>
                 </h1>
 
                 <ul class="product-slider">
                     <% data.products.products.each do |p| %>
                         <% if p.category == "shutters" %>
-                        <li>
-                            
+                        <li style="background-image: url('<%= p.image %>');">                            
                         </li>  
                         <% end %>          
                     <% end %>
