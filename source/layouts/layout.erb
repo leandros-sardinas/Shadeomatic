@@ -55,7 +55,7 @@
                         <span class="icon-bar"></span> 
                     </button>
                     <a href="/" class="navbar-brand">
-                        <img src="images/logo.png" alt="Shadeomatic Logo" />
+                        <img src="/images/logo.png" alt="Shadeomatic Logo" />
                     </a>
                 </div> 
 
@@ -72,8 +72,8 @@
                               Products <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a href="#">Blinds and Shades</a></li>
-                              <li><a href="#">Shutters</a></li>                              
+                              <li><a href="/blinds-shades">Blinds and Shades</a></li>
+                              <li><a href="/shutters">Shutters</a></li>                              
                             </ul>
                         </li>                                
                         <li>
@@ -257,7 +257,9 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://unpkg.com/vue"></script>
+
+    <!-- https://unpkg.com/vue -->
+    <%= javascript_include_tag "vue.min.js" %>    
 
     <%= javascript_include_tag "bootstrap.min.js" %>
     <%= javascript_include_tag "jquery.bxslider.min.js" %>

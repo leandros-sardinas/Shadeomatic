@@ -2,7 +2,7 @@
     var app = new Vue({
         el: '#app-measurement',
         data: {
-            contentUrl: '/data/measuring-guides.json',
+            contentUrl: '/db/measuring-guides.json',
             query: '',
             manuals: []
         },

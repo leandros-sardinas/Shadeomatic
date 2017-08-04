@@ -1,0 +1,59 @@
+---
+title: Blinds and Shades
+---
+
+<div class="row-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li class="active">
+                        Blinds and Shades
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="text-center section-title">
+                Blinds & Shades             
+                <hr>
+                <small class="description">
+                    Convenience and Versatility
+                </small>
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="row-default">
+    <div class="container">
+        <div class="row">
+            <% data.products.products.each do |p| %>
+                <% if p.category == "blinds" %>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <div class="product-card">
+                        <div class="product-image" style="background-image: url('<%= p.imagexs%>');">                            
+                        </div>
+
+                        <div class="product-desc">
+                            <a href="<%= p.url%>">
+                                <%= p.name%>
+                            </a>                            
+                        </div>
+                    </div>                    
+                </div>
+                <% end %>          
+            <% end %>
+        </div>
+    </div>
+</div>

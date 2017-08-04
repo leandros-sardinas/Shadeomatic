@@ -2,86 +2,114 @@
     "products": [{
         "name": "Honeycomb Shades",
         "image": "/images/products/main-honeycomb.jpg",
+        "imagexs": "/images/products/tn-honeycomb.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
         }, {
         "name": "Shadow Magic Horizontal Shadings",
         "image": "/images/products/main-shadowmagic.jpg",
+        "imagexs": "/images/products/tn-shadowmagic.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
     }, {
         "name": "Collection of Colour Vertical Blinds",
         "image": "/images/products/main-visionellesheer.jpg",
+        "imagexs": "/images/products/tn-visionellesheer.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
     }, {
         "name": "Romanelle Panel Track Systems",
         "image": "/images/products/main-romanellepaneltrack.jpg",
+        "imagexs": "/images/products/tn-romanellepaneltrack.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
     }, {
         "name": "Lasting Impressions Pleated Shades",
         "image": "/images/products/main-pleatedshades.jpg",
+        "imagexs": "/images/products/tn-pleatedshades.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
     }, {
         "name": "Regency Roller Shades",
         "image": "/images/products/main-rollershade.jpg",
+        "imagexs": "/images/products/tn-rollershade.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
     }, {
         "name": "Faux Wood Horizontal Blinds",
         "image": "/images/products/main-fauxwood.jpg",
+        "imagexs": "/images/products/tn-fauxwood.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
     }, {
         "name": "Concept Dual Shadings",
         "image": "/images/products/main-conceptdualshadings.jpg",
+        "imagexs": "/images/products/tn-conceptdualshadings.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
     }, {
         "name": "Wood Horizontal Blinds",
         "image": "/images/products/main-woodblind.jpg",
+        "imagexs": "/images/products/tn-woodblind.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
     }, {
         "name": "Aluminum Horizontal Blinds",
-        "image": "/images/products/",
+        "image": "/images/products/main-woodblind.jpg",
+        "imagexs": "/images/products/tn-woodblind.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "false"
     }, {
         "name": "Romanelle Roman Shades",
         "image": "/images/products/main-romanelleromanshade.jpg",
+        "imagexs": "/images/products/tn-romanelleromanshade.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "false"
     }, {
         "name": "Sheerluxe Window Shadings",
         "image": "/images/products/main-sheerluxe.jpg",
+        "imagexs": "/images/products/tn-sheerluxe.jpg",
         "description": "",
         "url": "",
-        "category": "blinds"
+        "category": "blinds",
+        "cordless": "true"
     }, {
         "name": "Grandeur Woodalloy Shutters",
         "image": "/images/products/main-grandeur.jpg",
+        "imagexs": "/images/products/tn-grandeur.jpg",
         "description": "",
         "url": "",
-        "category": "shutters"
+        "category": "shutters",
+        "cordless": "true"
     }, {
         "name": "Polysating Shutters - Tropics and Seaview",
         "image": "/images/products/main-polysatin.jpg",
+        "imagexs": "/images/products/tn-polysatin.jpg",
         "description": "",
         "url": "",
-        "category": "shutters"
+        "category": "shutters",
+        "cordless": "true"
     }]
 }

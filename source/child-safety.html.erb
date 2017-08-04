@@ -41,137 +41,32 @@ category: resource
 
 <div class="row-default">    
     <div class="row">
-    <div class="col-xs-12">
-        <h1 class="section-title text-center">
-            Cordless alternatives 
-            <hr>
-            <small class="description">
-                Cordless alternatives and window coverings with inaccessible cords 
-                <br>
-                are available in the following product lines
-            </small>            
-        </h3>        
+        <div class="col-xs-12">
+            <h1 class="section-title text-center">
+                Cordless alternatives 
+                <hr>
+                <small class="description">
+                    Cordless alternatives and window coverings with inaccessible cords 
+                    <br>
+                    are available in the following product lines
+                </small>            
+            </h3>        
+        </div>
+        <% data.products.products.each do |p| %>
+            <% if p.cordless == "true" %>
+            <div class="col-md-6 col-xs-12">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('<%= p.imagexs%>');">                            
+                    </div>
 
-        <ul class="products-circle">
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Grandeur® Woodalloy Shutters" class="product-image"/>
-                    <span class="product-name">
-                        Grandeur® Woodalloy 
-                        <br>
-                        Shutters                        
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Polysatin™ Shutters" class="product-image"/>
-                    <span class="product-name">
-                        Polysatin™ 
-                        <br>
-                        Shutters
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Shadow Magic® Horizontal Shadings" class="product-image"/>
-                    <span class="product-name">
-                        Shadow Magic® 
-                        <br>
-                        Horizontal Shadings
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Moodscapes® Cellular Shades" class="product-image"/>
-                    <span class="product-name">
-                        Moodscapes® 
-                        <br>
-                        Cellular Shades
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Moodscapes® Cellular Vertical Application" class="product-image"/>
-                    <span class="product-name">
-                        Moodscapes® Cellular 
-                        <br>
-                        Vertical Application
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Regency® Roller Shades" class="product-image"/>
-                    <span class="product-name">
-                        Regency® 
-                        <br>
-                        Roller Shades
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Concept Dual Shadings©" class="product-image"/>
-                    <span class="product-name">
-                        Concept Dual 
-                        <br>
-                        Shadings©
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Romanelle® Panel Track Systems" class="product-image"/>
-                    <span class="product-name">
-                        Romanelle® 
-                        <br>
-                        Panel Track Systems
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Lasting Impressions® Pleated Shades" class="product-image"/>
-                    <span class="product-name">
-                        Lasting Impressions® 
-                        <br>
-                        Pleated Shades
-                    </span>
-                </a>                
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Vertical Blinds" class="product-image"/>
-                    <span class="product-name">
-                        Vertical Blinds
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Faux Wood Horizontal Blinds" class="product-image"/>
-                    <span class="product-name">
-                        Faux Wood 
-                        <br>
-                        Horizontal Blinds
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://via.placeholder.com/146x146" alt="Wood Horizontal Blinds" class="product-image"/>
-                    <span class="product-name">
-                        Wood 
-                        <br>
-                        Horizontal Blinds
-                    </span>
-                </a>                
-            </li>
-        </ul>
-    </div>    
+                    <div class="product-desc">
+                        <a href="<%= p.url%>">
+                            <%= p.name%>
+                        </a>                            
+                    </div>
+                </div>                    
+            </div>
+            <% end %>          
+        <% end %>
     </div>
 </div>

@@ -2,7 +2,7 @@
     var app = new Vue({
         el: '#app-installation',
         data: {
-            contentUrl: '/data/installation-instructions.json',
+            contentUrl: '/db/installation-instructions.json',
             query: '',
             manuals: []
         },
