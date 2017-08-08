@@ -3,15 +3,15 @@
         "name": "Honeycomb Shades",
         "image": "/images/products/main-honeycomb.jpg",
         "imagexs": "/images/products/tn-honeycomb.jpg",
-        "description": "",
+        "description": "Are the most luxurious window coverings in today's market. Our superior selection of fabrics provide lasting beauty, elegance and sophistication all in one.",
         "url": "",
         "category": "blinds",
         "cordless": "true"
         }, {
-        "name": "Shadow Magic Horizontal Shadings",
+        "name": "Shadow Magic",
         "image": "/images/products/main-shadowmagic.jpg",
         "imagexs": "/images/products/tn-shadowmagic.jpg",
-        "description": "",
+        "description": "is our most sophisticated window covering product combining soft sheer panels of fabric with center horizontal vanes that provide the highest degree of light and privacy control.    These shadings will add simplistic beauty and sophistication to any home.",
         "url": "",
         "category": "blinds",
         "cordless": "true"
@@ -19,7 +19,7 @@
         "name": "Collection of Colour Vertical Blinds",
         "image": "/images/products/main-visionellesheer.jpg",
         "imagexs": "/images/products/tn-visionellesheer.jpg",
-        "description": "",
+        "description": "Offer a fashionable selection of patterns, textures and colours, in Fabrics and PVC vanes.",
         "url": "",
         "category": "blinds",
         "cordless": "true"
@@ -27,15 +27,15 @@
         "name": "Romanelle Panel Track Systems",
         "image": "/images/products/main-romanellepaneltrack.jpg",
         "imagexs": "/images/products/tn-romanellepaneltrack.jpg",
-        "description": "",
+        "description": "Provide vertical sliding panels for large scale windows to make a dramatic fashion statement.",
         "url": "",
         "category": "blinds",
         "cordless": "true"
     }, {
-        "name": "Lasting Impressions Pleated Shades",
+        "name": "Lasting Impressions",
         "image": "/images/products/main-pleatedshades.jpg",
         "imagexs": "/images/products/tn-pleatedshades.jpg",
-        "description": "",
+        "description": "Offer an excellent form of window covering, providing light, privacy and sun control.",
         "url": "",
         "category": "blinds",
         "cordless": "true"
@@ -43,15 +43,15 @@
         "name": "Regency Roller Shades",
         "image": "/images/products/main-rollershade.jpg",
         "imagexs": "/images/products/tn-rollershade.jpg",
-        "description": "",
+        "description": "Have evolved into a sophisticated window covering that offers an extensive collection of both classic and contemporary fabrics, providing eye-catching style and superior performance.",
         "url": "",
         "category": "blinds",
         "cordless": "true"
     }, {
-        "name": "Faux Wood Horizontal Blinds",
+        "name": "Faux Wood",
         "image": "/images/products/main-fauxwood.jpg",
         "imagexs": "/images/products/tn-fauxwood.jpg",
-        "description": "",
+        "description": "Offer the look and style of real wood, yet are a practical cost effective alternative. Slats are engineered from durable polymer  materials that won’t crack, chip or peel. They are a perfect choice for high-moisture areas such as kitchens and bathrooms",
         "url": "",
         "category": "blinds",
         "cordless": "true"
@@ -59,23 +59,23 @@
         "name": "Concept Dual Shadings",
         "image": "/images/products/main-conceptdualshadings.jpg",
         "imagexs": "/images/products/tn-conceptdualshadings.jpg",
-        "description": "",
+        "description": "Is a soft shade that combines the light control capacities of a horizontal blind with the soft beauty of a fabric shade.",
         "url": "",
         "category": "blinds",
         "cordless": "true"
     }, {
-        "name": "Wood Horizontal Blinds",
+        "name": "Wood Blinds",
         "image": "/images/products/main-woodblind.jpg",
         "imagexs": "/images/products/tn-woodblind.jpg",
-        "description": "",
+        "description": "Bring the natural warmth and beauty of wood into your home for a classic look.",
         "url": "",
         "category": "blinds",
         "cordless": "true"
     }, {
-        "name": "Aluminum Horizontal Blinds",
+        "name": "Aluminum Blinds",
         "image": "/images/products/main-woodblind.jpg",
         "imagexs": "/images/products/tn-woodblind.jpg",
-        "description": "",
+        "description": "Conveniently offered in both 1 & 2 slat sizes, provide crisp clean lines and bring both elegance and classic style to any room.",
         "url": "",
         "category": "blinds",
         "cordless": "false"
@@ -83,7 +83,7 @@
         "name": "Romanelle Roman Shades",
         "image": "/images/products/main-romanelleromanshade.jpg",
         "imagexs": "/images/products/tn-romanelleromanshade.jpg",
-        "description": "",
+        "description": "Add elegance to any room.",
         "url": "",
         "category": "blinds",
         "cordless": "false"
@@ -91,7 +91,7 @@
         "name": "Sheerluxe Window Shadings",
         "image": "/images/products/main-sheerluxe.jpg",
         "imagexs": "/images/products/tn-sheerluxe.jpg",
-        "description": "",
+        "description": "A streamlined collection featuring both translucent and light-dimming vane styles to provide varying degrees of light control. Covers large window expanses with no visible internal lift cords to detract from their elegant appearance.",
         "url": "",
         "category": "blinds",
         "cordless": "true"
@@ -99,15 +99,15 @@
         "name": "Grandeur Woodalloy Shutters",
         "image": "/images/products/main-grandeur.jpg",
         "imagexs": "/images/products/tn-grandeur.jpg",
-        "description": "",
+        "description": " Woodalloy Shutters offer a leading edge design, giving windows an air of classic elegance. Our advanced engineering technology provides the consistency and warmth of real wood, while helping the shutters maintain their superior strength and their durability.",
         "url": "",
         "category": "shutters",
         "cordless": "true"
     }, {
-        "name": "Polysating Shutters - Tropics and Seaview",
+        "name": "Polysating Tropics and Seaview Shutters",
         "image": "/images/products/main-polysatin.jpg",
         "imagexs": "/images/products/tn-polysatin.jpg",
-        "description": "",
+        "description": "The sleek, classic elegance of Shade-O-Matic's Polysatin™ Shutters can turn a window into a stunning focal point in any room.",
         "url": "",
         "category": "shutters",
         "cordless": "true"

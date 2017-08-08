@@ -1,0 +1,18 @@
+{
+    "name": "Shade-O-Matic",
+    "short_name": "Shadeomatic",
+    "display": "standalone",
+    "version": "1.0",
+    "manifest_version": 2,
+    "theme_color": "#8cc63f",
+    "background_color": "#8cc63f",    
+    "icons": [
+        {"sizes":"32x32", "src":"images/homescreen32.png"},
+        {"sizes": "48x48", "src": "images/homescreen48.png"},
+        {"sizes":"72x72", "src": "images/homescreen72.png"},
+        {"sizes": "96x96", "src": "images/homescreen96.png"},
+        {"sizes":"144x144", "src": "images/homescreen144.png"},
+        {"sizes":"168x168", "src": "images/homescreen168.png"},
+        {"sizes": "192x192", "src": "images/homescreen192.png"}
+    ]
+}

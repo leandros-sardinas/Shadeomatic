@@ -1,0 +1,17 @@
+{
+    "name": "Shade-O-Matic",
+    "display": "browser",
+    "version": "1.0",
+    "manifest_version": 2,
+    "theme_color": "#8cc63f",
+    "background_color": "#8cc63f",    
+    "icons": {
+        "32":"images/homescreen32.png",
+        "48":"images/homescreen48.png",
+        "72": "images/homescreen72.png",
+        "96": "images/homescreen96.png",
+        "144": "images/homescreen144.png",
+        "168": "images/homescreen168.png",
+        "192": "images/homescreen192.png"
+  }
+}

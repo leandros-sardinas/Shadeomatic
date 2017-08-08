@@ -5,70 +5,85 @@
             "name": "Aluminum Blinds Measure",
             "fileName": "/resources/measurement/horizontal-blinds.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "29 kb"
         }, {
             "name": "Aluminum Blinds Measure",
             "fileName": "/resources/measurement/horizontal-blinds.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "29 kb"
         }]
     }, {
         "sequence": 2,
         "files": [{
             "name": "Polysatin Shutters Bi-Fold and Bi-Pass Track System Measure",
-            "fileName": "/resources/measurement/horizontal-blinds.pdf",
+            "fileName": "/resources/measurement/polysatin-shutters-bi-fold-bi-pass-track.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "260 kb"
         }, {
             "name": "Polysatin Shutters Bi-Fold and Bi-Pass Track System Measure",
-            "fileName": "/resources/measurement/horizontal-blinds.pdf",
+            "fileName": "/resources/measurement/polysatin-shutters-bi-fold-bi-pass-track.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "260 kb"
         }, {
             "name": "Polysatin Shutters Bay & Bow",
             "fileName": "/resources/measurement/polysatin-shutters-bay-bow-windows.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "218 kb"
         }, {
             "name": "Polysatin Shutters Bay & Bow",
             "fileName": "/resources/measurement/polysatin-shutters-bay-bow-windows.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "218 kb"
         }, {
             "name": "Polysatin Shutters Bay, Bow & Corner",
             "fileName": "/resources/measurement/polysatin-shutters-bay-bow-corner.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "126 kb"
         }, {
             "name": "Polysatin Shutters Bay, Bow & Corner",
             "fileName": "/resources/measurement/polysatin-shutters-bay-bow-corner.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "126 kb"
         }, {
             "name": "Polysatin Shutters French Door",
             "fileName": "/resources/measurement/polysatin-shutters-french-door.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "137 kb"
+        },{
+            "name": "Polysatin Shutters French Door",
+            "fileName": "/resources/measurement/polysatin-shutters-french-door.pdf",
+            "language": "FR",
+            "size": "137 kb"
+        }, {
+            "name": "Polysatin Shutters Inside and Outside Measure",
+            "fileName": "/resources/measurement/polysatin-shutters-outside-inside.pdf",
+            "language": "EN",
+            "size": "137 kb"
         }, {
             "name": "Polysatin Shutters Inside and Outside Measure",
             "fileName": "/resources/measurement/polysatin-shutters-outside-inside.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "137 kb"
+        }, {
+            "name": "Polysatin Shutters Speciality",
+            "fileName": "/resources/measurement/polysatin-shutters-specialty.pdf",
+            "language": "EN",
+            "size": "104 kb"
         }, {
             "name": "Polysatin Shutters Speciality",
             "fileName": "/resources/measurement/polysatin-shutters-specialty.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "104 kb"
         }, {
-            "name": "Polysatin Shutters Speciality",
-            "fileName": "/resources/measurement/polysatin-shutters-specialty.pdf",
-            "language": "FR",
-            "size": "995 kb"
+            "name": "Polysatin Shutters T-Post, Divider Rail and Split Tilt-Bar Measuring",
+            "fileName": "/resources/measurement/polysatin-shutters-tpost-divider-rail-split-tilt-bar.pdf",
+            "language": "EN",
+            "size": "337 kb"
         }, {
             "name": "Polysatin Shutters T-Post, Divider Rail and Split Tilt-Bar Measuring",
             "fileName": "/resources/measurement/polysatin-shutters-tpost-divider-rail-split-tilt-bar.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "337 kb"
         }]
     }, {
         "sequence": 3,
@@ -76,12 +91,12 @@
             "name": "Cellular Shades",
             "fileName": "/resources/measurement/cellular-shade-select-collection.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "70 kb"
         }, {
             "name": "Cellular Shades",
             "fileName": "/resources/measurement/cellular-shade-select-collection.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "70 kb"
         }]
     }, {
         "sequence": 4,
@@ -89,12 +104,12 @@
             "name": "Concept Dual",
             "fileName": "/resources/measurement/concept-dual-shadings.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "38 kb"
         }, {
             "name": "Concept Dual",
             "fileName": "/resources/measurement/concept-dual-shadings.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "38 kb"
         }]
     }, {
         "sequence": 5,
@@ -102,12 +117,12 @@
             "name": "Corner Window",
             "fileName": "/resources/measurement/butt-bi-pass.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "53 kb"
         }, {
             "name": "Corner Window",
             "fileName": "/resources/measurement/butt-bi-pass.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "53 kb"
         }]
     }, {
         "sequence": 6,
@@ -115,25 +130,25 @@
             "name": "Faux Wood",
             "fileName": "/resources/measurement/faux-wood-blind.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "35 kb"
         }, {
             "name": "Faux Wood",
             "fileName": "/resources/measurement/faux-wood-blind.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "35 kb"
         }]
     }, {
         "sequence": 7,
         "files": [{
-            "name": "Grandeur®Woodalloy",
+            "name": "Grandeur Woodalloy",
             "fileName": "/resources/measurement/grandeur-wood-alloy-shutters.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "118 kb"
         }, {
-            "name": "Grandeur®Woodalloy",
+            "name": "Grandeur Woodalloy",
             "fileName": "/resources/measurement/grandeur-wood-alloy-shutters.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "118 kb"
         }]
     }, {
         "sequence": 8,
@@ -141,12 +156,12 @@
             "name": "Panel Track",
             "fileName": "/resources/measurement/romanelle-panel-tracks.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "174 kb"
         }, {
             "name": "Panel Track",
             "fileName": "/resources/measurement/romanelle-panel-tracks.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "174 kb"
         }]
     }, {
         "sequence": 9,
@@ -154,12 +169,12 @@
             "name": "Pleated Shades",
             "fileName": "/resources/measurement/pleated-shades.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "37 kb"
         }, {
             "name": "Pleated Shades",
             "fileName": "/resources/measurement/pleated-shades.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "37 kb"
         }]
     }, {
         "sequence": 10,
@@ -167,12 +182,12 @@
             "name": "Roller Shades",
             "fileName": "/resources/measurement/regency-roller-shades.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "44 kb"
         }, {
             "name": "Roller Shades",
             "fileName": "/resources/measurement/regency-roller-shades.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "44 kb"
         }]
     }, {
         "sequence": 11,
@@ -180,25 +195,25 @@
             "name": "Roman Shades",
             "fileName": "/resources/measurement/romanelle-roman-shades.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "94 kb"
         }, {
             "name": "Roman Shades",
             "fileName": "/resources/measurement/romanelle-roman-shades.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "94 kb"
         }]
     }, {
         "sequence": 12,
         "files": [{
-            "name": "Shadow Magic® Horizontal Shadings",
+            "name": "Shadow Magic Horizontal Shadings",
             "fileName": "/resources/measurement/shadow-magic-horizontal-shadings.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "85 kb"
         }, {
-            "name": "Shadow Magic® Horizontal Shadings",
+            "name": "Shadow Magic Horizontal Shadings",
             "fileName": "/resources/measurement/shadow-magic-horizontal-shadings.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "85 kb"
         }]
     }, {
         "sequence": 13,
@@ -206,12 +221,12 @@
             "name": "Vertical Blinds",
             "fileName": "/resources/measurement/collection-vertical-blinds.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "71 kb"
         }, {
             "name": "Vertical Blinds",
             "fileName": "/resources/measurement/collection-vertical-blinds.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "71 kb"
         }]
     }, {
         "sequence": 14,
@@ -219,12 +234,12 @@
             "name": "Wood Blinds",
             "fileName": "/resources/measurement/wood.pdf",
             "language": "EN",
-            "size": "995 kb"
+            "size": "35 kb"
         }, {
             "name": "Wood Blinds",
             "fileName": "/resources/measurement/wood.pdf",
             "language": "FR",
-            "size": "995 kb"
+            "size": "35 kb"
         }]
     }]
 }
