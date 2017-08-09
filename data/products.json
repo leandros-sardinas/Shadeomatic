@@ -4,7 +4,7 @@
         "image": "/images/products/main-honeycomb.jpg",
         "imagexs": "/images/products/tn-honeycomb.jpg",
         "description": "Are the most luxurious window coverings in today's market. Our superior selection of fabrics provide lasting beauty, elegance and sophistication all in one.",
-        "url": "",
+        "url": "/honeycomb-shades",
         "category": "blinds",
         "cordless": "true"
         }, {
@@ -83,7 +83,7 @@
         "name": "Romanelle Roman Shades",
         "image": "/images/products/main-romanelleromanshade.jpg",
         "imagexs": "/images/products/tn-romanelleromanshade.jpg",
-        "description": "Add elegance to any room.",
+        "description": "Add elegance to any room. There are many stylish fabrics to choose from that will compliment any room décor.",
         "url": "",
         "category": "blinds",
         "cordless": "false"
