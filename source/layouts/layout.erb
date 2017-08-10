@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" type="image/png" href="/images/homescreen32.png">
 
@@ -267,7 +268,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,400i,700" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <%= javascript_include_tag "jquery.bxslider.js" %>    
+    
     <script src="/javascripts/bootstrap.js" defer></script>
+    <script src="/javascripts/jquery.appear.js" defer></script>
 
     <%if current_page.data.title == "Installation Instructions" %> 
         <%= javascript_include_tag "vue.min.js" %>
@@ -284,6 +287,10 @@
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HUxEbYS_5Y80fNWk4El1IC6AICXARxw&libraries=places">
         </script>
         <%= javascript_include_tag "dealer-locator.js" %>
+    <% end %>
+
+    <%if current_page.data.category == "product" %>
+        <script src="/javascripts/product.js" defer></script>        
     <% end %>
 
   </body>
