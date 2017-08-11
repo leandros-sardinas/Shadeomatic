@@ -1,22 +1,28 @@
-$(document).ready(function() {    
-    $(".bx-wrapper").appear();
-    $(".bx-wrapper").on("appear", function(event){
-        $('.product-toolbar').fadeOut('fast');
+$(document).ready(function() {
+
+    var $bxWrapper = $(".bx-wrapper");
+    var $productToolbar = $('.product-toolbar');
+    var $highlightImg = $('.product-highlight img');
+    var $productFeature = $('.product-feature-image');
+
+    $bxWrapper.appear();
+    $bxWrapper.on("appear", function(event){
+        $productToolbar.fadeOut('fast');
     })
     
-    $('.bx-wrapper').on("disappear", function(event) {        
-        $('.product-toolbar').fadeIn('slow');        
+    $bxWrapper.on("disappear", function(event) {        
+        $productToolbar.fadeIn('slow');        
     })
 
-    $('.product-highlight img').appear();
-    $('.product-highlight img').on("appear", function(event, $all_appeared_elements) {
+    $highlightImg.appear();
+    $highlightImg.on("appear", function(event, $all_appeared_elements) {
         for(var i=0; i<$all_appeared_elements.length; i++) {
             $($all_appeared_elements[i]).animate({opacity: 1},500)                
         }
     })
 
-    $('.product-feature-image').appear();
-    $('.product-feature-image').on("appear", function(event, $all_appeared_elements) {
+    $productFeature.appear();
+    $productFeature.on("appear", function(event, $all_appeared_elements) {
         for(var i=0; i<$all_appeared_elements.length; i++) {
             $($all_appeared_elements[i]).addClass('product-feature-image_up');
         }

@@ -120,13 +120,15 @@
                             self.coordinates.lat = data.results[0].geometry.location.lat;
                             self.coordinates.long = data.results[0].geometry.location.lng;
                             self.locate();
-                        } else {
+                        } else {                            
                             self.error.inError = true;
-                            self.error.message = "Invalid address, please verify your address";                            
+                            self.error.message = "Invalid address, please select your address";                            
                         }
                     }).fail(function() {
                         self.error.inError = true;
                         self.error.message = "An error has ocurred, please try again later";                        
+                    }).complete(function(){
+                        self.statuses.inSearch = false;
                     })
                 }
             }
