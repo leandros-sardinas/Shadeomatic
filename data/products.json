@@ -11,8 +11,8 @@
         "name": "Shadow Magic",
         "image": "/images/products/main-shadowmagic.jpg",
         "imagexs": "/images/products/tn-shadowmagic.jpg",
-        "description": "is our most sophisticated window covering product combining soft sheer panels of fabric with center horizontal vanes that provide the highest degree of light and privacy control.    These shadings will add simplistic beauty and sophistication to any home.",
-        "url": "",
+        "description": "Our most sophisticated window covering product combining soft sheer panels of fabric with center horizontal vanes that provide the highest degree of light and privacy control.    These shadings will add simplistic beauty and sophistication to any home.",
+        "url": "/shadow-magic",
         "category": "blinds",
         "cordless": "true"
     }, {
@@ -20,7 +20,7 @@
         "image": "/images/products/main-visionellesheer.jpg",
         "imagexs": "/images/products/tn-visionellesheer.jpg",
         "description": "Offer a fashionable selection of patterns, textures and colours, in Fabrics and PVC vanes.",
-        "url": "",
+        "url": "/vertical-blinds",
         "category": "blinds",
         "cordless": "true"
     }, {
@@ -28,15 +28,15 @@
         "image": "/images/products/main-romanellepaneltrack.jpg",
         "imagexs": "/images/products/tn-romanellepaneltrack.jpg",
         "description": "Provide vertical sliding panels for large scale windows to make a dramatic fashion statement.",
-        "url": "",
+        "url": "/romanelle-panel-track",
         "category": "blinds",
         "cordless": "true"
     }, {
-        "name": "Lasting Impressions",
+        "name": "Pleated Shades Lasting Impressions",
         "image": "/images/products/main-pleatedshades.jpg",
         "imagexs": "/images/products/tn-pleatedshades.jpg",
         "description": "Offer an excellent form of window covering, providing light, privacy and sun control.",
-        "url": "",
+        "url": "/pleated-shades",
         "category": "blinds",
         "cordless": "true"
     }, {
@@ -44,7 +44,7 @@
         "image": "/images/products/main-rollershade.jpg",
         "imagexs": "/images/products/tn-rollershade.jpg",
         "description": "Have evolved into a sophisticated window covering that offers an extensive collection of both classic and contemporary fabrics, providing eye-catching style and superior performance.",
-        "url": "",
+        "url": "/roller-shades",
         "category": "blinds",
         "cordless": "true"
     }, {
@@ -52,7 +52,7 @@
         "image": "/images/products/main-fauxwood.jpg",
         "imagexs": "/images/products/tn-fauxwood.jpg",
         "description": "Offer the look and style of real wood, yet are a practical cost effective alternative. Slats are engineered from durable polymer  materials that won’t crack, chip or peel. They are a perfect choice for high-moisture areas such as kitchens and bathrooms",
-        "url": "",
+        "url": "/faux-wood",
         "category": "blinds",
         "cordless": "true"
     }, {
@@ -60,7 +60,7 @@
         "image": "/images/products/main-conceptdualshadings.jpg",
         "imagexs": "/images/products/tn-conceptdualshadings.jpg",
         "description": "Is a soft shade that combines the light control capacities of a horizontal blind with the soft beauty of a fabric shade.",
-        "url": "",
+        "url": "/concept-dual",
         "category": "blinds",
         "cordless": "true"
     }, {
