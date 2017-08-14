@@ -4850,31 +4850,93 @@ ul.bxslider {
 }
 
 .bg {
+  background-repeat: no-repeat;
+  background-size: cover;
   position:absolute;
   height: 100%;
   width: 100%;  
 }
 
-.bg-1 {
-  background-image: url('../images/slideshow/1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+
+@media only screen and (min-width : 320px) {
+  .bg-1 {
+    background-image: url('../images/slideshow/1x480.jpg');    
+  }
+  .bg-2 {
+    background-image: url('../images/slideshow/2x480.jpg');    
+  }
+  .bg-3 {
+    background-image: url('../images/slideshow/3x480.jpg');    
+  }
+  .bg-4 {
+    background-image: url('../images/slideshow/4x480.jpg');    
+  }
 }
-.bg-2 {
-  background-image: url('../images/slideshow/2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  .bg-1 {
+    background-image: url('../images/slideshow/1x768.jpg');    
+  }
+  .bg-2 {
+    background-image: url('../images/slideshow/2x768.jpg');    
+  }
+  .bg-3 {
+    background-image: url('../images/slideshow/3x768.jpg');    
+  }
+  .bg-4 {
+    background-image: url('../images/slideshow/4x768.jpg');    
+  }
 }
-.bg-3 {
-  background-image: url('../images/slideshow/3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .bg-1 {
+    background-image: url('../images/slideshow/1x992.jpg');    
+  }
+  .bg-2 {
+    background-image: url('../images/slideshow/2x992.jpg');    
+  }
+  .bg-3 {
+    background-image: url('../images/slideshow/3x992.jpg');    
+  }
+  .bg-4 {
+    background-image: url('../images/slideshow/4x992.jpg');    
+  }
 }
-.bg-4 {
-  background-image: url('../images/slideshow/4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .bg-1 {
+    background-image: url('../images/slideshow/1x1920.jpg');    
+  }
+  .bg-2 {
+    background-image: url('../images/slideshow/2x1920.jpg');    
+  }
+  .bg-3 {
+    background-image: url('../images/slideshow/3x1920.jpg');    
+  }
+  .bg-4 {
+    background-image: url('../images/slideshow/4x1920.jpg');    
+  }
 }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .bg-1 {
+    background-image: url('../images/slideshow/1x1920.jpg');    
+  }
+  .bg-2 {
+    background-image: url('../images/slideshow/2x1920.jpg');    
+  }
+  .bg-3 {
+    background-image: url('../images/slideshow/3x1920.jpg');    
+  }
+  .bg-4 {
+    background-image: url('../images/slideshow/4x1920.jpg');    
+  }
+}
+
 
 .caption {
   color: #fff;

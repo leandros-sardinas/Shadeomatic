@@ -20,9 +20,7 @@ var ImgLoader = {
     types: {
         Background: "bg",
         Image: "src"
-    },
-    callbackSrc: undefined,
-    callbackBg: undefined,
+    },    
     loadImages: function() {
         var self = this;
         var images = $('img.lazy');
@@ -35,7 +33,7 @@ var ImgLoader = {
         bgs.each(function(index, item){
             self.loadImage(item, self.types.Background);
         })
-    },
+    },    
     loadImage: function(item, type) {
         var self = this;
         var image = new Image();
