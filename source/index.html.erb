@@ -99,7 +99,7 @@ category: general
                 <ul class="product-slider">
                     <% data.products.products.each do |p| %>
                         <% if p.category == "blinds" %>
-                        <li style="background-image: url('<%= p.image %>');">
+                        <li data-lazy="<%= p.image %>" class="lazy-bg">                            
                             <div class="caption">
                                 <h2>
                                     <%= p.name%>
@@ -132,7 +132,7 @@ category: general
                 <ul class="product-slider">
                     <% data.products.products.each do |p| %>
                         <% if p.category == "shutters" %>
-                        <li style="background-image: url('<%= p.image %>');">
+                        <li data-lazy="<%= p.image %>" class="lazy-bg">
                             <div class="caption">
                                 <h2>
                                     <%= p.name%>

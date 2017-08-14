@@ -14,3 +14,108 @@ $(".stay").affix({
         bottom: 495
     }
 })
+
+//Lazy load images
+var ImgLoader = {
+    types: {
+        Background: "bg",
+        Image: "src"
+    },
+    callbackSrc: undefined,
+    callbackBg: undefined,
+    loadImages: function() {
+        var self = this;
+        var images = $('img.lazy');
+        var bgs = $('.lazy-bg');
+
+        images.each(function(index, item){
+            self.loadImage(item, self.types.Image);
+        });
+
+        bgs.each(function(index, item){
+            self.loadImage(item, self.types.Background);
+        })
+    },
+    loadImage: function(item, type) {
+        var self = this;
+        var image = new Image();
+        image.src = $(item).attr('data-lazy');        
+        image.onload = function() {
+            if(type==self.types.Background) {
+                var url = 'url(' + image.src + ')';
+                $(item).css({'background-image': url});                
+            }
+            if(type==self.types.Image) {
+                $(item).attr('src', image.src);
+            }
+        };
+    }
+}
+
+//Resize Slider
+var sliderSize = {
+    active: true,
+    height: 0,
+    headerHeight: 0,
+    sliderHeight: 0,
+    calculateHeight: function() {
+        var currentWindowHeight = $(window).height();
+        if(currentWindowHeight === undefined) {
+            this.active = false;
+        }
+
+        if(this.height !== currentWindowHeight) {
+            var languageHeight = $('.row-language').outerHeight();
+            var navHeight = $('.row-nav').outerHeight();
+            var sloganHeight = $('.row-slogan').outerHeight();
+            this.height = currentWindowHeight;
+
+            if(this.height > 650) {
+                this.headerHeight = languageHeight + navHeight + sloganHeight;
+                this.sliderHeight = (this.height - this.headerHeight);
+            } else {
+                this.headerHeight = languageHeight + navHeight;
+                this.sliderHeight = currentWindowHeight - this.headerHeight;
+            }
+
+            $("#home-slider").css('height', this.sliderHeight);
+            $("#home-slider .bx-viewport").css('height', this.sliderHeight);
+            $('#home-slider .bx-wrapper').css('height', this.sliderHeight);
+            $("#home-slider .bxslider li").css('height', this.sliderHeight);
+        }
+    }
+};
+
+ImgLoader.loadImages();
+
+
+$('.product-slider').bxSlider({
+    autoHover: false,
+    pause: 6000,
+    mode: 'fade',
+    auto: true,
+    controls: true,
+    pager: false,
+    onSlideAfter: function(item, index) {              
+        $(item).addClass('active');              
+    }
+});
+
+sliderSize.calculateHeight();
+$(window).on('resize', function(e) {
+    if(sliderSize.active === true) {
+        sliderSize.calculateHeight();
+    }
+})
+
+//Slider
+$('.bxslider').bxSlider({
+    autoHover: false,
+    pause: 6000,
+    mode: 'fade',
+    auto: false,
+    controls: false,          
+    onSlideAfter: function(item, index) {              
+        $(item).addClass('active');              
+    }
+});
