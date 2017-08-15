@@ -266,7 +266,7 @@
     </footer>
 
     <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,400i,700" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <%= javascript_include_tag "jquery.bxslider.js" %>    
     
     <script src="/javascripts/bootstrap.js" defer></script>
@@ -288,10 +288,15 @@
         </script>
         <%= javascript_include_tag "dealer-locator.js" %>
     <% end %>
-
+    
     <%if current_page.data.category == "product" %>
-        <script src="/javascripts/product.js" defer></script>        
+        <script src="/javascripts/product.js" defer></script>
     <% end %>
 
+    <%if current_page.data.type == "contact" %>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="/javascripts/jquery.validate.min.js" defer></script>
+        <script src="/javascripts/contact.js" defer></script>
+    <% end %>
   </body>
 </html>
