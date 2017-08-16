@@ -4840,13 +4840,13 @@ ul.bxslider {
 
 @keyframes title {
   0% {
-    margin-left:50%;
+    transform: translateX(50%);    
     opacity: 0;
   }
   100% {
-    margin-left:0;
+    transform: translateX(0%);
     opacity: 1;
-  }  
+  }
 }
 
 .bg {
@@ -4974,7 +4974,7 @@ ul.bxslider {
 
 /* Custom Theme */
 .row-language {
-  background: #f0f0f0;
+  background: #eee;
 }
 .row-nav {
   background:#fff;
@@ -5108,12 +5108,20 @@ ul.bxslider {
 }
 
 .row-gray {
-  background: #f5f5f5;
+  background: #eee;
 }
 
-.row-alt {
-  background: #f5f5f5;
-  border-top: solid 1px #f0f0f0;
+.row-primary {
+  background-color: #7cb034;
+  color: #fff;  
+}
+.row-primary a {
+  color: #fff;
+}
+
+.primary-title {  
+  color: #fff;
+  padding: 10px 0px;
 }
 
 .row-contrast {
