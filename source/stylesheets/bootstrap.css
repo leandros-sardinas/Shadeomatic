@@ -5836,3 +5836,12 @@ label[data-required='true']:after {
   margin: 0 auto 10px auto;  
   opacity: 0;
 }
+
+/*Contact us*/
+.hours th {
+  padding: 5px 20px 5px 0px;
+  text-align: left;
+}
+.hours td {
+  padding: 5px 20px 5px 0px;
+}

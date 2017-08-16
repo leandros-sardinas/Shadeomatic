@@ -1,3 +1,3 @@
-$(body).ready(function(){
+$('body').ready(function(){
 
 })

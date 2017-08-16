@@ -54,17 +54,28 @@ category: resource
         </div>
         <% data.products.products.each do |p| %>
             <% if p.cordless == "true" %>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-12 col-xs-12">
                 <div class="product-card">
-                    <div class="product-image" style="background-image: url('<%= p.imagexs%>');">                            
-                    </div>
+                    <a href="<%= p.url%>">
+                        <div class="product-image" style="background-image: url('<%= p.imagexs%>');">                            
+                            
+                        </div>
 
-                    <div class="product-desc">
-                        <a href="<%= p.url%>">
-                            <%= p.name%>
-                        </a>                            
-                    </div>
-                </div>                    
+                        <div class="product-desc">                                
+                            <p class="product-name">                                
+                                <%= p.name%>                                
+                            </p>
+                            <p>
+                                <%= p.description%>
+                            </p>                            
+                        </div>
+                        <div class="product-action">
+                            <a href="<%= p.url%>">
+                                View Product
+                            </a>                            
+                        </div>    
+                    </a>                    
+                </div>                   
             </div>
             <% end %>          
         <% end %>
