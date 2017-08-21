@@ -1,6 +1,6 @@
 ---
 title: Welcome to Shadeomatic
-category: general
+category: homepage
 ---
 <div id="home-slider">
 <ul class="bxslider">
@@ -96,7 +96,7 @@ category: general
                     </small>
                 </h1>
 
-                <ul class="product-slider">
+                <ul class="bxslider product-slider">
                     <% data.products.products.each do |p| %>
                         <% if p.category == "blinds" %>
                         <li data-lazy="<%= p.image %>" class="lazy-bg">                            
@@ -129,7 +129,7 @@ category: general
                     </small>
                 </h1>
 
-                <ul class="product-slider">
+                <ul class="bxslider product-slider">
                     <% data.products.products.each do |p| %>
                         <% if p.category == "shutters" %>
                         <li data-lazy="<%= p.image %>" class="lazy-bg">

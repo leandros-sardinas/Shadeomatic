@@ -78,8 +78,12 @@ var sliderSize = {
 
             $("#home-slider").css('height', this.sliderHeight);
             $("#home-slider .bx-viewport").css('height', this.sliderHeight);
-            $('#home-slider .bx-wrapper').css('height', this.sliderHeight);
-            $("#home-slider .bxslider li").css('height', this.sliderHeight);
+            $('#home-slider .bx-wrapper').css('height', this.sliderHeight);            
+            $("#home-slider .bxslider").css('height', this.sliderHeight);
+            $("#home-slider .bxslider li").css({
+                'height': this.sliderHeight,
+                'overflow': 'visible'
+            });
         }
     }
 };

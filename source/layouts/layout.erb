@@ -18,6 +18,99 @@
     <%= stylesheet_link_tag "bootstrap" %>
     <link rel="stylesheet" media="print" href="/stylesheets/print.css" />
     <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,400i,700" rel="stylesheet">
+    
+    <%if current_page.data.category == "homepage" %>
+    <style>
+        @media only screen and (min-width : 320px) {
+        .bg-1 {
+            background-image: url('../images/slideshow/1x480.jpg');    
+        }
+        .bg-2 {
+            background-image: url('../images/slideshow/2x480.jpg');    
+        }
+        .bg-3 {
+            background-image: url('../images/slideshow/3x480.jpg');    
+        }
+        .bg-4 {
+            background-image: url('../images/slideshow/4x480.jpg');    
+        }
+        }
+
+        /* Extra Small Devices, Phones */ 
+        @media only screen and (min-width : 480px) {
+        .bg-1 {
+            background-image: url('../images/slideshow/1x768.jpg');    
+        }
+        .bg-2 {
+            background-image: url('../images/slideshow/2x768.jpg');    
+        }
+        .bg-3 {
+            background-image: url('../images/slideshow/3x768.jpg');    
+        }
+        .bg-4 {
+            background-image: url('../images/slideshow/4x768.jpg');    
+        }
+        }
+
+        /* Small Devices, Tablets */
+        @media only screen and (min-width : 768px) {
+        .bg-1 {
+            background-image: url('../images/slideshow/1x992.jpg');    
+        }
+        .bg-2 {
+            background-image: url('../images/slideshow/2x992.jpg');    
+        }
+        .bg-3 {
+            background-image: url('../images/slideshow/3x992.jpg');    
+        }
+        .bg-4 {
+            background-image: url('../images/slideshow/4x992.jpg');    
+        }
+        }
+
+        /* Medium Devices, Desktops */
+        @media only screen and (min-width : 992px) {
+        .bg-1 {
+            background-image: url('../images/slideshow/1x1920.jpg');    
+        }
+        .bg-2 {
+            background-image: url('../images/slideshow/2x1920.jpg');    
+        }
+        .bg-3 {
+            background-image: url('../images/slideshow/3x1920.jpg');    
+        }
+        .bg-4 {
+            background-image: url('../images/slideshow/4x1920.jpg');    
+        }
+        }
+
+        /* Large Devices, Wide Screens */
+        @media only screen and (min-width : 1200px) {
+        .bg-1 {
+            background-image: url('../images/slideshow/1x1920.jpg');    
+        }
+        .bg-2 {
+            background-image: url('../images/slideshow/2x1920.jpg');    
+        }
+        .bg-3 {
+            background-image: url('../images/slideshow/3x1920.jpg');    
+        }
+        .bg-4 {
+            background-image: url('../images/slideshow/4x1920.jpg');    
+        }
+        }
+    </style>
+    <% end %>
+
+    <!-- Product Stylesheets -->
+    <%if current_page.data.name == "honeycomb" %>
+        <link rel="stylesheet" href="/stylesheets/honeycomb.css" />
+    <% end %>
+
+    <%if current_page.data.name == "shadowmagic" %>
+        <link rel="stylesheet" href="/stylesheets/shadowmagic.css" />
+    <% end %>
+
   </head>
 
   <body>
@@ -266,18 +359,17 @@
         </div>
     </footer>
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <%= javascript_include_tag "jquery.bxslider.js" %>    
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+    <script src="/javascripts/jquery.bxslider.js" defer></script>    
     <script src="/javascripts/bootstrap.js" defer></script>
     <script src="/javascripts/jquery.appear.js" defer></script>
-
+    
     <%if current_page.data.title == "Installation Instructions" %> 
         <%= javascript_include_tag "vue.min.js" %>
         <%= javascript_include_tag "installation.js" %>
     <% end %>
     
-    <%if current_page.data.title == "Measurement Guides" %> 
+    <%if current_page.data.title == "Measurement Guides" %>
         <%= javascript_include_tag "vue.min.js" %>
         <%= javascript_include_tag "measurement.js" %>
     <% end %>
@@ -291,7 +383,7 @@
     
     <%if current_page.data.category == "product" %>
         <script src="/javascripts/product.js" defer></script>
-    <% end %>
+    <% end %>    
 
     <%if current_page.data.type == "contact" %>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
