@@ -16,9 +16,9 @@
     <title><%= current_page.data.title %> | Shadeomatic</title>
     
     <%= stylesheet_link_tag "bootstrap" %>
-    <link rel="stylesheet" media="print" href="/stylesheets/print.css" />
+    <link rel="stylesheet" media="print" href="/stylesheets/print.css" />    
     <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,400i,700" rel="stylesheet">
-    
+        
     <%if current_page.data.category == "homepage" %>
     <style>
         @media only screen and (min-width : 320px) {
@@ -121,7 +121,7 @@
         </p>
     <![endif]-->
 
-    <div class="row-language">
+    <div id="row-language" class="row-language">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -141,7 +141,7 @@
             </div>
         </div>
     </div>
-    <header class="row-nav">
+    <header id="row-nav" class="row-nav">
         <nav class="navbar navbar-default"> 
             <div class="container"> 
                 <div class="navbar-header"> 

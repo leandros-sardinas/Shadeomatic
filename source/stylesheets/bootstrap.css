@@ -2811,6 +2811,19 @@ fieldset[disabled] .btn-primary.focus {
   color: #7cb034;
   background-color: #ffffff;
 }
+
+.btn-ghost {
+  background: rgba(0,0,0,0.5);
+  border: solid 2px #fff;
+  color: #fff;
+}
+.btn-ghost:hover {
+  color: #ffffff;
+  background-color: #7cb034;
+  border: solid 2px #7cb034;
+  transition: all 0.5s;
+}
+
 .btn-success {
   color: #ffffff;
   background-color: #5cb85c;
@@ -4630,7 +4643,7 @@ ul.bxslider {
   list-style: none;
 }
 .bx-viewport {
-  /*min-height: 500px;*/
+  min-height: 500px;
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
 }
@@ -4666,19 +4679,21 @@ ul.bxslider {
 }
 
 #home-slider .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #f5f5f5;
-  box-shadow: 0 2px 10px 0 rgba(2,2,2,.10);
+  background: transparent;
+  border: solid 2px #fff;
+  border-radius: 10px;
   text-indent: -9999px;
   display: block;
-  width: 48px;
-  height: 5px;
+  width: 20px;
+  height: 20px;
   margin: 0 5px;
   outline: 0;
 }
 #home-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
 #home-slider .bx-wrapper .bx-pager.bx-default-pager a.active,
 #home-slider .bx-wrapper .bx-pager.bx-default-pager a:focus {  
-  background: #999;
+  background: #7cb034;
+  border: solid 2px #7cb034;
   box-shadow: 0 2px 10px 0 rgba(2,2,2,.10);
 }
 
@@ -4815,11 +4830,28 @@ ul.bxslider {
 }
 
 .bxslider li h1 {
-  color: #fff;
+  color: #fff;  
   font-weight: bold;
   margin-top: 80px;
   text-transform: uppercase;  
-  opacity: 0;
+  opacity: 0;  
+}
+@media(min-width: 320px) {
+  .bxslider li h1 {
+    font-size: 30px;
+  }
+  .bxslider .btn-ghost {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+@media(min-width: 480px) {
+  .bxslider li h1 {
+    font-size: 60px;
+  }
+  .bxslider .btn-ghost {
+    margin-top: 10px;
+  }
 }
 
 .bxslider li.active h1{
@@ -5618,6 +5650,7 @@ label[data-required='true']:after {
 }
 
 .product-card {
+  background: #fff;
   margin-bottom: 40px;
   min-height: 542px;
   width: 100%;
