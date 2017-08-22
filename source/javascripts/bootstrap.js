@@ -76,6 +76,13 @@ $(document).ready(function() {
         }
     })
 
+    //Load font
+    var fontLink = document.createElement("link");
+    fontLink.href = "//fonts.googleapis.com/css?family=Lora|Roboto:400,400i,700";
+    fontLink.rel = "stylesheet";
+    
+    document.head.appendChild(fontLink);
+
     $(".social-share").on("click", function(e){
         var $this = $(this);
         var next = $this.next();

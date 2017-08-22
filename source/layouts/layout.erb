@@ -16,8 +16,11 @@
     <title><%= current_page.data.title %> | Shadeomatic</title>
     
     <%= stylesheet_link_tag "bootstrap" %>
-    <link rel="stylesheet" media="print" href="/stylesheets/print.css" />    
-    <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" media="print" href="/stylesheets/print.css" />   
+    
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,400i,700" rel="stylesheet">
+    </noscript>    
         
     <%if current_page.data.category == "homepage" %>
     <style>
