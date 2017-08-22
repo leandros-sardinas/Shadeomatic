@@ -28,4 +28,11 @@ $(document).ready(function() {
         }
     })
 
+    //Slider
+    $('.product-slider').bxSlider({
+        pager: false,
+        controls: true,
+        mode: 'fade'
+    });
+
 })
