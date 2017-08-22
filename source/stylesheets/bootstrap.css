@@ -5695,8 +5695,26 @@ label[data-required='true']:after {
 .product-card .product-action {
   position: absolute;
   bottom:0;
+  line-height: 30px;
   padding: 10px 20px 20px 20px;
   text-transform: uppercase;
+  width: 100%;
+}
+
+.product-card .product-social {
+  display: inline;
+  margin:0;
+  padding:0;
+  display:none;
+}
+.product-card .product-social li {
+  float: left;
+  list-style: none;
+  margin-left:15px;
+}
+
+.product-card .product-social li img {
+  height: 30px;
 }
 
 .product-wrapper {

@@ -50,9 +50,9 @@ var sliderSize = {
             sliderHeight = (this.windowHeight - 164);
 
             $("#home-slider").css('height', sliderHeight);
-            $("#home-slider .bx-viewport").css('height', sliderHeight);
-            $('#home-slider .bx-wrapper').css('height', sliderHeight);            
-            $("#home-slider .bxslider").css('height', sliderHeight);
+            $("#home-slider .bx-viewport").css({'height': sliderHeight});
+            $('#home-slider .bx-wrapper').css({'height': sliderHeight});            
+            $("#home-slider .bxslider").css({'height': sliderHeight});
             $("#home-slider .bxslider li").css({
                 'height': sliderHeight,
                 'overflow': 'visible'
@@ -75,7 +75,19 @@ $(document).ready(function() {
             bottom: 495
         }
     })
-       
+
+    $(".social-share").on("click", function(e){
+        var $this = $(this);
+        var next = $this.next();
+        $this.fadeOut(250, function(){
+            next.fadeIn(250);
+        });
+
+        e.preventDefault();
+    });
+    
+    //lazy load images
+    ImgLoader.loadImages();
                 
     //Slider
     $('.bxslider').bxSlider({
