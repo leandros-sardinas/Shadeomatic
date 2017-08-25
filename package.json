@@ -1,0 +1,24 @@
+{
+  "name": "shadeomatic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~1.0.1"
+  },
+  "devDependencies": {
+    "grunt-responsive-images": "~1.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leandros-sardinas/Shadeomatic.git"
+  },
+  "author": "Leandros Sardinas",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/leandros-sardinas/Shadeomatic/issues"
+  }
+}
