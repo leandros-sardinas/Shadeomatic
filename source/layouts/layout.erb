@@ -121,7 +121,61 @@
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <link rel="stylesheet" href="/stylesheets/products/shadowmagic.css" />
     <% end %>
-
+    <%if current_page.data.name == "concept" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/concept.css" />
+    <% end %>
+    <%if current_page.data.name == "fauxwood" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/fauxwood.css" />
+    <% end %>
+    <%if current_page.data.name == "grandeur" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/grandeur.css" />
+    <% end %>
+    <%if current_page.data.name == "pleated" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/pleated.css" />
+    <% end %>
+    <%if current_page.data.name == "polysatin" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/polysatin.css" />
+    <% end %>
+    <%if current_page.data.name == "roller" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/roller.css" />
+    <% end %>
+    <%if current_page.data.name == "paneltrack" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/paneltrack.css" />
+    <% end %>
+    <%if current_page.data.name == "roman" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/roman.css" />
+    <% end %>
+    <%if current_page.data.name == "sheerluxe" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/sheerluxe.css" />
+    <% end %>
+    <%if current_page.data.name == "vertical" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/vertical/vertical.css" />
+    <% end %>
+    <%if current_page.data.name == "wood" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/vertical/wood.css" />
+    <% end %>
   </head>
 
   <body>
@@ -376,20 +430,20 @@
     <script src="/javascripts/jquery.appear.js" defer></script>
     
     <%if current_page.data.title == "Installation Instructions" %> 
-        <%= javascript_include_tag "vue.min.js" %>
-        <%= javascript_include_tag "installation.js" %>
+        <script src="/javascripts/vue.min.js" defer></script>
+        <script src="/javascripts/installation.js" defer></script>        
     <% end %>
     
     <%if current_page.data.title == "Measurement Guides" %>
-        <%= javascript_include_tag "vue.min.js" %>
-        <%= javascript_include_tag "measurement.js" %>
+        <script src="/javascripts/vue.min.js" defer></script>
+        <script src="/javascripts/measurement.js" defer></script>        
     <% end %>
 
     <%if current_page.data.title == "Dealer Locator" %> 
-        <%= javascript_include_tag "vue.min.js" %>
+        <script src="/javascripts/vue.min.js" defer></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HUxEbYS_5Y80fNWk4El1IC6AICXARxw&libraries=places">
         </script>
-        <%= javascript_include_tag "dealer-locator.js" %>
+        <script src="/javascripts/dealer-locator.js" defer></script>        
     <% end %>
     
     <%if current_page.data.category == "product" %>
