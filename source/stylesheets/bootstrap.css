@@ -5448,6 +5448,19 @@ label[data-required='true']:after {
   font-size: 18px;
   list-style: none;
   margin-bottom: 10px;
+  padding-left: 25px;
+  position:relative;
+}
+.product-features li:before {
+  background: #464646;
+  border: solid 3px #fff;
+  content: '';
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  position:absolute;
+  left:0px;
+  top: 4px;
 }
 
 .product-feature-image {

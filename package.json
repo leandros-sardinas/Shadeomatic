@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-responsive-images": "^1.10.1"
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-responsive-images": "^1.10.1",
+    "grunt-tinypng": "^0.7.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
