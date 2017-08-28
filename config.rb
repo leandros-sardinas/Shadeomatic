@@ -5,6 +5,10 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :blog do |blog|
+  # set options on blog
+end
+
 activate :directory_indexes
 
 # Layouts
@@ -14,8 +18,6 @@ activate :directory_indexes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-
-
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

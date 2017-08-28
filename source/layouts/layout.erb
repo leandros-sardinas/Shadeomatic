@@ -8,7 +8,8 @@
     <meta name="theme-color" content="#8cc63f">
 
     <!-- SEO Meta Tag -->
-    <meta name="description" content="<%=current_page.data.description %>">
+    <meta name="description" content="<%=current_page.data.title %> <%=current_page.data.description %>">
+    <meta name="keywords" content="">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="<%= current_page.data.title%>" />
@@ -18,17 +19,14 @@
 
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" type="image/png" href="/images/homescreen32.png">
-   
-    <!-- Use the title from a pages frontmatter if it has one -->
+       
     <title><%= current_page.data.title %> | Shadeomatic</title>
-    
-    <%= stylesheet_link_tag "bootstrap" %>
-    <link rel="stylesheet" media="print" href="/stylesheets/print.css" />   
-    
+            
     <noscript>
         <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,400i,700" rel="stylesheet">
     </noscript>    
-        
+    
+    <!-- Stylesheets -->
     <%if current_page.data.category == "homepage" %>
     <style>
         @media only screen and (min-width : 320px) {
@@ -111,6 +109,8 @@
         }
     </style>
     <% end %>
+    <%= stylesheet_link_tag "bootstrap" %>
+    <link rel="stylesheet" media="print" href="/stylesheets/print.css" />   
 
     <!-- Product Stylesheets -->
     <%if current_page.data.name == "honeycomb" %>
@@ -186,243 +186,11 @@
         </p>
     <![endif]-->
 
-    <div id="row-language" class="row-language">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <ul class="languages">                            
-                        <li>
-                            <a href="#french">
-                                Français
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="#english">
-                                English
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <header id="row-nav" class="row-nav">
-        <nav class="navbar navbar-default"> 
-            <div class="container"> 
-                <div class="navbar-header"> 
-                    <button id="navigation-menu" type="button" class="closed collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false"> 
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                    </button>
-                    <a href="/" class="navbar-brand">
-                        <img srcset="/images/logo.svg" src="/images/logo.png" alt="Shadeomatic Logo" />
-                    </a>
-                </div> 
-
-                <div class="collapse navbar-collapse" id="main-menu"> 
-                    <ul class="nav navbar-nav navbar-right"> 
-                        <li>
-                            <a href="/">Home</a>
-                        </li> 
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                              Products <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a href="/blinds-shades">Blinds and Shades</a></li>
-                              <li><a href="/shutters">Shutters</a></li>                              
-                            </ul>
-                        </li>                                
-                        <li>
-                            <a href="/faq">Resources</a>
-                        </li> 
-                        <li>
-                            <a href="/dealer-locator">Dealer Locator</a>
-                        </li> 
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                About <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a href="/company">Company</a></li>
-                              <li><a href="/News">News</a></li>                              
-                            </ul>
-                        </li> 
-                        <li>
-                            <a href="/contact">Contact</a>
-                        </li>
-                    </ul> 
-                </div> 
-            </div> 
-        </nav>                    
-    </header>
+    <%= partial "header"%>
 
     <%= yield %>
 
-    <footer class="row-footer">
-        <div class="container">            
-            <div class="row">                
-                <div class="col-md-3">
-                    <p>
-                        <strong>
-                            About Us
-                        </strong>
-                    </p>
-                    <ul class="list">
-                        <li>
-                            <a href="/company">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/news">
-                                News
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/contact">
-                                Contact
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/terms-of-use">
-                                Terms Of Use 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Privacy Policy
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <p>
-                        <strong>
-                            Our Products
-                        </strong>                        
-                    </p>
-
-                    <ul class="list">
-                        <li>
-                            <a href="#">
-                                Blinds and Shades
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Shutters 
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <p>
-                        <strong>
-                            Customer Support
-                        </strong>                        
-                    </p>
-
-                    <ul class="list">
-                        <li>
-                            <a href="/faq">
-                                F.A.Q
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/dealer-locator">
-                                Dealer Locator
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/measurement-guides">
-                                Measurement Guides
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/installation-instructions">
-                                Installation Instructions
-                            </a>
-                        </li>                        
-                        <li>
-                            <a href="/warranty">
-                                Warranty
-                            </a>
-                        </li>
-                        <li>
-                          <a href="/warranty-registration">
-                            Warranty Registration
-                          </a>
-                        </li>
-                        <li>
-                            <a href="/child-safety">
-                                Child Safety
-                            </a>
-                        </li>                        
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <p>
-                        <strong>
-                            Contact Us
-                        </strong>                        
-                    </p>
-
-                    <ul class="list">                        
-                        <li>
-                            <address>                                
-                                132 First Gulf Blvd. 
-                                <br>
-                                Brampton, Ontario 
-                                <br>
-                                L6W 4T7
-                            </address>
-                        </li>
-                        <li>
-                            <a href="tel:1-800-789-0331">                                
-                                1-800-789-0331
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@shadeomatic.ca">                                
-                                info@shadeomatic.ca
-                            </a>
-                        </li>
-                    </ul>                    
-                </div>
-
-                <div class="col-xs-12">
-                    <p>
-                        <strong>
-                            Connect with us
-                        </strong>                        
-                    </p>
-                    <p>
-                        <a href="https://www.facebook.com/shadeomaticLP/" target="_blank">
-                            <img src="/images/facebook-50.png" alt="Facebook" class="social"/>
-                        </a>
-                        <a href="https://www.instagram.com/shadeomatic.canada/" target="_blank">
-                            <img src="/images/instagram-50.png" alt="Instagram" class="social"/>    
-                        </a>                        
-                        <a href="http://www.pinterest.com/shadeomaticLP/" target="_blank">
-                            <img src="/images/pinterest-50.png" alt="Pinterest" class="social"/>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCnygd20Tz8v4h2_m3n34smQ" target="_blank">
-                            <img src="/images/youtube-50.png" alt="Youtube" class="social"/>
-                        </a>                        
-                    </p>                    
-                </div>
-
-                <div class="col-xs-12">
-                    <p>
-                        Shade O Matic, 2017. All right Reserved
-                    </p>                        
-                </div>
-            </div>
-        </div>
-    </footer>
+    <%= partial "footer"%>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
     <script src="/javascripts/jquery.bxslider.js" defer></script>    
