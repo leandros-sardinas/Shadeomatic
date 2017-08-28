@@ -42,7 +42,7 @@ description: a classic functional window covering, shutters are a great choice t
             <% data.products.products.each do |p| %>
                 <% if p.category == "blinds" %>
                 <div class="col-lg-6 col-md-6 col-xs-12">
-                    <%= partial "productcard", :locals => {:product => p} %>                    
+                    <%= partial "productcard", :locals => {:product => p} %>
                 </div>
                 <% end %>          
             <% end %>

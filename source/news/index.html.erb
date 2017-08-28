@@ -40,22 +40,24 @@ per_page: 10
 <div class="row-default">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <% if paginate && num_pages > 1 %>
-                <p>Page <%= page_number %> of <%= num_pages %></p>
             
+            <% if paginate && num_pages > 1 %>
+                <p>Page <%= page_number %> of <%= num_pages %></p>
+        
                 <% if prev_page %>
                 <p><%= link_to 'Previous page', prev_page %></p>
                 <% end %>
-                <% end %>
-                
-                <% page_articles.each_with_index do |article, i| %>
-                    <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-                    <!-- use article.summary(250) if you have Nokogiri available to show just
-                        the first 250 characters -->
-                    <%= article.body %>
-                <% end %>
-                
+            <% end %>
+            
+            <% page_articles.each_with_index do |article, i| %>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <%= partial "newscard", :locals => {:article => article} %>
+                </div>
+            <% end %>                                
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
                 <% if paginate %>
                     <% if next_page %>
                     <p><%= link_to 'Next page', next_page %></p>
