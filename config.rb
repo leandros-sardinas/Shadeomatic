@@ -6,7 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :blog do |blog|
-  # set options on blog
+  blog.prefix = "news"
 end
 
 activate :directory_indexes
