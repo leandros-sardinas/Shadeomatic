@@ -1,0 +1,76 @@
+<header>
+<div id="row-language" class="row-language">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="languages">                            
+                    <li>
+                        <a href="#french">
+                            Français
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#english">
+                            English
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="row-nav" class="row-nav">
+<nav class="navbar navbar-default"> 
+    <div class="container"> 
+        <div class="navbar-header"> 
+            <button id="navigation-menu" type="button" class="closed collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false"> 
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+            </button>
+            <a href="/" class="navbar-brand">
+                <img srcset="/images/logo.svg" src="/images/logo.png" alt="Shadeomatic Logo" />
+            </a>
+        </div> 
+
+        <div class="collapse navbar-collapse" id="main-menu"> 
+            <ul class="nav navbar-nav navbar-right"> 
+                <li>
+                    <a href="/">
+                        <%= t(:home) %>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Products <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-left">
+                    <li><a href="/blinds-shades">Blinds and Shades</a></li>
+                    <li><a href="/shutters">Shutters</a></li>                              
+                    </ul>
+                </li>                                
+                <li>
+                    <a href="/faq">Resources</a>
+                </li> 
+                <li>
+                    <a href="/dealer-locator">Dealer Locator</a>
+                </li> 
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        About <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-left">
+                    <li><a href="/company">Company</a></li>
+                    <li><a href="/news">News</a></li>                              
+                    </ul>
+                </li> 
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul> 
+        </div> 
+    </div> 
+</nav>                    
+</div>
+</header>    
