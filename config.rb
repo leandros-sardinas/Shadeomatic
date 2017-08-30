@@ -11,6 +11,7 @@ end
 
 activate :directory_indexes
 activate :i18n
+set :relative_links, true
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -43,6 +44,35 @@ page '/*.txt', layout: false
 #     'Helping'
 #   end
 # end
+helpers do 
+  def lang_helper    
+    prefix="/";
+    if I18n.locale.to_s != 'en' then 
+      prefix ="/" + I18n.locale.to_s + "/"      
+    end
+
+    prefix
+  end
+
+  def activeEnglish
+    activeClass=""
+    if I18n.locale.to_s == 'en' then 
+      activeClass = "active"
+    end
+
+    activeClass
+  end
+
+  def activeFrench
+    activeClass=""
+    if I18n.locale.to_s == 'fr' then 
+      activeClass="active"
+    end
+
+    activeClass
+  end
+
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings

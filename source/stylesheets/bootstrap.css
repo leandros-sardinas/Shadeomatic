@@ -4713,6 +4713,7 @@ ul.bxslider {
 .dropdown-menu li a {
   display: block;
   padding: 10px;
+  text-transform: capitalize;
 }
 
 @media (max-width: 414px) {
@@ -4797,11 +4798,11 @@ ul.bxslider {
 .row-footer .list{
   margin: 0 0 20px 0;
   padding: 0;
-} 
+}
 .row-footer .list li{
   list-style: none;
   margin: 0 0 5px 0;
-  padding: 0;  
+  padding: 0;    
 }
 .row-footer .social {
   margin-right: 10px;

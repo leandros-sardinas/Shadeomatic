@@ -4,13 +4,13 @@
         <div class="row">
             <div class="col-xs-12">
                 <ul class="languages">                            
-                    <li>
-                        <a href="#french">
+                    <li class="<%= activeFrench%>">
+                        <a href="/fr/">
                             Français
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="#english">
+                    <li class="<%= activeEnglish%>">
+                        <a href="/">
                             English
                         </a>
                     </li>
@@ -29,46 +29,70 @@
                 <span class="icon-bar"></span> 
                 <span class="icon-bar"></span> 
             </button>
-            <a href="/" class="navbar-brand">
+            <a href="<%=lang_helper%>" class="navbar-brand">
                 <img srcset="/images/logo.svg" src="/images/logo.png" alt="Shadeomatic Logo" />
             </a>
         </div> 
 
         <div class="collapse navbar-collapse" id="main-menu"> 
             <ul class="nav navbar-nav navbar-right"> 
-                <li>
-                    <a href="/">
+                <li>                    
+                    <a href="<%=lang_helper%>">
                         <%= t(:home) %>
                     </a>
                 </li> 
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Products <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        <%= t(:products) %>
+                        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-left">
-                    <li><a href="/blinds-shades">Blinds and Shades</a></li>
-                    <li><a href="/shutters">Shutters</a></li>                              
+                    <li>
+                        <a href="<%=lang_helper%>blinds-shades">
+                            <%= t(:blindsAndShades) %>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<%=lang_helper%>shutters">
+                            <%= t(:shutters) %>
+                        </a>
+                    </li>                              
                     </ul>
                 </li>                                
                 <li>
-                    <a href="/faq">Resources</a>
+                    <a href="<%=lang_helper%>faq">
+                        <%= t(:resources) %>
+                    </a>
                 </li> 
                 <li>
-                    <a href="/dealer-locator">Dealer Locator</a>
+                    <a href="<%=lang_helper%>dealer-locator">
+                        <%= t(:dealerLocator) %>
+                    </a>
                 </li> 
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        About <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        <%= t(:about) %>
+                        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-left">
-                    <li><a href="/company">Company</a></li>
-                    <li><a href="/news">News</a></li>                              
+                    <li>
+                        <a href="<%=lang_helper%>company">
+                            <%= t(:company) %>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<%=lang_helper%>news">
+                            <%= t(:news) %>
+                        </a>
+                    </li>                              
                     </ul>
                 </li> 
                 <li>
-                    <a href="/contact">Contact</a>
+                    <a href="<%=lang_helper%>contact">
+                        <%= t(:contact) %>
+                    </a>
                 </li>
-            </ul> 
+            </ul>
         </div> 
     </div> 
 </nav>                    

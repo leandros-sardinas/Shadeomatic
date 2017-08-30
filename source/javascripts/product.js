@@ -27,12 +27,33 @@ $(document).ready(function() {
             $($all_appeared_elements[i]).addClass('product-feature-image_up');
         }
     })
+    
+    function resizeSlider(height) {
+        $(".bx-viewport").css({'height': height});
+        $('.bx-wrapper').css({'height': height});            
+        $(".product-slider").css({'height': height});
+        $(".product-slider > li").css({
+            'height': height,
+            'overflow': 'visible'
+        });       
+    }
 
+    
     //Slider
     $('.product-slider').bxSlider({
-        pager: false,
-        controls: true,
-        mode: 'fade'
-    });
+            pager: false,
+            controls: true,
+            mode: 'fade',
+            onSliderLoad: function() {
+                var sliderHeight = $(window).height() - 154;
+                resizeSlider(sliderHeight);
+
+                $(window).on("resize", function(){
+                    var sliderHeight = $(window).height() - 154;
+                    resizeSlider(sliderHeight);
+                })
+            }
+        }        
+    );
 
 })
