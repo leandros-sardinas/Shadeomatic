@@ -20,13 +20,18 @@
     width: 100%;
 }
 
-.product-slider .product-social {
-    
-    bottom: 0px;    
+
+@media(min-width: 320px) {
+    .product-slider .product-social {
+        top: 0px;
+    }
+}
+
+.product-slider .product-social {        
     position: absolute;
     height: 110px;
     width: 100%;
-    padding: 10px 0;
+    top: 50px;    
 }
 
 .product-slider .product-social ul
@@ -43,7 +48,7 @@
     margin-bottom: 10px;    
 }
 .product-slider .product-social li {
-    float: right;
+    float: left;
     list-style: none;
     margin-right: 10px;
 }

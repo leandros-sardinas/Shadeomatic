@@ -49,6 +49,10 @@ var sliderSize = {
             this.windowHeight = currentWindowHeight;                        
             sliderHeight = (this.windowHeight - 164);
 
+            if(sliderHeight < 414) {
+                sliderHeight = 414;
+            }
+
             $("#home-slider").css('height', sliderHeight);
             $("#home-slider .bx-viewport").css({'height': sliderHeight});
             $('#home-slider .bx-wrapper').css({'height': sliderHeight});            

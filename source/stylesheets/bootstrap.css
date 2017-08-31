@@ -3680,9 +3680,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
-.navbar-default {
-  
-}
+
 .navbar-default .navbar-brand {
   color: #777777;
 }
@@ -4667,6 +4665,7 @@ ul.bxslider {
   
   float: right;
   list-style: none;
+  transition: all 0.25s;
 }
 .languages li:hover {
   background: #fff;
@@ -4719,13 +4718,19 @@ ul.bxslider {
 @media (max-width: 414px) {
   .navbar-brand {
       padding: 5px 15px;
-      height:40px;
+      height:40px;      
       margin-top: 20px; 
       margin-bottom: 20px;
   }
   .navbar-brand img {
     margin-top:0;
     height: 30px;
+  }
+}
+
+@media(min-width: 414px) {
+  .navbar-brand {
+    margin-left: 10px;
   }
 }
 
@@ -5518,9 +5523,48 @@ label[data-required='true']:after {
 
 .product-highlight img {
   display: block;
-  margin: 0 auto 10px auto;  
-  opacity: 0;
+  margin: 0 auto 10px auto;    
 }
+
+.scroll-down {
+  background: #709e32;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  left: 50%;
+  border-radius: 50px;
+  border: solid 3px #fff;
+  margin: 0;
+  padding: 0;
+  margin-left: -25px;
+
+  animation-name: scrollBreath;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.scroll-down .glyphicon {
+  line-height: 45px;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  height: 50px;
+  font-size: 24px;
+}
+
+@keyframes scrollBreath {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 /*Contact us*/
 .hours th {
