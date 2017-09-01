@@ -1022,8 +1022,7 @@ a {
   text-decoration: none;
 }
 a:hover,
-a:focus {
-  color: #527523;
+a:focus {  
   text-decoration: underline;
 }
 a:focus {
@@ -4428,27 +4427,29 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url('../images/controls.png') no-repeat 0 -32px;
+  background: url('../images/icon-arrow-left.svg') no-repeat;
+  /*background: url('../images/controls.png') no-repeat 0 -32px;*/
+  transition: all 0.5s;
 }
-.bx-wrapper .bx-prev:hover,
-.bx-wrapper .bx-prev:focus {
-  background-position: 0 0;
+.bx-wrapper .bx-prev:hover {
+  transform: scale(1.2);
 }
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url('../images/controls.png') no-repeat -43px -32px;
+  background: url('../images/icon-arrow-right.svg') no-repeat;
+  /*background: url('../images/controls.png') no-repeat -43px -32px;*/
+  transition: all 0.5s;
 }
-.bx-wrapper .bx-next:hover,
-.bx-wrapper .bx-next:focus {
-  background-position: -43px 0;
+.bx-wrapper .bx-next:hover {
+  transform: scale(1.2);
 }
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   top: 50%;
-  margin-top: -16px;
+  margin-top: -24px;
   outline: 0;
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   text-indent: -9999px;
   z-index: 9999;
 }
@@ -4668,9 +4669,7 @@ ul.bxslider {
   transition: all 0.25s;
 }
 .languages li:hover {
-  background: #fff;
-  border-left: solid 1px #ccc;
-  border-right: solid 1px #ccc;
+  text-decoration: underline;
 }
 .languages li.active {
   background: #fff;
