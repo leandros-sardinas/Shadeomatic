@@ -8,14 +8,14 @@
     <meta name="theme-color" content="#8cc63f">
 
     <!-- SEO Meta Tag -->
-    <meta name="description" content="<%=current_page.data.title %> <%=current_page.data.description %>">
+    <meta name="description" content="<%=current_page.data.title %><%=current_page.data.description %>">
     <meta name="keywords" content="">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="<%= current_page.data.title%>" />
     <meta property="og:type" content="<%= current_page.data.mediatype%>" />
-    <meta property="og:url" content="https://www.shadeomatic.com<%=current_page.url%>"/>
-    <meta property="og:image" content="https://alpha.shadeomatic.com<%= current_page.data.image%>" />
+    <meta property="og:url" content="<%= data.config.config.url%><%=current_page.url%>"/>
+    <meta property="og:image" content="<%= data.config.config.url%><%= current_page.data.image%>" />
 
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" type="image/png" href="/images/homescreen32.png">

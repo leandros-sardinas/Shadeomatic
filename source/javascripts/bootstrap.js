@@ -47,7 +47,7 @@ var sliderSize = {
 
         if(this.windowHeight !== currentWindowHeight) {            
             this.windowHeight = currentWindowHeight;                        
-            sliderHeight = (this.windowHeight - 164);
+            sliderHeight = (this.windowHeight - 158);
 
             if(sliderHeight < 414) {
                 sliderHeight = 414;
@@ -65,7 +65,7 @@ var sliderSize = {
     }
 };
 
-$(document).ready(function() {    
+$(document).ready(function() {
     //Main repsonsive menu
     $('#navigation-menu').on('click', function() {
     $('.navbar-collapse').slideToggle();
@@ -83,8 +83,7 @@ $(document).ready(function() {
     //Load font
     var fontLink = document.createElement("link");
     fontLink.href = "//fonts.googleapis.com/css?family=Lora|Roboto:400,400i,700";
-    fontLink.rel = "stylesheet";
-    
+    fontLink.rel = "stylesheet";    
     document.head.appendChild(fontLink);
 
     $(".social-share").on("click", function(e){
@@ -99,7 +98,7 @@ $(document).ready(function() {
     
     //lazy load images
     ImgLoader.loadImages();
-                
+
     //Slider
     $('.bxslider').bxSlider({
         autoHover: false,
@@ -114,8 +113,25 @@ $(document).ready(function() {
             sliderSize.calculateHeight();
             $(window).on('resize', function(e) {                
                 sliderSize.calculateHeight();                
-            })            
-        }
-    });    
-})
+            });
 
+            $('.home-scroll').on("click", function(e) {
+                $('html, body').animate({
+                    scrollTop: $("#row-slogan").offset().top
+                }, 1000);
+
+                e.preventDefault();
+            })
+        }
+    });
+
+    $('.products-slider').bxSlider({
+        minSlides: 1,
+        maxSlides: 2,
+        pager: false,
+        adaptiveHeight: false,
+        slideWidth: 585,
+        slideMargin: 0,
+        infiniteLoop: false
+    });
+});

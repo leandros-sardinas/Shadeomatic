@@ -8,76 +8,11 @@ mediatype: website
 ---
 
 <div id="home-slider">
-<ul class="bxslider">
-    <li class="active">
-        <span class="bg bg-1"></span>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1>
-                        Create an air of 
-                        <br>
-                        elegance in any room
-                    </h1>
-                    <a href="/blinds-shades" class="btn btn-ghost btn-lg">
-                        View Blinds & Shades
-                    </a>
-                    <a href="/shutters" class="btn btn-ghost btn-lg">
-                        View Shutters 
-                    </a>
-
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>                
-    </li>
-    <li>
-        <span class="bg bg-2"></span>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1>
-                        Add style and
-                        <br>
-                        sophistication to your decor
-                    </h1>
-                    <a href="/blinds-shades" class="btn btn-ghost btn-lg">
-                        View Blinds & Shades
-                    </a>
-                    <a href="/shutters" class="btn btn-ghost btn-lg">
-                        View Shutters 
-                    </a>
-
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>                                
-    </li>
-    <li>
-        <span class="bg bg-3"></span>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1>
-                        Make your own 
-                        <br>
-                        design statement
-                    </h1>
-                    <a href="/blinds-shades" class="btn btn-ghost btn-lg">
-                        View Blinds & Shades
-                    </a>
-                    <a href="/shutters" class="btn btn-ghost btn-lg">
-                        View Shutters 
-                    </a>
-
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
-    </li>    
-</ul>
+<!-- Slideshow -->
+<%= partial "mainslider"%>
 </div>
 
+<!--
 <div id="row-colors" class="row-colors">
     <div class="color-1"></div>
     <div class="color-2"></div>
@@ -85,8 +20,9 @@ mediatype: website
     <div class="color-4"></div>
     <div class="clearfix"></div>
 </div>
+-->
 
-<div class="row-slogan">
+<div id="row-slogan" class="row-slogan">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -100,7 +36,7 @@ mediatype: website
     </div>
 </div>
 
-<section class="row-default row-gray">
+<section id="blinds-shades" class="row-default row-gray">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -112,13 +48,19 @@ mediatype: website
                     </small>
                 </h1>
             </div>
-            <% data.products.products.first(2).each do |p| %>
+            <div class="clearfix"></div>
+
+            <ul class="products-slider">
+                <% data.products.products.each do |p| %>
                 <% if p.category == "blinds" %>
-                <div class="col-lg-6 col-md-6 col-xs-12">
+                <li>
                     <%= partial "productcard", :locals => {:product => p} %>
-                </div>
+                </li>
                 <% end %>
-            <% end %>
+                <% end %>
+                <div class="clearfix"></div>
+            </ul>
+
             <div class="col-xs-12">
                 <a href="/blinds-shades" class="pull-right text-uppercase">
                     View All Blinds & Shades
@@ -129,7 +71,7 @@ mediatype: website
     </div>
 </section>
 
-<section class="row-default">
+<section id="shutters" class="row-default">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">

@@ -4329,10 +4329,10 @@ fieldset[disabled] .btn-primary.active {
 ul.bxslider {
   list-style: none;
 }
-.bx-viewport {
-  min-height: 500px;
+.bx-viewport {  
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
+  overflow: visible;
 }
 /** THEME
 ===================================*/
@@ -4342,7 +4342,8 @@ ul.bxslider {
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
+  height: 10px;
   width: 100%;
 }
 /* LOADER */
@@ -4365,21 +4366,12 @@ ul.bxslider {
   color: #666;  
 }
 
-@media(max-height: 568px) {
-  .bx-wrapper .bx-pager {
-    display:none;
-  }
-}
-
 #home-slider .bx-wrapper .bx-pager.bx-default-pager a {
-  background: transparent;
-  border: solid 2px #fff;
-  border-radius: 10px;
+  background: #648e2c;  
   text-indent: -9999px;
   display: block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
+  width: 100%;
+  height: 10px;  
   outline: 0;
 }
 #home-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -4423,12 +4415,12 @@ ul.bxslider {
 .bx-wrapper .bx-pager-item {
   font-size: 0;
   line-height: 0;
+  width: 25%;
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url('../images/icon-arrow-left.svg') no-repeat;
-  /*background: url('../images/controls.png') no-repeat 0 -32px;*/
+  background: url('../images/icon-arrow-left.svg') no-repeat;  
   transition: all 0.5s;
 }
 .bx-wrapper .bx-prev:hover {
@@ -4436,8 +4428,7 @@ ul.bxslider {
 }
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url('../images/icon-arrow-right.svg') no-repeat;
-  /*background: url('../images/controls.png') no-repeat -43px -32px;*/
+  background: url('../images/icon-arrow-right.svg') no-repeat;  
   transition: all 0.5s;
 }
 .bx-wrapper .bx-next:hover {
@@ -4524,6 +4515,17 @@ ul.bxslider {
   overflow:hidden;
 }
 
+#blinds-shades .bx-viewport {
+  height: 600px !important;
+}
+
+.products-slider {
+  min-height: 500px;
+}
+.products-slider > li {  
+  padding: 0 15px;
+}
+
 .bxslider li h1 {
   color: #fff;  
   font-weight: bold;
@@ -4567,7 +4569,7 @@ ul.bxslider {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }  
 }
 
@@ -4686,8 +4688,8 @@ ul.bxslider {
 }
 
 .navbar-brand img {
-  margin: 20px 0;
-  height: 40px;
+  margin: 25px 0 0 0;
+  height: 30px;
 }
 .navbar-nav > li > a {
   color: #444 !important;
