@@ -5365,6 +5365,12 @@ label[data-required='true']:after {
 .product-card a:hover {
   text-decoration: none;
 }
+.product-card a:visited {
+  text-decoration: none;
+}
+.product-card a:active {
+  text-decoration: none;
+}
 
 .product-card .product-name {
   font-weight: bold;
@@ -5393,6 +5399,7 @@ label[data-required='true']:after {
 }
 
 .product-card .product-social li img {
+  width: 30px;
   height: 30px;
 }
 
@@ -5540,6 +5547,7 @@ label[data-required='true']:after {
   animation-name: scrollBreath;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+  transition: all 1s;
 }
 .scroll-down .glyphicon {
   line-height: 45px;
@@ -5549,7 +5557,21 @@ label[data-required='true']:after {
   height: 50px;
   font-size: 24px;
 }
+.scroll-down:hover {  
+  animation-name: scrollGrow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
 
+@keyframes scrollGrow {
+  0% {
+    /*transform: scale(1);*/
+  }
+  100% {
+    transform: scale(1.3);
+  }  
+}
 @keyframes scrollBreath {
   0% {
     transform: scale(1);
@@ -5761,7 +5783,7 @@ label[data-required='true']:after {
     cursor: default; }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px; }
+  margin: 10px 0; }
 
 .owl-theme .owl-dots {
   text-align: center;

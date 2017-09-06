@@ -123,20 +123,5 @@ $(document).ready(function() {
                 e.preventDefault();
             })
         }
-    });
-
-
-
-    $('.owl-carousel').owlCarousel({        
-        margin: 0,
-        responsive: {
-            0: {
-                items:1
-            },
-            992: {
-                items:2
-            }
-        }
-    });
-
+    });    
 });
