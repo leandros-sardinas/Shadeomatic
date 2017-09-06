@@ -125,13 +125,18 @@ $(document).ready(function() {
         }
     });
 
-    $('.products-slider').bxSlider({
-        minSlides: 1,
-        maxSlides: 2,
-        pager: false,
-        adaptiveHeight: false,
-        slideWidth: 585,
-        slideMargin: 0,
-        infiniteLoop: false
+
+
+    $('.owl-carousel').owlCarousel({        
+        margin: 0,
+        responsive: {
+            0: {
+                items:1
+            },
+            992: {
+                items:2
+            }
+        }
     });
+
 });

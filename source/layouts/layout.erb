@@ -192,11 +192,18 @@
 
     <%= partial "footer"%>
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>    
+    
+    <%if current_page.data.category == "homepage" %>
+        <script src="/javascripts/owl.carousel.js" defer></script>
+    <% end %>
+    
     <script src="/javascripts/jquery.bxslider.js" defer></script>    
     <script src="/javascripts/bootstrap.js" defer></script>
     <script src="/javascripts/jquery.appear.js" defer></script>
-    
+        
+
+
     <%if current_page.data.title == "Installation Instructions" %> 
         <script src="/javascripts/vue.min.js" defer></script>
         <script src="/javascripts/installation.js" defer></script>        

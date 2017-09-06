@@ -50,17 +50,18 @@ mediatype: website
             </div>
             <div class="clearfix"></div>
 
-            <ul class="products-slider">
+            <div class="col-xs-12">
+            <div class="owl-carousel">
                 <% data.products.products.each do |p| %>
                 <% if p.category == "blinds" %>
-                <li>
-                    <%= partial "productcard", :locals => {:product => p} %>
-                </li>
-                <% end %>
-                <% end %>
-                <div class="clearfix"></div>
-            </ul>
 
+                    <%= partial "productcard", :locals => {:product => p} %>
+                
+                <% end %>
+                <% end %>
+            </div>
+            </div>
+            
             <div class="col-xs-12">
                 <a href="/blinds-shades" class="pull-right text-uppercase">
                     View All Blinds & Shades
