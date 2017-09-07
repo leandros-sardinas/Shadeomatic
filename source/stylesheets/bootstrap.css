@@ -5405,14 +5405,21 @@ label[data-required='true']:after {
 
 .news-card {
   background: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 100%;
-
   border-radius: 5px;
   overflow:hidden;
-  position: relative;
-  padding:20px 20px 52px 20px;  
+  position: relative;  
   transition: all 0.25s;
+}
+.news-card .card-title {
+  margin-bottom: 5px;
+}
+.news-card .card-footer {
+  font-weight: bold;
+}
+.news-card .card-footer img {
+  height: 22px;
 }
 
 .product-wrapper {

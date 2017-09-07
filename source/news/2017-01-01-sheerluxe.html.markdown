@@ -1,5 +1,5 @@
 ---
-title: New SheerLuxe Horizontal Sheer Collection
+title: New SheerLuxe Horizontal Sheer
 image: 
 ---
 
