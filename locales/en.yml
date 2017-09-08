@@ -25,3 +25,9 @@ en:
   secondSlogan: "Make your own <br> design statement"
   thirdSlogan: "Add style and <br> sophistication to your decor"
   fourthSlogan: "Light control <br> and <br> design in one"
+  #Products
+
+  #Helpers
+  view: "view"
+  share: "share"
+  top: "top"

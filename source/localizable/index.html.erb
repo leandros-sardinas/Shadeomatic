@@ -8,23 +8,20 @@ mediatype: website
 ---
 
 <div id="home-slider">
-<!-- Slideshow -->
-<%= partial "mainslider"%>
+    <!-- Slideshow -->
+    <%= partial "mainslider"%>
 </div>
-
-<!--
-<div id="row-colors" class="row-colors">
-    <div class="color-1"></div>
-    <div class="color-2"></div>
-    <div class="color-3"></div>
-    <div class="color-4"></div>
-    <div class="clearfix"></div>
-</div>
--->
 
 <div id="row-slogan" class="row-slogan">
     <div class="container">
         <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    <img src="/images/35years-icon.png" alt="35 Years logo" />
+                </p>                
+            </div>
+        </div>
+        <div class="row">            
             <div class="col-xs-12">
                 <p>
                     Shade-O-Matic® is Canada’s leading supplier of premier quality window coverings. 
@@ -61,7 +58,7 @@ mediatype: website
             </div>            
             
             <div class="col-xs-12">
-                <a href="/blinds-shades" class="pull-right text-uppercase">
+                <a href="<%=lang_helper%>blinds-shades" class="pull-right text-uppercase">
                     View All Blinds & Shades
                     <span class="glyphicon glyphicon-menu-right"></span>
                 </a>
@@ -93,7 +90,7 @@ mediatype: website
                 <% end %>          
             <% end %>
             <div class="col-xs-12">
-                <a href="/shutters" class="pull-right text-uppercase">
+                <a href="<%=lang_helper%>shutters" class="pull-right text-uppercase">
                     View All Shutters
                     <span class="glyphicon glyphicon-menu-right"></span>
                 </a>

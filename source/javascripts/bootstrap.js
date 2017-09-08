@@ -104,10 +104,10 @@ $(document).ready(function() {
         autoHover: false,
         pause: 6000,
         mode: 'fade',
-        auto: false,
+        auto: true,
         controls: false,          
         onSlideAfter: function(item, index) {              
-            $(item).addClass('active');              
+            $(item).addClass('active');
         },
         onSliderLoad: function() {            
             sliderSize.calculateHeight();
@@ -118,6 +118,14 @@ $(document).ready(function() {
             $('.home-scroll').on("click", function(e) {
                 $('html, body').animate({
                     scrollTop: $("#row-slogan").offset().top
+                }, 1000);
+
+                e.preventDefault();
+            })
+
+            $('.top').on("click", function(e) {
+                $('html, body').animate({
+                    scrollTop: $("#row-language").offset().top
                 }, 1000);
 
                 e.preventDefault();

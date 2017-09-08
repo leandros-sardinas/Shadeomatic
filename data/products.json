@@ -1,89 +1,127 @@
 {
     "products": [{
         "name": "Honeycomb Shades",
+        "description": "Honeycomb Shades are the most luxurious window coverings in today's market. Our superior selection of fabrics provide lasting beauty, elegance and sophistication all in one.",
+        "altName": "Stores Alvéolés",
+        "altDescription": "Stores Alvéolés sont les recouvrements de fenêtre les plus luxueux du marché d’aujourd'hui. Notre sélection supérieure de tissu ajoute beauté, élégance et sophistication à votre décor.",
         "image": "/images/products/main-honeycomb.jpg",
-        "imagexs": "/images/products/tn-honeycomb.jpg",
-        "description": "Are the most luxurious window coverings in today's market. Our superior selection of fabrics provide lasting beauty, elegance and sophistication all in one.",
-        "url": "/honeycomb-shades",
+        "imagexs": "/images/products/tn-honeycomb.jpg",        
+        "url": "honeycomb-shades",
         "category": "blinds",
         "cordless": "true"
         }, {
         "name": "Shadow Magic",
+        "description": "Shadow Magic our most sophisticated window covering product combining soft sheer panels of fabric with center horizontal vanes that provide the highest degree of light and privacy control.    These shadings will add simplistic beauty and sophistication to any home.",
+        "altName": "Stores Horizontaux Shadow Magic",
+        "altDescription": "Stores Horizontaux Shadow Magic sont nos recouvrements de fenêtres les plus sophistiqués. Ils combinent deux panneaux de tissus diaphanes avec des lattes horizontales qui vous offrent une flexibilité maximale sur la lumière et l’intimité. Ces stores ajoutent une beauté simpliste et une touche de sophistication à votre décor.",
         "image": "/images/products/main-shadowmagic.jpg",
-        "imagexs": "/images/products/tn-shadowmagic.jpg",
-        "description": "Our most sophisticated window covering product combining soft sheer panels of fabric with center horizontal vanes that provide the highest degree of light and privacy control.    These shadings will add simplistic beauty and sophistication to any home.",
-        "url": "/shadow-magic",
+        "imagexs": "/images/products/tn-shadowmagic.jpg",        
+        "url": "shadow-magic",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Collection of Colour Vertical Blinds",
+        "description": "Collection of Colour Vertical Blinds offer a fashionable selection of patterns, textures and colours, in Fabrics and PVC vanes.",
+        "altName": "Collection de Stores Verticaux de Couleurs",
+        "altDescription": "La collection de stores verticaux de couleurs vous propose une sélection variée de motifs, de textures et de couleurs, avec des lattes en tissu ou en PVC.",
         "image": "/images/products/main-visionellesheer.jpg",
-        "imagexs": "/images/products/tn-visionellesheer.jpg",
-        "description": "Offer a fashionable selection of patterns, textures and colours, in Fabrics and PVC vanes.",
-        "url": "/vertical-blinds",
+        "imagexs": "/images/products/tn-visionellesheer.jpg",        
+        "url": "vertical-blinds",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Romanelle Panel Track Systems",
+        "description": "Romanelle Panel Track Systems provide vertical sliding panels for large scale windows to make a dramatic fashion statement.",
+        "altName": "Stores à Panneaux Coulissants Romanelle",
+        "altDescription": "Les systèmes à panneaux coulissants Romanelle sont dotés de panneaux verticaux qui se glissent aisément afin de recouvrir les fenêtres de grande taille, avec un style inégalé.",
         "image": "/images/products/main-romanellepaneltrack.jpg",
-        "imagexs": "/images/products/tn-romanellepaneltrack.jpg",
-        "description": "Provide vertical sliding panels for large scale windows to make a dramatic fashion statement.",
-        "url": "/romanelle-panel-track",
+        "imagexs": "/images/products/tn-romanellepaneltrack.jpg",        
+        "url": "romanelle-panel-track",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Pleated Shades Lasting Impressions",
-        "image": "/images/products/main-pleatedshades.jpg",
-        "imagexs": "/images/products/tn-pleatedshades.jpg",
         "description": "Offer an excellent form of window covering, providing light, privacy and sun control.",
-        "url": "/pleated-shades",
+        "altName": "Stores Plissés Lasting Impressions",
+        "altDescription": "Les stores plissés Lasting Impressions représentent une excellente manière de couvrir vos fenêtres, car ils permettent de contrôler la quantité de lumière qui entre dans la pièce et de créer une ambiance intime à volonté.",
+        "image": "/images/products/main-pleatedshades.jpg",
+        "imagexs": "/images/products/tn-pleatedshades.jpg",        
+        "url": "pleated-shades",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Regency Roller Shades",
+        "description": "Have evolved into a sophisticated window covering that offers an extensive collection of both classic and contemporary fabrics, providing eye-catching style and superior performance.",
+
+        "altName": "Stores à Enrouleur Regency",
+        "altDescription": "Les stores à enrouleur Regency ont beaucoup évolué : ils sont devenus de magnifiques recouvrements de fenêtre, offerts dans une vaste collection de tissus classiques et contemporains qui procurent élégance et rendement supérieur.",
+
         "image": "/images/products/main-rollershade.jpg",
         "imagexs": "/images/products/tn-rollershade.jpg",
-        "description": "Have evolved into a sophisticated window covering that offers an extensive collection of both classic and contemporary fabrics, providing eye-catching style and superior performance.",
-        "url": "/roller-shades",
+        
+        "url": "roller-shades",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Faux Wood",
+        "description": "Offer the look and style of real wood, yet are a practical cost effective alternative. Slats are engineered from durable polymer  materials that won’t crack, chip or peel. They are a perfect choice for high-moisture areas such as kitchens and bathrooms",
+
+        "altName": "Stores en Similibois",
+        "altDescription": "Les stores horizontaux en similibois offrent l'allure et le style du bois véritable, mais à un prix bien plus abordable. Les lattes sont fabriquées d’un polymère durable qui ne craquera et ne s’écaillera jamais. Ils représentent un choix idéal pour les pièces ou l'humidité est élevée, comme les cuisines et les salles de bain.",
+
         "image": "/images/products/main-fauxwood.jpg",
         "imagexs": "/images/products/tn-fauxwood.jpg",
-        "description": "Offer the look and style of real wood, yet are a practical cost effective alternative. Slats are engineered from durable polymer  materials that won’t crack, chip or peel. They are a perfect choice for high-moisture areas such as kitchens and bathrooms",
-        "url": "/faux-wood",
+        
+        "url": "faux-wood",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Concept Dual Shadings",
-        "image": "/images/products/main-conceptdualshadings.jpg",
-        "imagexs": "/images/products/tn-conceptdualshadings.jpg",
         "description": "Is a soft shade that combines the light control capacities of a horizontal blind with the soft beauty of a fabric shade.",
-        "url": "/concept-dual",
+
+        "altName": "Stores Doubles Concept",
+        "altDescription": "Les stores doubles Concept sont un type de store doux qui combine les fonctionnalités de contrôle de la lumière des stores horizontaux et toute la beauté des stores en tissu.",
+
+        "image": "/images/products/main-conceptdualshadings.jpg",
+        "imagexs": "/images/products/tn-conceptdualshadings.jpg",        
+        "url": "concept-dual",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Wood Blinds",
-        "image": "/images/products/main-woodblind.jpg",
-        "imagexs": "/images/products/tn-woodblind.jpg",
         "description": "Bring the natural warmth and beauty of wood into your home for a classic look.",
+
+        "altName": "Stores en Bois",
+        "altDescription": "Les stores horizontaux en bois apportent la chaleur et la beauté naturelles du bois dans votre demeure, afin de créer un look classique. ",
+
+        "image": "/images/products/main-woodblind.jpg",
+        "imagexs": "/images/products/tn-woodblind.jpg",        
         "url": "/wood",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Aluminum Blinds",
+        "description": "Conveniently offered in both 1 & 2 slat sizes, provide crisp clean lines and bring both elegance and classic style to any room.",
+
+        "altName": "Stores horizontaux en aluminium",
+        "altDescription": "Les stores horizontaux en aluminium, offerts en pratiques tailles de lattes de 1 po et 2 po, créent un style épuré et apportent une touche d’élégance classique à toute pièce où vous les placez.",
+
         "image": "/images/products/main-woodblind.jpg",
         "imagexs": "/images/products/tn-woodblind.jpg",
-        "description": "Conveniently offered in both 1 & 2 slat sizes, provide crisp clean lines and bring both elegance and classic style to any room.",
+        
         "url": "/aluminum",
         "category": "blinds",
         "cordless": "false"
     }, {
         "name": "Romanelle Roman Shades",
+        "description": "Add elegance to any room. There are many stylish fabrics to choose from that will compliment any room décor.",
+
+        "altName": "Stores romains Romanelle",
+        "altDescription": "Les luxueux stores romains Romanelle ajoutent une dose d'élégance à toute pièce dans lesquelles vous les placez.",
+
         "image": "/images/products/main-romanelleromanshade.jpg",
         "imagexs": "/images/products/tn-romanelleromanshade.jpg",
-        "description": "Add elegance to any room. There are many stylish fabrics to choose from that will compliment any room décor.",
+        
         "url": "/romanelle-roman-shades",
         "category": "blinds",
         "cordless": "false"

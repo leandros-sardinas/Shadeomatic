@@ -2741,6 +2741,7 @@ fieldset[disabled] .btn-primary.focus {
   background: rgba(0,0,0,0.5);
   border: solid 2px #fff;
   color: #fff;
+  text-transform: capitalize;
 }
 .btn-ghost:hover {
   color: #ffffff;
@@ -4814,6 +4815,11 @@ ul.bxslider {
   margin-right: 10px;
   margin-bottom: 20px;
   width: 40px;  
+}
+.row-footer .top {
+  line-height: 40px;
+  height: 40px;
+  font-weight: bold;
 }
 
 .section-title {
