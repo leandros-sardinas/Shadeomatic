@@ -1,21 +1,23 @@
 ---
-title: Installation Instructions
+id: measurement
+title: Guides de Mesure
 category: resource
 layout: resources-layout
-smallDesc: Find the installation instructions for your product
+smallDesc: Retrouvez les guides de mesure pour vos stores, stores et volets de fenêtre ici
 ---
 
-<div id="app-installation">
+<div id="app-measurement">
     
     <div class="row">
         <div class="col-xs-12">
-            <input type="text" class="form-control input-lg main-search" id="installation-search" placeholder="Search" 
+            <input type="text" class="form-control input-lg main-search" id="measurement-search" placeholder="Chercher" 
             v-model:value="query"/>
         </div>
-    </div>
+    </div>    
+    
     <div class="row-default-sm">    
         <div class="row">        
-            <div class="col-xs-12">                
+            <div class="col-xs-12">
                 <ul class="installation-instructions">
                     <li v-for="manual in manuals" v-show="manual.visible" v-bind:key="manual.sequence">                        
                         <a v-for="file in manual.files" v-bind:href="file.fileName" target="_blank" v-if="file.visible">
@@ -28,10 +30,9 @@ smallDesc: Find the installation instructions for your product
 
                 <div role="alert" v-show="noResults">
                     <h2>
-                        <i> No installation manuals for "{{query}}" </i>
+                        <i> No measurement guides for "{{query}}" </i>
                     </h2>
                 </div>
-
             </div>
         </div>    
     </div>

@@ -1,0 +1,40 @@
+---
+id: measurement
+title: Measurement Guides
+category: resource
+layout: resources-layout
+smallDesc: Learn how to measure your blinds
+---
+
+<div id="app-measurement">
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <input type="text" class="form-control input-lg main-search" id="measurement-search" placeholder="Search" 
+            v-model:value="query"/>
+        </div>
+    </div>    
+    
+    <div class="row-default-sm">    
+        <div class="row">        
+            <div class="col-xs-12">
+                <ul class="installation-instructions">
+                    <li v-for="manual in manuals" v-show="manual.visible" v-bind:key="manual.sequence">                        
+                        <a v-for="file in manual.files" v-bind:href="file.fileName" target="_blank" v-if="file.visible">
+                            <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
+                            {{file.name}} {{file.language}}                             
+                            <span class="file-info"> .pdf ({{file.size}}) </span>
+                        </a>                        
+                    </li>
+                </ul>
+
+                <div role="alert" v-show="noResults">
+                    <h2>
+                        <i> No measurement guides for "{{query}}" </i>
+                    </h2>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+</div>

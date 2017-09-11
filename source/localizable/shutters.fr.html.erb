@@ -1,0 +1,51 @@
+---
+title: Shutters
+description: a classic functional window covering, shutters are a great choice to add a touch of elegance to any space
+---
+
+<div class="row-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/">
+                            <%= t(:home) %>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <%= t(:shutters) %>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="text-center section-title">
+                Persiennes
+                <hr>
+                <small class="description">
+                    Les persiennes sont le choix idéal des clients qui souhaitent recouvrir leurs fenêtres avec élégance et commodité.Les persiennes sont à la fois classiques et fonctionnelles. Elles ajoutent une touche d’élégance dans tous les espaces où vous les placez
+                </small>
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="row-default">
+    <div class="container">
+        <div class="row">
+            <% data.products.products.each do |p| %>
+                <% if p.category == "shutters" %>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <%= partial "productcard", :locals => {:product => p} %>                                      
+                </div>
+                <% end %>          
+            <% end %>
+        </div>
+    </div>
+</div>

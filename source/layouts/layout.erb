@@ -192,23 +192,25 @@
 
     <%= partial "footer"%>
     
+    <!-- Required JS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>    
-    
-    <%if current_page.data.category == "homepage" %>
-        <script src="/javascripts/owl.carousel.js" defer></script>
-        <script src="/javascripts/home.js" defer></script>
-    <% end %>
-    
     <script src="/javascripts/jquery.bxslider.js" defer></script>    
     <script src="/javascripts/bootstrap.js" defer></script>
     <script src="/javascripts/jquery.appear.js" defer></script>        
 
-    <%if current_page.data.title == "Installation Instructions" %> 
+    <!-- Page specific -->
+    <%if current_page.data.category == "homepage" %>
+        <script src="/javascripts/owl.carousel.js" defer></script>
+        <script src="/javascripts/home.js" defer></script>
+    <% end %>
+        
+
+    <%if current_page.data.id == "installation" %> 
         <script src="/javascripts/vue.min.js" defer></script>
         <script src="/javascripts/installation.js" defer></script>        
     <% end %>
     
-    <%if current_page.data.title == "Measurement Guides" %>
+    <%if current_page.data.id == "measurement" %>
         <script src="/javascripts/vue.min.js" defer></script>
         <script src="/javascripts/measurement.js" defer></script>        
     <% end %>

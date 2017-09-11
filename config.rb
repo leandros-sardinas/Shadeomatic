@@ -54,6 +54,27 @@ helpers do
     prefix
   end
 
+  def frenchUrl
+    page = current_page.url
+
+    if page.start_with?('/fr/') then
+      return page
+    else
+      return '/fr' + page
+    end
+  end
+
+  def englishUrl
+    page = current_page.url
+    
+    if page.start_with?('/fr/') == false then
+      return page
+    else
+      return page[3, page.length]
+    end
+    
+  end
+
   def activeEnglish
     activeClass=""
     if I18n.locale.to_s == 'en' then 

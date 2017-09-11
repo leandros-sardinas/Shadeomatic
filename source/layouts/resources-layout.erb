@@ -6,8 +6,8 @@
                 <div class="col-xs-12">
                     <ul class="breadcrumb">
                         <li>
-                            <a href="/">
-                                Home
+                            <a href="<%=lang_helper%>">
+                                <%= t(:home) %>
                             </a>
                         </li>
                         <li class="active">
@@ -24,32 +24,34 @@
             <div class="row">
                 <div class="col-md-3 col-xs-12">
                     <ul class="tab-list stay">
-                        <li role="presentation" <%if current_page.data.title == "F.A.Q" %> class="active" <% end %> >
-                            <a href="/faq">
-                                <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> F.A.Q                                
+                        <li role="presentation" <%if current_page.data.id == "F.A.Q" %> class="active" <% end %> >
+                            <a href="<%=lang_helper%>faq">
+                                <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 
+                                <%= t(:faq) %>
                             </a>
                         </li>
-                        <li role="presentation" <%if current_page.data.title == "Measurement Guides" %> class="active" <% end %>>
-                            <a href="/measurement-guides">                                
+                        <li role="presentation" <%if current_page.data.id == "Measurement Guides" %> class="active" <% end %>>
+                            <a href="<%=lang_helper%>measurement-guides">                                
                                 <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
-                                Measurement Guides
+                                <%= t(:measurementGuides) %>
                             </a>
                         </li>
-                        <li role="presentation" <%if current_page.data.title == "Installation Instructions" %> class="active" <% end %>>
-                            <a href="/installation-instructions">
-                                <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Installation Instructions
+                        <li role="presentation" <%if current_page.data.id == "Installation Instructions" %> class="active" <% end %>>
+                            <a href="<%=lang_helper%>installation-instructions">
+                                <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> 
+                                <%= t(:installationInstructions) %>
                             </a>
                         </li>                
-                        <li role="presentation" <%if current_page.data.title == "Warranty" %> class="active" <% end %>>
-                            <a href="/warranty">
+                        <li role="presentation" <%if current_page.data.id == "Warranty" %> class="active" <% end %>>
+                            <a href="<%=lang_helper%>warranty">
                                 <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>                                
-                                Warranty
+                                <%= t(:warranty) %>
                             </a>
                         </li>                        
-                        <li role="presentation" <%if current_page.data.title == "Child Safety" %> class="active" <% end %>>
-                            <a href="/child-safety">                                
+                        <li role="presentation" <%if current_page.data.id == "Child Safety" %> class="active" <% end %>>
+                            <a href="<%=lang_helper%>child-safety">                                
                                 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                                Child Safety
+                                <%= t(:childSafety) %>
                             </a>
                         </li>                        
                     </ul>

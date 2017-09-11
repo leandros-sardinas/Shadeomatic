@@ -3778,6 +3778,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .breadcrumb > li {
   display: inline-block;
+  text-transform: capitalize;
 }
 .breadcrumb > li + li:before {
   content: "/\00a0";
@@ -4901,6 +4902,7 @@ label[data-required='true']:after {
   font-weight: bold;    
   padding: 0 10px;
   padding: 25px 0;
+  text-transform: capitalize;
   
 }
 .tab-list li a:hover {  

@@ -1,0 +1,68 @@
+---
+id: Child Safety
+title: Sécurité des enfants
+fullTitle: Sécurité des enfants
+smallDesc: La sécurité des enfants est une affaire sérieuse
+layout: resources-layout
+category: resource
+---
+<div class="row-default">    
+    <div class="row">        
+        <div class="col-md-6 col-xs-12 ">
+            <img src="/images/child1.jpg" alt="Child playing" class="img-responsive frame-pic" />
+        </div>       
+        <div class="col-md-6 col-xs-12">
+            <h3>Renseignements sur la Sécurité des Enfants</h3>
+            <p>        
+                Shade-O-Matic offre une riche collection de produits de recouvrement de fenêtres qui 
+                respectent les normes les plus récentes en matière de sécurité des enfants. Des stores 
+                sans cordon jusqu'aux systèmes automatisés, en passant par les tendeurs de cordon et 
+                les baguettes de commande, nous mettons à votre disposition une gamme d'options de 
+                sécurité pour les enfants et les animaux.
+            </p>        
+        </div> 
+        <div class="clearfix"></div>
+    </div>    
+</div>
+<div class="row-default">    
+    <div class="row">                
+        <div class="col-md-6 col-xs-12 col-md-push-6">
+            <img src="/images/child-label-en.jpg" alt="Safety Tags" class="img-responsive frame-pic" />
+        </div>
+        <div class="col-md-6 col-xs-12 col-md-pull-6">
+            <h3>La sécurité des enfants est une affaire sérieuse.</h3>
+            <p>            
+                C'est pourquoi les joueurs de notre industrie utilisent des étiquettes de mise en garde 
+                et différents moyens pour communiquer aux utilisateurs les risques liés aux recouvrements 
+                de fenêtres avec cordons. La mise en garde illustrée ici, par exemple, décrit les risques 
+                d'étranglement liés aux cordons et recommande d'utiliser des produits sans cordon ou dont 
+                les cordons ne sont pas accessibles.
+            </p>
+        </div>        
+        <div class="clearfix"></div>
+    </div>        
+</div>
+
+
+<div class="row-default">    
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="section-title text-center">
+                Cordless alternatives 
+                <hr>
+                <small class="description">
+                    Les produits sans cordon ou dont les cordons ne sont pas accessibles 
+                    <br>
+                    de Shade-O-Matic sont offerts dans les collections suivantes :                    
+                </small>            
+            </h3>        
+        </div>
+        <% data.products.products.each do |p| %>
+            <% if p.cordless == "true" %>
+            <div class="col-md-12 col-xs-12">
+                <%= partial "productcard", :locals => {:product => p} %>                                    
+            </div>
+            <% end %>          
+        <% end %>
+    </div>
+</div>

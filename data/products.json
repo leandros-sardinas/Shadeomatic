@@ -127,25 +127,40 @@
         "cordless": "false"
     }, {
         "name": "Sheerluxe Window Shadings",
+        "description": "A streamlined collection featuring both translucent and light-dimming vane styles to provide varying degrees of light control. Covers large window expanses with no visible internal lift cords to detract from their elegant appearance.",
+        
+        "altName": "Stores Sheerluxe",
+        "altDescription": "Une collection épurée mettant en vedette des styles de lattes translucides et atténuantes offrant divers degrés de contrôle de la lumière.",
+
         "image": "/images/products/main-sheerluxe.jpg",
         "imagexs": "/images/products/tn-sheerluxe.jpg",
-        "description": "A streamlined collection featuring both translucent and light-dimming vane styles to provide varying degrees of light control. Covers large window expanses with no visible internal lift cords to detract from their elegant appearance.",
+        
         "url": "/sheerluxe",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Grandeur Woodalloy",
+        "description": "Woodalloy Shutters offer a leading edge design, giving windows an air of classic elegance. Our advanced engineering technology provides the consistency and warmth of real wood, while helping the shutters maintain their superior strength and their durability.",
+
+        "altName": "Persiennes Grandeur",
+        "altDescription": "Les persiennes Grandeur Woodalloy de Shade-O-Matic offrent un design moderne de pointe et procurent à vos fenêtres un air d’élégance classique. Nos technologies évoluées permettent de reproduire la texture et la chaleur du bois véritable et procurent aux persiennes une robustesse et une durabilité hors pair.",
+
         "image": "/images/products/main-grandeur.jpg",
         "imagexs": "/images/products/tn-grandeur.jpg",
-        "description": "Woodalloy Shutters offer a leading edge design, giving windows an air of classic elegance. Our advanced engineering technology provides the consistency and warmth of real wood, while helping the shutters maintain their superior strength and their durability.",
+        
         "url": "/grandeur-woodalloy",
         "category": "shutters",
         "cordless": "true"
     }, {
         "name": "Polysating Tropics and Polysating Seaview",
+        "description": "The sleek, classic elegance of Shade-O-Matic's Polysatin™ Shutters can turn a window into a stunning focal point in any room.",
+
+        "altName": "Persiennes Polysatin<sup>MC</sup> : Tropics<sup>MD</sup> et Seaview<sup>MD</sup>",
+        "altDescription": "L'élégance classique des persiennes PolysatinMC de Shade-O-Matic peut transformer une simple fenêtre en un magnifique point d'intérêt dans toutes les pièces où vous les placez. ",
+
         "image": "/images/products/main-polysatin.jpg",
         "imagexs": "/images/products/tn-polysatin.jpg",
-        "description": "The sleek, classic elegance of Shade-O-Matic's Polysatin™ Shutters can turn a window into a stunning focal point in any room.",
+        
         "url": "/polysatin",
         "category": "shutters",
         "cordless": "true"

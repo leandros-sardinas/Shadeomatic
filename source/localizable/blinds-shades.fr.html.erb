@@ -1,0 +1,51 @@
+---
+title: Stores
+description: Trouvez l’équilibre parfait de lumière et d’intimité grâce à notre vaste sélection de stores.
+---
+
+<div class="row-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/">
+                            <%= t(:home) %>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <%= t(:blindsAndShades) %>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="text-center section-title">
+                STORES
+                <hr>
+                <small class="description">
+                    Commodité et Polyvalence
+                </small>
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="row-default">
+    <div class="container">
+        <div class="row">
+            <% data.products.products.each do |p| %>
+                <% if p.category == "blinds" %>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <%= partial "productcard", :locals => {:product => p} %>
+                </div>
+                <% end %>          
+            <% end %>
+        </div>
+    </div>
+</div>
