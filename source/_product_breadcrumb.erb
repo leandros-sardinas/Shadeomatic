@@ -1,0 +1,30 @@
+<div class="row-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="<%=lang_helper%>">
+                            <%= t(:home) %>
+                        </a>
+                    </li>
+                    <li>
+                        <% if current_page.data.producttype == 'blind' %>
+                            <a href="<%=lang_helper%>blinds-shades">
+                                <%= t(:blindsAndShades) %>
+                            </a>
+                        <% end %>
+                        <% if current_page.data.producttype == 'shutter' %>
+                            <a href="<%=lang_helper%>shutters">
+                                <%= t(:shutters) %>
+                            </a>
+                        <% end %>
+                    </li>
+                    <li class="active">
+                        <%=current_page.data.title %>                        
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </div>    
+</div>

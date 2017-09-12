@@ -113,68 +113,73 @@
     <link rel="stylesheet" media="print" href="/stylesheets/print.css" />   
 
     <!-- Product Stylesheets -->
-    <%if current_page.data.name == "honeycomb" %>
+    <%if current_page.data.id == "honeycomb" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <link rel="stylesheet" href="/stylesheets/products/honeycomb.css" />
     <% end %>    
-    <%if current_page.data.name == "shadowmagic" %>
+    <%if current_page.data.id == "shadowmagic" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <link rel="stylesheet" href="/stylesheets/products/shadowmagic.css" />
     <% end %>
-    <%if current_page.data.name == "concept" %>
+    <%if current_page.data.id == "concept" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
         <link rel="stylesheet" href="/stylesheets/products/concept.css" />
     <% end %>
-    <%if current_page.data.name == "fauxwood" %>
+    <%if current_page.data.id == "fauxwood" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
         <link rel="stylesheet" href="/stylesheets/products/fauxwood.css" />
     <% end %>
-    <%if current_page.data.name == "grandeur" %>
+    <%if current_page.data.id == "grandeur" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
         <link rel="stylesheet" href="/stylesheets/products/grandeur.css" />
     <% end %>
-    <%if current_page.data.name == "pleated" %>
+    <%if current_page.data.id == "pleated" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
         <link rel="stylesheet" href="/stylesheets/products/pleated.css" />
     <% end %>
-    <%if current_page.data.name == "polysatin" %>
+    <%if current_page.data.id == "polysatin" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
         <link rel="stylesheet" href="/stylesheets/products/polysatin.css" />
     <% end %>
-    <%if current_page.data.name == "roller" %>
+    <%if current_page.data.id == "roller" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
         <link rel="stylesheet" href="/stylesheets/products/roller.css" />
     <% end %>
-    <%if current_page.data.name == "paneltrack" %>
+    <%if current_page.data.id == "paneltrack" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
         <link rel="stylesheet" href="/stylesheets/products/paneltrack.css" />
     <% end %>
-    <%if current_page.data.name == "roman" %>
+    <%if current_page.data.id == "roman" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
         <link rel="stylesheet" href="/stylesheets/products/roman.css" />
     <% end %>
-    <%if current_page.data.name == "sheerluxe" %>
+    <%if current_page.data.id == "sheerluxe" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
         <link rel="stylesheet" href="/stylesheets/products/sheerluxe.css" />
     <% end %>
-    <%if current_page.data.name == "vertical" %>
+    <%if current_page.data.id == "vertical" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
-        <link rel="stylesheet" href="/stylesheets/vertical/vertical.css" />
+        <link rel="stylesheet" href="/stylesheets/products/vertical.css" />
     <% end %>
-    <%if current_page.data.name == "wood" %>
+    <%if current_page.data.id == "wood" %>
         <link rel="stylesheet" href="/stylesheets/products/product.css" />
         <!-- Pending -->
-        <link rel="stylesheet" href="/stylesheets/vertical/wood.css" />
+        <link rel="stylesheet" href="/stylesheets/products/wood.css" />
+    <% end %>
+    <%if current_page.data.id == "aluminum" %>
+        <link rel="stylesheet" href="/stylesheets/products/product.css" />
+        <!-- Pending -->
+        <link rel="stylesheet" href="/stylesheets/products/aluminum.css" />
     <% end %>
   </head>
 
@@ -215,7 +220,7 @@
         <script src="/javascripts/measurement.js" defer></script>        
     <% end %>
 
-    <%if current_page.data.title == "Dealer Locator" %> 
+    <%if current_page.data.id == "locator" %> 
         <script src="/javascripts/vue.min.js" defer></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HUxEbYS_5Y80fNWk4El1IC6AICXARxw&libraries=places">
         </script>

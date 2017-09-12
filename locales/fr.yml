@@ -29,6 +29,8 @@ fr:
   faq: "F.A.Q"
   warranty: "Garantie"
   childSafety: "Sécurité des enfants"
+  #Product
+  wheretobuy: "Où acheter"
   #Helpers      
   view: "vue"
   share: "partager"

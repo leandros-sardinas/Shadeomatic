@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var $bxWrapper = $(".bx-wrapper");
+    var $bxWrapper = $(".product-slider");
     var $productToolbar = $('.product-toolbar');
     var $highlightImg = $('.product-highlight img');
     var $productFeature = $('.product-feature-image');

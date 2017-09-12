@@ -121,15 +121,15 @@ $(document).ready(function() {
                 }, 1000);
 
                 e.preventDefault();
-            })
-
-            $('.top').on("click", function(e) {
-                $('html, body').animate({
-                    scrollTop: $("#row-language").offset().top
-                }, 1000);
-
-                e.preventDefault();
-            })
+            })            
         }
     });    
+
+    $('.top').on("click", function(e) {
+        $('html, body').animate({
+            scrollTop: $("#row-language").offset().top
+        }, 1000);
+
+        e.preventDefault();
+    });
 });

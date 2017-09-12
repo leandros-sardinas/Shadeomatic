@@ -2,17 +2,17 @@
     "products": [{
         "name": "Honeycomb Shades",
         "description": "Honeycomb Shades are the most luxurious window coverings in today's market. Our superior selection of fabrics provide lasting beauty, elegance and sophistication all in one.",
-        "altName": "Stores Alvéolés",
-        "altDescription": "Stores Alvéolés sont les recouvrements de fenêtre les plus luxueux du marché d’aujourd'hui. Notre sélection supérieure de tissu ajoute beauté, élégance et sophistication à votre décor.",
+        "altName": "Stores Alvéolés | Stores Trilight",
+        "altDescription": "Stores Alvéolés | Stores Trilight sont les recouvrements de fenêtre les plus luxueux du marché d’aujourd'hui. Notre sélection supérieure de tissu ajoute beauté, élégance et sophistication à votre décor.",
         "image": "/images/products/main-honeycomb.jpg",
         "imagexs": "/images/products/tn-honeycomb.jpg",        
         "url": "honeycomb-shades",
         "category": "blinds",
         "cordless": "true"
         }, {
-        "name": "Shadow Magic",
+        "name": "Shadow Magic® Horizontal Shadings",
         "description": "Shadow Magic our most sophisticated window covering product combining soft sheer panels of fabric with center horizontal vanes that provide the highest degree of light and privacy control.    These shadings will add simplistic beauty and sophistication to any home.",
-        "altName": "Stores Horizontaux Shadow Magic",
+        "altName": "Stores Horizontaux Shadow Magic <sup>MD</sup>",
         "altDescription": "Stores Horizontaux Shadow Magic sont nos recouvrements de fenêtres les plus sophistiqués. Ils combinent deux panneaux de tissus diaphanes avec des lattes horizontales qui vous offrent une flexibilité maximale sur la lumière et l’intimité. Ces stores ajoutent une beauté simpliste et une touche de sophistication à votre décor.",
         "image": "/images/products/main-shadowmagic.jpg",
         "imagexs": "/images/products/tn-shadowmagic.jpg",        
@@ -32,7 +32,7 @@
     }, {
         "name": "Romanelle Panel Track Systems",
         "description": "Romanelle Panel Track Systems provide vertical sliding panels for large scale windows to make a dramatic fashion statement.",
-        "altName": "Stores à Panneaux Coulissants Romanelle",
+        "altName": "Stores à Panneaux Coulissants Romanelle <sup>MD</sup>",
         "altDescription": "Les systèmes à panneaux coulissants Romanelle sont dotés de panneaux verticaux qui se glissent aisément afin de recouvrir les fenêtres de grande taille, avec un style inégalé.",
         "image": "/images/products/main-romanellepaneltrack.jpg",
         "imagexs": "/images/products/tn-romanellepaneltrack.jpg",        
@@ -42,7 +42,7 @@
     }, {
         "name": "Pleated Shades Lasting Impressions",
         "description": "Offer an excellent form of window covering, providing light, privacy and sun control.",
-        "altName": "Stores Plissés Lasting Impressions",
+        "altName": "Stores Plissés Lasting Impressions<sup>MD</sup>",
         "altDescription": "Les stores plissés Lasting Impressions représentent une excellente manière de couvrir vos fenêtres, car ils permettent de contrôler la quantité de lumière qui entre dans la pièce et de créer une ambiance intime à volonté.",
         "image": "/images/products/main-pleatedshades.jpg",
         "imagexs": "/images/products/tn-pleatedshades.jpg",        
@@ -50,10 +50,10 @@
         "category": "blinds",
         "cordless": "true"
     }, {
-        "name": "Regency Roller Shades",
+        "name": "Regency© Roller Shades",
         "description": "Have evolved into a sophisticated window covering that offers an extensive collection of both classic and contemporary fabrics, providing eye-catching style and superior performance.",
 
-        "altName": "Stores à Enrouleur Regency",
+        "altName": "Stores à Enrouleur Regency <sup>MD</sup>",
         "altDescription": "Les stores à enrouleur Regency ont beaucoup évolué : ils sont devenus de magnifiques recouvrements de fenêtre, offerts dans une vaste collection de tissus classiques et contemporains qui procurent élégance et rendement supérieur.",
 
         "image": "/images/products/main-rollershade.jpg",
@@ -79,7 +79,7 @@
         "name": "Concept Dual Shadings",
         "description": "Is a soft shade that combines the light control capacities of a horizontal blind with the soft beauty of a fabric shade.",
 
-        "altName": "Stores Doubles Concept",
+        "altName": "Stores Doubles Concept <sup>MD</sup>",
         "altDescription": "Les stores doubles Concept sont un type de store doux qui combine les fonctionnalités de contrôle de la lumière des stores horizontaux et toute la beauté des stores en tissu.",
 
         "image": "/images/products/main-conceptdualshadings.jpg",
@@ -96,7 +96,7 @@
 
         "image": "/images/products/main-woodblind.jpg",
         "imagexs": "/images/products/tn-woodblind.jpg",        
-        "url": "/wood",
+        "url": "wood",
         "category": "blinds",
         "cordless": "true"
     }, {
@@ -106,62 +106,62 @@
         "altName": "Stores horizontaux en aluminium",
         "altDescription": "Les stores horizontaux en aluminium, offerts en pratiques tailles de lattes de 1 po et 2 po, créent un style épuré et apportent une touche d’élégance classique à toute pièce où vous les placez.",
 
-        "image": "/images/products/main-woodblind.jpg",
-        "imagexs": "/images/products/tn-woodblind.jpg",
+        "image": "/images/products/main-aluminum.jpg",
+        "imagexs": "/images/products/tn-aluminum.jpg",
         
-        "url": "/aluminum",
+        "url": "aluminum",
         "category": "blinds",
         "cordless": "false"
     }, {
         "name": "Romanelle Roman Shades",
         "description": "Add elegance to any room. There are many stylish fabrics to choose from that will compliment any room décor.",
 
-        "altName": "Stores romains Romanelle",
+        "altName": "Stores Romains Romanelle <sup>MD</sup>",
         "altDescription": "Les luxueux stores romains Romanelle ajoutent une dose d'élégance à toute pièce dans lesquelles vous les placez.",
 
         "image": "/images/products/main-romanelleromanshade.jpg",
         "imagexs": "/images/products/tn-romanelleromanshade.jpg",
         
-        "url": "/romanelle-roman-shades",
+        "url": "romanelle-roman-shades",
         "category": "blinds",
         "cordless": "false"
     }, {
         "name": "Sheerluxe Window Shadings",
         "description": "A streamlined collection featuring both translucent and light-dimming vane styles to provide varying degrees of light control. Covers large window expanses with no visible internal lift cords to detract from their elegant appearance.",
         
-        "altName": "Stores Sheerluxe",
+        "altName": "Stores Sheerluxe <sup>MD</sup>",
         "altDescription": "Une collection épurée mettant en vedette des styles de lattes translucides et atténuantes offrant divers degrés de contrôle de la lumière.",
 
         "image": "/images/products/main-sheerluxe.jpg",
         "imagexs": "/images/products/tn-sheerluxe.jpg",
         
-        "url": "/sheerluxe",
+        "url": "sheerluxe",
         "category": "blinds",
         "cordless": "true"
     }, {
         "name": "Grandeur Woodalloy",
         "description": "Woodalloy Shutters offer a leading edge design, giving windows an air of classic elegance. Our advanced engineering technology provides the consistency and warmth of real wood, while helping the shutters maintain their superior strength and their durability.",
 
-        "altName": "Persiennes Grandeur",
+        "altName": "Persiennes Grandeur <sup>MD</sup>",
         "altDescription": "Les persiennes Grandeur Woodalloy de Shade-O-Matic offrent un design moderne de pointe et procurent à vos fenêtres un air d’élégance classique. Nos technologies évoluées permettent de reproduire la texture et la chaleur du bois véritable et procurent aux persiennes une robustesse et une durabilité hors pair.",
 
         "image": "/images/products/main-grandeur.jpg",
         "imagexs": "/images/products/tn-grandeur.jpg",
         
-        "url": "/grandeur-woodalloy",
+        "url": "grandeur-woodalloy",
         "category": "shutters",
         "cordless": "true"
     }, {
         "name": "Polysating Tropics and Polysating Seaview",
         "description": "The sleek, classic elegance of Shade-O-Matic's Polysatin™ Shutters can turn a window into a stunning focal point in any room.",
 
-        "altName": "Persiennes Polysatin<sup>MC</sup> : Tropics<sup>MD</sup> et Seaview<sup>MD</sup>",
+        "altName": "Persiennes Polysatin<sup>MD</sup> : Tropics<sup>MD</sup> et Seaview<sup>MD</sup>",
         "altDescription": "L'élégance classique des persiennes PolysatinMC de Shade-O-Matic peut transformer une simple fenêtre en un magnifique point d'intérêt dans toutes les pièces où vous les placez. ",
 
         "image": "/images/products/main-polysatin.jpg",
         "imagexs": "/images/products/tn-polysatin.jpg",
         
-        "url": "/polysatin",
+        "url": "polysatin",
         "category": "shutters",
         "cordless": "true"
     }]
