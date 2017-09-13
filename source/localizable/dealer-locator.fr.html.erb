@@ -30,7 +30,7 @@ category: general
                 Site pour détaillant
                 <hr>
                 <small class="description">
-                    Trouvez un détaillant Shade-O-maticMD professionnel près de chez vous.                                
+                    Trouvez un détaillant Shade-O-Matic<sup>MD</sup> professionnel près de chez vous.                                
                 </small>
             </h1>            
         </div>
@@ -46,7 +46,7 @@ category: general
                     <input id="dealer-search" type="text" 
                         class="form-control input-lg dealer-search" 
                         aria-label="..." 
-                        placeholder="Enter Address or Postal Code"
+                        placeholder="Entrez l'adresse ou le code postal"
                         v-model="query">
 
                     <div class="input-group-btn">
@@ -139,8 +139,8 @@ category: general
                         <div class="col-md-6 col-xs-12">
                             <ul>
                                 <li>
-                                    <a v-bind:href="linkMap(dealer.Lat, dealer.Lng)" target="_blank">
-                                        Directions
+                                    <a v-bind:href="linkMap(dealer.Lat, dealer.Lng)" target="_blank">                                        
+                                        Itinéraire
                                     </a>
                                 </li>
                                 <li class="separator"></li>
