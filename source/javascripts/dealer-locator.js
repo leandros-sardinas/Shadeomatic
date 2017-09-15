@@ -1,6 +1,5 @@
 //I should watch the quote on Google API console and enable billing in case we run out
-
-(function(){
+$(document).ready(function() {
     
     var app = new Vue({
         el: '#app-dealer',
@@ -17,7 +16,7 @@
                 lat: 0,
                 lng: 0
             },            
-            dealers: [],            
+            dealers: [],
             error: {
                 inError: false,
                 message: '',
@@ -86,15 +85,22 @@
                 $.ajax({
                     url: url,
                     crossDomain: true,
-                    dataType: "json"
+                    dataType: "json",
+                    error: function(){
+                        self.error.inError = true;
+                        self.error.message = appMessages.Messages.generalError;
+                    }
                 }).done(function(data) {
+                    if(data.length < 1) {
+                        self.error.inError = true;
+                        self.error.message = appMessages.Messages.noDealers;
+                        return;
+                    }
+
                     for(var i=0; i<data.length; i++) {
                         self.dealers.push(data[i]);
                     }
-                }).fail(function() {                                        
-                    self.error.inError = true;
-                    self.error.message = "An error has ocurred, please try again later";
-                }).always(function() {
+                }).always(function(){
                     self.statuses.inSearch = false;
                 })
             },
@@ -112,26 +118,31 @@
                 if(this.autoCompleteUsed === true) {
                     self.locate();
                 } else {
+
                     var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + this.query +"&key=" + this.googleKey;
                     $.ajax({
-                        url: url
-                    }).done(function(data) {
+                        url: url,
+                        crossDomain: true,
+                        dataType: "json",
+                        error: function() {
+                            self.error.inError = true;
+                            self.error.message = appMessages.Messages.generalError;                        
+                        }
+                    }).done(function(data) {                        
                         if (data.status === "OK") {
                             self.coordinates.lat = data.results[0].geometry.location.lat;
                             self.coordinates.long = data.results[0].geometry.location.lng;
                             self.locate();
                         } else {                            
                             self.error.inError = true;
-                            self.error.message = "Invalid address, please select your address";                            
+                            self.error.message = appMessages.Messages.invalidAddress;
                         }
-                    }).fail(function() {
-                        self.error.inError = true;
-                        self.error.message = "An error has ocurred, please try again later";                        
-                    }).complete(function(){
+                    }).always(function(){
                         self.statuses.inSearch = false;
                     })
                 }
             }
         }
     });    
-})()
+
+})

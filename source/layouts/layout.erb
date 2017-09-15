@@ -191,6 +191,15 @@
     <script src="/javascripts/bootstrap.js" defer></script>
     <script src="/javascripts/jquery.appear.js" defer></script>        
 
+    <!-- JS Info Messages -->
+    <%if lang_helper == '/'%>
+    <script src="/javascripts/message-english.js" defer></script>
+    <%end%>
+
+    <%if lang_helper == '/fr/'%>
+    <script src="/javascripts/message-french.js" defer></script>
+    <%end%>
+
     <!-- Page specific -->
     <%if current_page.data.category == "homepage" %>
         <script src="/javascripts/owl.carousel.js" defer></script>
@@ -208,7 +217,7 @@
         <script src="/javascripts/measurement.js" defer></script>        
     <% end %>
 
-    <%if current_page.data.id == "locator" %> 
+    <%if current_page.data.id == "locator" %>
         <script src="/javascripts/vue.min.js" defer></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HUxEbYS_5Y80fNWk4El1IC6AICXARxw&libraries=places">
         </script>
