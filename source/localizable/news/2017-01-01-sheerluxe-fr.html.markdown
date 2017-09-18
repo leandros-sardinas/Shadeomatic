@@ -1,5 +1,5 @@
 ---
-title: New SheerLuxe Horizontal Sheer
+title: Présentation d'une nouvelle collection SheerLuxe Horizontal Sheer
 image: 
 lang: fr
 ---

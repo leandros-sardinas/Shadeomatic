@@ -1,426 +1,167 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://shadeomatic.com/news/2017/01/01/concept/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/news/2017/01/01/grandeur/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/news/2017/01/01/motorization/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>
-https://shadeomatic.com/news/2017/01/01/new-moodscapes-cellular-collection/
-</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/news/2017/01/01/rollers/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/news/2017/01/01/shadow-magic/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/news/2017/01/01/sheerluxe/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>
-https://shadeomatic.com/news/2017/01/01/updated-polysatin-shutter-collection/
-</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/news/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/aluminum/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/aluminum/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/blinds-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/blinds-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/child-safety/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/child-safety/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/company/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/company/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/concept-dual/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/concept-dual/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/contact/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/contact/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/dealer-locator/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/dealer-locator/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/faq/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/faq/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/faux-wood/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/faux-wood/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/grandeur-woodalloy/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/grandeur-woodalloy/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/honeycomb-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/honeycomb-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/installation-instructions/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/installation-instructions/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/measurement-guides/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/measurement-guides/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/pleated-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/pleated-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/polysatin/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/polysatin/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/roller-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/roller-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/romanelle-panel-track/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/romanelle-panel-track/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/romanelle-roman-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/romanelle-roman-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/shadow-magic/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/shadow-magic/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/sheerluxe/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/sheerluxe/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/shutters/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/shutters/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/vertical-blinds/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/vertical-blinds/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/warranty/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/warranty/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/wood/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/wood/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/aluminum/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/blinds-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/child-safety/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/company/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/concept-dual/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/contact/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/dealer-locator/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/faq/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/faux-wood/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/grandeur-woodalloy/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/honeycomb-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/installation-instructions/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/measurement-guides/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/pleated-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/polysatin/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/roller-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/romanelle-panel-track/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/romanelle-roman-shades/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/shadow-magic/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/sheerluxe/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/shutters/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/vertical-blinds/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/warranty/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://shadeomatic.com/fr/wood/</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.shadeomatic.com/aluminum/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/aluminum/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/blinds-shades/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/blinds-shades/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/child-safety/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/child-safety/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/company/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/company/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.shadeomatic.com/concept-dual/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/concept-dual/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.shadeomatic.com/contact/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/contact/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/dealer-locator/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/dealer-locator/" />
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/faq/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/faq/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/faux-wood/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/faux-wood/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.shadeomatic.com/grandeur-woodalloy/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/grandeur-woodalloy/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.shadeomatic.com/honeycomb-shades/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/honeycomb-shades/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.shadeomatic.com/installation-instructions/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/installation-instructions/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/measurement-guides/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/measurement-guides/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/news/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/news/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/pleated-shades/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/pleated-shades/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shadeomatic.com/polysatin/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/polysatin/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shadeomatic.com/roller-shades/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/roller-shades/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/romanelle-panel-track/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/romanelle-panel-track/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.shadeomatic.com/romanelle-roman-shades/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/romanelle-roman-shades/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.shadeomatic.com/shadow-magic/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/shadow-magic/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.shadeomatic.com/sheerluxe/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/sheerluxe/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.shadeomatic.com/shutters/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/shutters/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.shadeomatic.com/vertical-blinds/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/vertical-blinds/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/warranty/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/warranty/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://www.shadeomatic.com/wood/</loc>
+	<xhtml:link rel="alternate" hreflang="fr-ca" href="https://www.shadeomatic.com/fr/wood/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>  
 </urlset>

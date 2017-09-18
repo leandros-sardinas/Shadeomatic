@@ -4848,6 +4848,27 @@ label[data-required='true']:after {
   color: red;
 }
 
+label.error {
+  color: red;
+  font-weight: normal;
+  color: red;
+  font-weight: normal;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+}
+@media (min-width: 320px) {
+  label.error {
+    position: relative;
+  }
+}
+@media (min-width: 425px) {
+  label.error {
+    display: inline-block;
+    position: absolute;
+  }
+}
+
 .section-header {  
   text-align: center;
   margin-bottom: 40px;

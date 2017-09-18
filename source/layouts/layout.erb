@@ -224,6 +224,11 @@
         <script src="/javascripts/dealer-locator.js" defer></script>        
     <% end %>
     
+    <%if current_page.data.id == "warrantyregistration" %>
+        <script src="/javascripts/vue.min.js" defer></script>
+        <script src="/javascripts/warranty.js" defer></script>
+    <% end %>
+
     <%if current_page.data.category == "product" %>
         <script src="/javascripts/product.js" defer></script>
     <% end %>    
@@ -231,7 +236,8 @@
     <%if current_page.data.type == "contact" %>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script src="/javascripts/jquery.validate.min.js" defer></script>
-        <script src="/javascripts/contact.js" defer></script>
-    <% end %>
+        <script src="/javascripts/contact.js" defer></script>    
+    <% end %>    
+
   </body>
 </html>
