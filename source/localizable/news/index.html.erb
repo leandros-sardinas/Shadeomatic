@@ -1,0 +1,72 @@
+---
+title: News
+pageable: true
+per_page: 10
+---
+
+<div class="row-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li class="active">
+                        News
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="section-title text-center">
+                News
+                <hr>
+                <small class="description">
+                    Stay updated with our latest news
+                </small>
+            </h1>            
+        </div>
+    </div>
+</div>
+
+<div class="row-default">
+    <div class="container">
+        <div class="row">
+            
+            <% if paginate && num_pages > 1 %>
+                <p>Page <%= page_number %> of <%= num_pages %></p>
+        
+                <% if prev_page %>
+                <p><%= link_to 'Previous page', prev_page %></p>
+                <% end %>
+            <% end %>
+            
+            <% page_articles.each_with_index do |article, i| %>
+                <% if article.lang.to_s == "en" %>
+                <div class="col-md-push-2 col-md-8 col-xs-12">
+                    <%= partial "newscard", :locals => {:article => article} %>
+                    <div class="clearfix"></div>
+                </div>
+                <% end %>
+            <% end %>
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <% if paginate %>
+                    <% if next_page %>
+                    <p><%= link_to 'Next page', next_page %></p>
+                    <% end %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 ---
 title: New Grandeur Shutter Collection
 image: 
+lang: en
 ---
 
 The New Grandeur Shutter Collection - New Finish, New Colours and New Options - Available Now!!

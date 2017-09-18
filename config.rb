@@ -5,13 +5,13 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :blog do |blog|
-  blog.prefix = "news"
-end
-
 activate :directory_indexes
 activate :i18n
 set :relative_links, true
+
+activate :blog do |blog|
+  blog.prefix = "news"
+end
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
