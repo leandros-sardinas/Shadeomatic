@@ -27,6 +27,12 @@ smallDesc: Vous trouverez ici les guides de mesure pour vos stores et vos persie
                     </li>
                 </ul>
 
+                <div class="form-group" v-show="inError">
+                    <p class="text-danger">
+                        {{error}}
+                    </p>
+                </div>
+
                 <div role="alert" v-show="noResults">
                     <h2>
                         <i> No installation manuals for "{{query}}" </i>

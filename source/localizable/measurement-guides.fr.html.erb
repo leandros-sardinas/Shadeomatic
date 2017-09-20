@@ -28,11 +28,19 @@ smallDesc: Retrouvez les guides de mesure pour vos stores, stores et volets de f
                     </li>
                 </ul>
 
-                <div role="alert" v-show="noResults">
-                    <h2>
-                        <i> No measurement guides for "{{query}}" </i>
-                    </h2>
+                <div class="form-group" v-show="inError">
+                    <p class="text-danger">
+                        {{error}}
+                    </p>
                 </div>
+
+                <div v-show="!inError">
+                    <div role="alert" v-show="noResults">
+                        <h2>
+                            <i> No measurement guides for "{{query}}" </i>
+                        </h2>
+                    </div>
+                </div>                
             </div>
         </div>    
     </div>

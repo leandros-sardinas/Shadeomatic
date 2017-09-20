@@ -2,6 +2,9 @@
     var app = new Vue({
         el: '#app-measurement',
         data: {
+            inError: false,
+            error: '',
+
             contentUrl: '/db/measuring-guides.json',
             query: '',
             manuals: []
@@ -59,9 +62,16 @@
             },
             fetchContent: function() {
                 var self = this;
+
+                self.inError = false;
+
                 $.ajax({
-                    url: self.contentUrl
-                }).done(function(mans) {                    
+                    url: self.contentUrl,
+                    error: function() {
+                        self.inError = true;
+                        self.error = appMessages.Messages.generalError;                    
+                    }
+                }).done(function(mans) {
                     var remoteManuals = mans.manuals.sort(function(a,b) {
                         return a.sequence - b.sequence;
                     });
@@ -76,10 +86,7 @@
 
                         self.manuals.push(remoteManuals[i]);
                     }
-                })
-                .error(function(){
-                    console.log('An error has ocurred, please try again later.');
-                });
+                });                
             }
         }
     })

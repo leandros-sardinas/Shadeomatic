@@ -2,6 +2,9 @@ $(document).ready(function(){
     var app = new Vue({
         el: '#app-installation',
         data: {
+            inError: false,
+            error: '',
+
             contentUrl: '/db/installation-instructions.json',
             query: '',
             manuals: []
@@ -59,8 +62,15 @@ $(document).ready(function(){
             },
             fetchContent: function() {
                 var self = this;
+                self.inError = false;
+
                 $.ajax({
-                    url: self.contentUrl
+                    url: self.contentUrl,
+                    error: function() {                        
+                        self.inError = true;
+                        self.error = appMessages.Messages.generalError;                    
+                    }
+
                 }).done(function(mans) {                    
                     var remoteManuals = mans.manuals.sort(function(a,b) {
                         return a.sequence - b.sequence;
@@ -76,9 +86,6 @@ $(document).ready(function(){
 
                         self.manuals.push(remoteManuals[i]);
                     }
-                })
-                .error(function(){
-                    console.log('An error has ocurred, please try again later.');
                 });
             }
         }

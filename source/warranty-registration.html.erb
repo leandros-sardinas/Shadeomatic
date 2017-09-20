@@ -40,7 +40,7 @@ category: general
 </div>
 </div>
 
-<div id="app" class="row-default">
+<form id="app" class="row-default" method="get">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -75,9 +75,15 @@ category: general
                         Country
                     </label>
                     <select id="country" 
-                        name="country" 
-                        v-model="countries"
+                        name="country"
                         class="form-control">
+
+                        <option 
+                            v-for="country in countries" 
+                            v-bind:value="country.name"
+                            :key="country.name">
+                                {{country.name}}
+                        </option>
                     </select>
                 </div>
             </div>
@@ -87,6 +93,9 @@ category: general
                         Province
                     </label>
                     <select id="province" name="province" class="form-control">
+                        <option v-for="province in selectedCountry.provinces" v-bind:value="province.abbrv">
+                            {{province.abbrv}}
+                        </option>
                     </select>
                 </div>
             </div>
@@ -126,11 +135,11 @@ category: general
             </div>
 
             <div class="col-xs-12">
-                <a href="#submit" class="btn btn-lg btn-primary pull-right">
+                <a href="#submit" v-on:click="sendWarranty" class="btn btn-lg btn-primary pull-right">
                     Send
                 </a>
             </div>
 
         </div>
     </div>
-</div>
+</form>
