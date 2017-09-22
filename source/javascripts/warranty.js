@@ -36,10 +36,8 @@ $(document).ready(function() {
                         self.error = appMessages.Messages.generalError;
                     }
                 }).done(function(data) {
-
                     self.countries = data.countries;
                     self.selectedCountry = self.countries[0];
-
                 })
             }
         }
