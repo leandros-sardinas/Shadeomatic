@@ -2251,6 +2251,7 @@ input[type="search"] {
   }
 }
 .form-group {
+  position: relative;
   margin-bottom: 15px;
 }
 .radio,

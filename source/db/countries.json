@@ -1,6 +1,7 @@
 {
     "countries": [{
             "name": "Canada",
+            "abbrv": "CA",
             "provinces": [{
                 "province": "Ontario",
                 "abbrv": "ON"
@@ -44,6 +45,7 @@
         },
         {
             "name": "United States",
+            "abbrv": "USA",
             "provinces": [{
                 "province": "Other",
                 "abbrv": "Other"

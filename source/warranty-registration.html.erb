@@ -48,7 +48,13 @@ category: general
                     <label for="order" data-required="true">
                         Order / Reference number
                     </label>
-                    <input type="text" class="form-control" id="order" name="order" required />
+                    <input 
+                        id="order" 
+                        name="order" 
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="order"/>
                 </div>
             </div>
 
@@ -57,7 +63,13 @@ category: general
                     <label for="name" data-required="true">
                         Full name
                     </label>
-                    <input type="text" class="form-control" id="name" name="name" required />
+                    <input 
+                        id="name" 
+                        name="name" 
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="name"/>
                 </div>
             </div>
             <div class="col-md-6 col-xs-12">
@@ -65,7 +77,13 @@ category: general
                     <label for="email" data-required="true">
                         Email Address
                     </label>
-                    <input type="email" class="form-control" id="email" name="email" required />
+                    <input 
+                        id="email" 
+                        name="email" 
+                        type="email" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="email"/>
                 </div>
             </div>
 
@@ -76,14 +94,14 @@ category: general
                     </label>
                     <select id="country" 
                         name="country"
-                        class="form-control">
-
-                        <option 
-                            v-for="country in countries" 
-                            v-bind:value="country.name"
-                            :key="country.name">
-                                {{country.name}}
-                        </option>
+                        class="form-control input-lg"
+                        v-model="country">                        
+                            <option 
+                                v-for="country in countries"
+                                v-bind:value="country.abbrv"
+                                :key="country.abbrv">
+                                    {{country.name}}
+                            </option>
                     </select>
                 </div>
             </div>
@@ -92,8 +110,11 @@ category: general
                     <label for="province" data-required="true">
                         Province
                     </label>
-                    <select id="province" name="province" class="form-control">
-                        <option v-for="province in selectedCountry.provinces" v-bind:value="province.abbrv">
+                    <select id="province" 
+                        name="province" 
+                        class="form-control input-lg"
+                        v-model="province">
+                        <option v-for="province in provinces" v-bind:value="province.abbrv">
                             {{province.abbrv}}
                         </option>
                     </select>
@@ -105,7 +126,13 @@ category: general
                     <label for="address" data-required="true">
                         Address
                     </label>
-                    <input type="text" class="form-control" id="address" name="address" required />
+                    <input 
+                        id="address" 
+                        name="address"
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="address"/>
                 </div>
             </div>
             <div class="col-md-6 col-xs-12">
@@ -113,7 +140,12 @@ category: general
                     <label for="address2">
                         Address 2
                     </label>
-                    <input type="email" class="form-control" id="address2" name="address2" required />
+                    <input 
+                        id="address2" 
+                        name="address2" 
+                        type="email" 
+                        class="form-control input-lg"
+                        v-model="address2"/>
                 </div>
             </div>
 
@@ -122,7 +154,13 @@ category: general
                     <label for="city" data-required="true">
                         City
                     </label>
-                    <input type="text" class="form-control" id="city" name="city" required />
+                    <input 
+                        id="city" 
+                        name="city" 
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="city"/>
                 </div>
             </div>
             <div class="col-md-6 col-xs-12">
@@ -130,7 +168,13 @@ category: general
                     <label for="postalcode" data-required="true">
                         Postal Code / Zip
                     </label>
-                    <input type="text" class="form-control" id="postalcode" name="postalcode" required />
+                    <input 
+                        id="postalcode" 
+                        name="postalcode" 
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="postalCode"/>
                 </div>
             </div>
 
