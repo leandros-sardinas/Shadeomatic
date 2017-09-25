@@ -1,0 +1,203 @@
+---
+id: warrantyregistration
+title: Warranty Registration
+fullTitle: Warranty Registration
+type: contact
+category: general
+---
+
+<div class="row-breadcrumb">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="active">
+                    Warranty Registration
+                </li>
+            </ul>  
+        </div>
+    </div>
+</div>    
+</div>
+
+
+<div class="container">
+<div class="row">
+    <div class="col-xs-12">
+        <h1 class="text-center section-title">
+            Warranty Registration
+            <hr>
+            <small class="description">
+                Please take a moment to register your product and activate your warranty
+            </small>
+        </h1>
+    </div>
+</div>
+</div>
+
+<form id="app" class="row-default" method="get">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12">
+                <div class="alert alert-danger" v-if="error.active">                    
+                    {{error.message}}
+                </div>                
+            </div>
+
+            <div class="col-xs-12" v-if="success.active">
+                <div class="alert alert-success">                    
+                    {{success.message}}
+                </div>                
+            </div>
+
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="order" data-required="true">
+                        Order / Reference number
+                    </label>
+                    <input 
+                        id="order" 
+                        name="order" 
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="order"/>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label for="name" data-required="true">
+                        Full name
+                    </label>
+                    <input 
+                        id="name" 
+                        name="name" 
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="name"/>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label for="email" data-required="true">
+                        Email Address
+                    </label>
+                    <input 
+                        id="email" 
+                        name="email" 
+                        type="email" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="email"/>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label for="country" data-required="true">
+                        Country
+                    </label>
+                    <select id="country" 
+                        name="country"
+                        class="form-control input-lg"
+                        v-model="country">                        
+                            <option 
+                                v-for="country in countries"
+                                v-bind:value="country.abbrv"
+                                :key="country.abbrv">
+                                    {{country.name}}
+                            </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label for="province" data-required="true">
+                        Province
+                    </label>
+                    <select id="province" 
+                        name="province" 
+                        class="form-control input-lg"
+                        v-model="province">
+                        <option v-for="province in provinces" v-bind:value="province.abbrv">
+                            {{province.abbrv}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label for="address" data-required="true">
+                        Address
+                    </label>
+                    <input 
+                        id="address" 
+                        name="address"
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="address"/>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label for="address2">
+                        Address 2
+                    </label>
+                    <input 
+                        id="address2" 
+                        name="address2" 
+                        type="text" 
+                        class="form-control input-lg"
+                        v-model="address2"/>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label for="city" data-required="true">
+                        City
+                    </label>
+                    <input 
+                        id="city" 
+                        name="city" 
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="city"/>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label for="postalcode" data-required="true">
+                        Postal Code / Zip
+                    </label>
+                    <input 
+                        id="postalcode" 
+                        name="postalcode" 
+                        type="text" 
+                        class="form-control input-lg"                         
+                        required 
+                        v-model="postalCode"/>
+                </div>
+            </div>
+
+            <div class="col-xs-12">                
+                <a href="#submit" v-on:click="sendWarranty" class="btn btn-lg btn-primary pull-right" v-bind:class="{'disabled': loading}">
+                    Send                    
+                </a>
+                <img src="/images/ajax-loader.gif" alt="Loading" width="48px" height="48px" class="pull-right" v-show="loading" />
+            </div>
+
+        </div>
+    </div>
+</form>

@@ -1,7 +1,7 @@
 ---
 id: warrantyregistration
-title: Warranty Registration
-fullTitle: Warranty Registration
+title: Enregistrement de la garantie de l'obturateur
+fullTitle: Enregistrement de la garantie de l'obturateur
 type: contact
 category: general
 ---
@@ -13,11 +13,11 @@ category: general
             <ul class="breadcrumb">
                 <li>
                     <a href="/">
-                        Home
+                        Accueil
                     </a>
                 </li>
                 <li class="active">
-                    Warranty Registration
+                    Enregistrement de la garantie de l'obturateur
                 </li>
             </ul>  
         </div>
@@ -30,10 +30,12 @@ category: general
 <div class="row">
     <div class="col-xs-12">
         <h1 class="text-center section-title">
-            Warranty Registration
+            Enregistrement de la garantie de l'obturateur                                
             <hr>
             <small class="description">
-                Please take a moment to register your product and activate your warranty
+                    Merci d'avoir acheté les volets Shade-O-Matic. 
+                    <br>
+                    Prenez un moment pour enregistrer votre produit et activer votre garantie
             </small>
         </h1>
     </div>
@@ -43,10 +45,23 @@ category: general
 <form id="app" class="row-default" method="get">
     <div class="container">
         <div class="row">
+
+            <div class="col-xs-12">
+                <div class="alert alert-danger" v-if="error.active">                    
+                    {{error.message}}
+                </div>                
+            </div>
+
+            <div class="col-xs-12" v-if="success.active">
+                <div class="alert alert-success">                    
+                    {{success.message}}
+                </div>                
+            </div>
+
             <div class="col-xs-12">
                 <div class="form-group">
                     <label for="order" data-required="true">
-                        Order / Reference number
+                        Référence / Commande client
                     </label>
                     <input 
                         id="order" 
@@ -61,7 +76,7 @@ category: general
             <div class="col-md-6 col-xs-12">
                 <div class="form-group">
                     <label for="name" data-required="true">
-                        Full name
+                        Nom
                     </label>
                     <input 
                         id="name" 
@@ -75,7 +90,7 @@ category: general
             <div class="col-md-6 col-xs-12">
                 <div class="form-group">
                     <label for="email" data-required="true">
-                        Email Address
+                        Addresse du couriel
                     </label>
                     <input 
                         id="email" 
@@ -90,7 +105,7 @@ category: general
             <div class="col-md-6 col-xs-12">
                 <div class="form-group">
                     <label for="country" data-required="true">
-                        Country
+                        Pays
                     </label>
                     <select id="country" 
                         name="country"
@@ -124,7 +139,7 @@ category: general
             <div class="col-md-6 col-xs-12">
                 <div class="form-group">
                     <label for="address" data-required="true">
-                        Address
+                        Adresse
                     </label>
                     <input 
                         id="address" 
@@ -138,12 +153,12 @@ category: general
             <div class="col-md-6 col-xs-12">
                 <div class="form-group">
                     <label for="address2">
-                        Address 2
+                        Adresse Ligne 2
                     </label>
                     <input 
                         id="address2" 
                         name="address2" 
-                        type="email" 
+                        type="text" 
                         class="form-control input-lg"
                         v-model="address2"/>
                 </div>
@@ -152,7 +167,7 @@ category: general
             <div class="col-md-6 col-xs-12">
                 <div class="form-group">
                     <label for="city" data-required="true">
-                        City
+                        Ville
                     </label>
                     <input 
                         id="city" 
@@ -166,7 +181,7 @@ category: general
             <div class="col-md-6 col-xs-12">
                 <div class="form-group">
                     <label for="postalcode" data-required="true">
-                        Postal Code / Zip
+                        Code postal
                     </label>
                     <input 
                         id="postalcode" 
@@ -178,10 +193,11 @@ category: general
                 </div>
             </div>
 
-            <div class="col-xs-12">
-                <a href="#submit" v-on:click="sendWarranty" class="btn btn-lg btn-primary pull-right">
-                    Send
+            <div class="col-xs-12">                
+                <a href="#submit" v-on:click="sendWarranty" class="btn btn-lg btn-primary pull-right" v-bind:class="{'disabled': loading}">
+                    Registre                    
                 </a>
+                <img src="/images/ajax-loader.gif" alt="Loading" width="48px" height="48px" class="pull-right" v-show="loading" />
             </div>
 
         </div>

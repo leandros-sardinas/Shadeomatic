@@ -2,9 +2,16 @@ $(document).ready(function() {
     var app = new Vue({
         el: '#app',
         data: {
-            error: '',
-            inError: '',
-            loading: false,
+            error: {
+                message: '',
+                active: false
+            },
+            success: {
+                message: '',
+                active: false
+            },
+
+            loading: false,            
 
             contentUrl: '/db/countries.json',
             countries: [],
@@ -25,8 +32,14 @@ $(document).ready(function() {
         },
         methods: {
             sendWarranty: function(e) {
-                var self = this;
+                e.preventDefault();
 
+                var self = this;
+                
+                self.error.active = false;
+                self.success.active = false;                
+
+                //if the form is not valid dont execute anything else
                 if (!$('#app').valid()) {
                     return;
                 }
@@ -34,33 +47,45 @@ $(document).ready(function() {
                 //Set loading
                 self.loading = true;
 
+                //JS object to send
+                var id = {
+                    lang: appMessages.Messages.lang,
+                    order: encodeURIComponent(escape(self.order)),
+                    fullName: encodeURIComponent(escape(self.name)),
+                    email: encodeURIComponent(escape(self.email)),
+                    address1: encodeURIComponent(escape(self.address)),
+                    address2: encodeURIComponent(escape(self.address2)),
+                    city: encodeURIComponent(escape(self.city)),
+                    province: encodeURIComponent(escape(self.province)),
+                    postalCode: encodeURIComponent(escape(self.postalCode)),
+                    country: encodeURIComponent(escape(self.country))
+                };
+
                 //Form url to register warranty
-                var url = '';
+                //http://localhost:28617/
+                //https://api.shadeomatic.com
+                var url = 'https://api.shadeomatic.com/warranty/send?id=' + JSON.stringify(id);
 
                 //Register data
                 $.ajax({
-                    url: '',
+                    url: url,
                     error: function() {
-                        self.inError = true;
-                        self.error = appMessages.Messages.generalError;
+                        self.error.active = true;
+                        self.error.message = appMessages.Messages.generalError;
                     }
                 }).done(function(data) {
 
+                    //Show success page so it can be printed or saved in case the email gets blocked as spam                    
+                    self.success.active = true;
+                    self.success.message = appMessages.Messages.warrantySuccess;
+
                 }).always(function(){
                     self.loading = false;
-                });
 
-                console.log(this.order);
-                console.log(this.name);
-                console.log(this.email);
-                console.log(this.country);
-                console.log(this.province);
-                console.log(this.address);
-                console.log(this.address2);
-                console.log(this.city);
-                console.log(this.postalCode);
-
-                e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $(".section-title").offset().top
+                    }, 1000);
+                });                 
             },
             loadCountries: function() {
                 var self = this;
@@ -68,8 +93,12 @@ $(document).ready(function() {
                 $.ajax({
                     url: self.contentUrl,
                     error: function() {
-                        self.inError = true;
-                        self.error = appMessages.Messages.generalError;
+                        self.error.active = true;
+                        self.error.message = appMessages.Messages.generalError;
+
+                        $('html, body').animate({
+                            scrollTop: $(".section-title").offset().top
+                        }, 1000);
                     }
                 }).done(function(data) {
                     self.countries = data.countries;
