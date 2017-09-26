@@ -192,8 +192,10 @@ category: general
             </div>
 
             <div class="col-xs-12">                
-                <a href="#submit" v-on:click="sendWarranty" class="btn btn-lg btn-primary pull-right" v-bind:class="{'disabled': loading}">
-                    Send                    
+                <a href="#submit" v-on:click="sendWarranty" 
+                    class="btn btn-lg btn-primary pull-right" 
+                    v-bind:class="{'disabled': loading}">
+                        Send                    
                 </a>
                 <img src="/images/ajax-loader.gif" alt="Loading" width="48px" height="48px" class="pull-right" v-show="loading" />
             </div>

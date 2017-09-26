@@ -39,15 +39,34 @@ category: general
     </div>
 </div>
 
-<div class="row-default">
+<form id="app" class="row-default">
     <div class="container">        
         <div class="row">
+            <div class="col-xs-12">
+                <div class="alert alert-danger" v-if="error.active">                    
+                    {{error.message}}
+                </div>                
+            </div>
+
+            <div class="col-xs-12" v-if="success.active">
+                <div class="alert alert-success">                    
+                    {{success.message}}
+                </div>                
+            </div>
+
             <div class="col-md-6 col-xs-12">
                 <div class="form-group">
                     <label data-required="true" for="name">
                         Your name
                     </label>
-                    <input type="text" id="name" name="name" class="form-control input-lg" placeholder="Your Name" required="required"/>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        class="form-control input-lg"                         
+                        required="required"
+                        v-model="name"
+                        />
                 </div>
             </div>
             <div class="col-md-6 col-xs-12">
@@ -55,7 +74,12 @@ category: general
                     <label for="company">
                         Company
                     </label>
-                    <input type="text" id="company" name="company" class="form-control input-lg" placeholder="Company"/>
+                    <input 
+                        type="text" 
+                        id="company" 
+                        name="company" 
+                        class="form-control input-lg"                         
+                        v-model="company"/>
                 </div>
             </div>
         </div>
@@ -65,7 +89,12 @@ category: general
                     <label for="phone">
                         Phone
                     </label>
-                    <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="Phone Number"/>
+                    <input 
+                        type="text" 
+                        id="phone" 
+                        name="phone" 
+                        class="form-control input-lg"                         
+                        v-model="phone"/>
                 </div>
             </div>
             <div class="col-md-6 col-xs-12">
@@ -73,7 +102,13 @@ category: general
                     <label data-required="true" for="email">
                         Email Address
                     </label>
-                    <input type="text" id="email" name="email" class="form-control input-lg" placeholder="Email Address" required="required"/>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-control input-lg"                         
+                        required="required"
+                        v-model="email"/>
                 </div>
             </div>
         </div>
@@ -83,20 +118,37 @@ category: general
                     <label data-required="true" for="message">
                         Message
                     </label>
-                    <textarea name="message" id="message" class="form-control input-lg" placeholder="Message" required="required"></textarea>
+                    <textarea 
+                        name="message" 
+                        id="message" 
+                        class="form-control input-lg"                         
+                        required="required"
+                        v-model="message">
+                    </textarea>
                 </div>
                 <div class="form-group">
-                    <div class="g-recaptcha pull-right" data-sitekey="6Lcz-iwUAAAAAEgKSCH2t8w_HRGZy1yuNMOuLatT"></div>                    
+                    <div id="recaptcha" class="g-recaptcha pull-right" data-sitekey="6Lcz-iwUAAAAAEgKSCH2t8w_HRGZy1yuNMOuLatT"></div>                    
                     <div class="clearfix"></div>
                 </div>
                 <div class="form-group">
-                    <input id="submit-form" type="submit" class="btn btn-primary btn-lg pull-right" value="Send" />
+                    <a 
+                        href="#send" 
+                        class="btn btn-primary btn-lg pull-right"
+                        v-bind:class="{'disabled': loading}"
+                        v-on:click="send">
+                        Send
+                    </a>
+                    <img src="/images/ajax-loader.gif" 
+                        alt="Loading" 
+                        width="48px" height="48px" 
+                        class="pull-right" 
+                        v-show="loading" />
                     <div class="clearfix"></div>
                 </div>
             </div>            
         </div>                
     </div>
-</div>
+</form>
 <div class="row-default row-primary">
     <div class="container">
         <div class="row">

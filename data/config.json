@@ -1,5 +1,6 @@
 {
     "config": {
-        "url": "https://alpha.shadeomatic.com"
+        "url": "https://alpha.shadeomatic.com",
+        "api": "https://api.shadeomatic.com/"
     }
 }
