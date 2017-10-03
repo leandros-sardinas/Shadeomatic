@@ -80,8 +80,8 @@ $(document).ready(function() {
             //Find dealers by distance
             locate: function() {
                 var self = this;                
-                var url = 'https://api.shadeomatic.com/dealer/FindDealers?lat=' + this.coordinates.lat + '&lng=' + this.coordinates.lng + '&distance=' + this.distance;
-                                
+                var url = 'https://api.shadeomatic.com/dealer/FindDealers?lat=' + self.coordinates.lat + '&lng=' + self.coordinates.lng + '&distance=' + self.distance;
+                                                
                 $.ajax({
                     url: url,
                     crossDomain: true,
@@ -90,7 +90,7 @@ $(document).ready(function() {
                         self.error.inError = true;
                         self.error.message = appMessages.Messages.generalError;
                     }
-                }).done(function(data) {
+                }).done(function(data) {                    
                     if(data.length < 1) {
                         self.error.inError = true;
                         self.error.message = appMessages.Messages.noDealers;
@@ -119,7 +119,7 @@ $(document).ready(function() {
                     self.locate();
                 } else {
 
-                    var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + this.query +"&key=" + this.googleKey;
+                    var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + this.query +"&key=" + this.googleKey + '&components=country:CA';
                     $.ajax({
                         url: url,
                         crossDomain: true,
@@ -128,12 +128,13 @@ $(document).ready(function() {
                             self.error.inError = true;
                             self.error.message = appMessages.Messages.generalError;                        
                         }
-                    }).done(function(data) {                        
-                        if (data.status === "OK") {
+                    }).done(function(data) {   
+                        console.log(data);
+                        if (data.status === 'OK') {
                             self.coordinates.lat = data.results[0].geometry.location.lat;
-                            self.coordinates.long = data.results[0].geometry.location.lng;
+                            self.coordinates.lng = data.results[0].geometry.location.lng;
                             self.locate();
-                        } else {                            
+                        } else {
                             self.error.inError = true;
                             self.error.message = appMessages.Messages.invalidAddress;
                         }
