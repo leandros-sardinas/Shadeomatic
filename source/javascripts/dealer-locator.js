@@ -128,8 +128,7 @@ $(document).ready(function() {
                             self.error.inError = true;
                             self.error.message = appMessages.Messages.generalError;                        
                         }
-                    }).done(function(data) {   
-                        console.log(data);
+                    }).done(function(data) {                           
                         if (data.status === 'OK') {
                             self.coordinates.lat = data.results[0].geometry.location.lat;
                             self.coordinates.lng = data.results[0].geometry.location.lng;
@@ -137,9 +136,8 @@ $(document).ready(function() {
                         } else {
                             self.error.inError = true;
                             self.error.message = appMessages.Messages.invalidAddress;
+                            self.statuses.inSearch = false;
                         }
-                    }).always(function(){
-                        self.statuses.inSearch = false;
                     })
                 }
             }
