@@ -4573,33 +4573,34 @@ ul.bxslider {
 
 .bxslider li.active h1{
   animation-name: title;
-  animation-duration: 2s;      
+  animation-duration: 3s;      
   animation-fill-mode: forwards;
   text-shadow: 1px 1px 5px #444; 
+
+  transform: translateZ(0);
 }
 
 .bxslider li.active span{
-  animation-name: zoomIn;
-  animation-duration: 5s;
+  /*animation-name: zoomIn;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
+  transform: translateZ(0);*/
 }
 
 @keyframes zoomIn {
   0% {
-    transform: scale(1);
+    transform: scale(1);    
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1.1);    
   }  
 }
 
 @keyframes title {
-  0% {
-    transform: translateX(50%);    
+  0% {    
     opacity: 0;
   }
-  100% {
-    transform: translateX(0%);
+  100% {    
     opacity: 1;
   }
 }
@@ -4607,9 +4608,9 @@ ul.bxslider {
 .bg {
   background-repeat: no-repeat;
   background-size: cover;
-  position:absolute;
+  /*position:absolute;
   height: 100%;
-  width: 100%;  
+  width: 100%;*/
 }
 
 .caption {
@@ -5599,9 +5600,9 @@ label.error {
   margin-left: -25px;
 
   animation-name: scrollBreath;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
-  transition: all 1s;
+  transition: all 2s;
 }
 .scroll-down .glyphicon {
   line-height: 45px;

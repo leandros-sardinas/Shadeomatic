@@ -100,8 +100,13 @@ $(document).ready(function() {
                     for(var i=0; i<data.length; i++) {
                         self.dealers.push(data[i]);
                     }
-                }).always(function(){
-                    self.statuses.inSearch = false;
+                    
+                    //Wait for render to cancel loading effect
+                    Vue.nextTick(function(){
+                        self.statuses.inSearch = false;
+                    })
+
+                    
                 })
             },
             changeDistance: function(dist, event) {                
@@ -136,7 +141,10 @@ $(document).ready(function() {
                         } else {
                             self.error.inError = true;
                             self.error.message = appMessages.Messages.invalidAddress;
-                            self.statuses.inSearch = false;
+
+                            Vue.nextTick(function(){
+                                self.statuses.inSearch = false;
+                            })                            
                         }
                     })
                 }
