@@ -81,7 +81,7 @@ $(document).ready(function() {
             locate: function() {
                 var self = this;                
                 var url = 'https://api.shadeomatic.com/dealer/FindDealers?lat=' + self.coordinates.lat + '&lng=' + self.coordinates.lng + '&distance=' + self.distance;
-                                                
+
                 $.ajax({
                     url: url,
                     crossDomain: true,
